@@ -1,0 +1,42 @@
+.header {
+  padding: 34px 0;
+}
+
+.header__left {
+  float: left;
+  width: 80%;
+  @include clearfix;
+}
+
+.header__right {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+.logo {
+  float: left;
+  margin-right: 77px;
+}
+
+.navigation {
+  float: left;
+}
+
+.navigation__list {
+  font-size: 0;
+}
+
+.navigation__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding: 0 39px;
+  vertical-align: top;
+  font-size: 14px;
+  color: _palette(base, myblue);
+  text-decoration: none;
+}

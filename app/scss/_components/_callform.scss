@@ -1,0 +1,26 @@
+.callform {
+  max-width: 315px;
+}
+
+.callform__inner {
+  padding: 1.25rem;
+}
+
+.callform__input {
+  width: 100%;
+  padding: 0.8125rem 1.25rem;
+  border: 1px solid #dce4ea;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}
+
+.callform__btn {
+  display: block;
+  width: 100%;
+  background: _palette(base, myred);
+  height: 2.8125rem;
+  border: 0 none;
+  color: #ffffff;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}

@@ -1,0 +1,16 @@
+.picblock {
+  background-image: url("http://www.fillmurray.com/1396/658");
+  height: 658px;
+}
+
+.advertise-block {
+  width: 475px;
+  margin-bottom: 22px;
+  background-color: _palette(base, myred);
+}
+
+.picblock__advertise-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
