@@ -1,3 +1,4 @@
+// section picblock
 .picblock {
   background-image: url("http://www.fillmurray.com/1396/658");
   height: 658px;
@@ -11,6 +12,22 @@
 
 .picblock__advertise-container {
   height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
+  //display: flex;
+  //flex-direction: column-reverse;
+  .container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+  }
+}
+
+//section picblock secondary
+
+.picblock-secondary {
+  background-image: url("http://www.fillmurray.com/1396/658");
+  height: 658px;
 }

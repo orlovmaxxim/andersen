@@ -1,26 +1,28 @@
 header.header
   .container-main
-    .header__left
-      .logo
-        | Лого
-      nav.navigation
-        ul.navigation__list
-          li.navigation__item
-            a.navigation__link(href='#')
-              | Фотогалерея
-          li.navigation__item
-            a.navigation__link(href='#')
-              | Планировки и цены
-          li.navigation__item
-            a.navigation__link(href='#')
-              | Способы покупки
-          li.navigation__item
-            a.navigation__link(href='#')
-              | Контакты
-    .header__right
-      .call
-        .call__number
-        .call__btn
-          a.call__view
-            | 89889876543
+    .header__desktop
+      .header__left
+        a.logo(href="#")
+          img.logo__img(alt="andersen logo" src="img/logo.png")
+        nav.navigation
+          ul.navigation__list
+            li.navigation__item
+              a.navigation__link(href='#')
+                | Фотогалерея
+            li.navigation__item
+              a.navigation__link(href='#')
+                | Планировки и цены
+            li.navigation__item
+              a.navigation__link(href='#')
+                | Способы покупки
+            li.navigation__item
+              a.navigation__link(href='#')
+                | Контакты
+      .header__right
+        .call
+          .call__number
+            | 8 800 2000 600
+          a.call__btn(href='#')
+            .call__view
+              | Заказать звонок
 

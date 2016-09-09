@@ -1,6 +1,10 @@
+.container {
+	max-width: 1400px;
+}
+
 .container-main {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	@include clearfix;
+	//@include clearfix;
 }

@@ -24,3 +24,19 @@
   color: #ffffff;
   @include prefixer(border-radius, 5px, webkit ms spec);
 }
+
+.callform__triangle {
+  width: 0;
+  margin-right: 10px;
+  margin-left: auto;
+  border: 15px solid transparent;
+  border-bottom-color: red;
+}
+
+.call__btn {
+  display: inline-block;
+  padding: 0 8px;
+  background: _palette(base, myred);
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  color: #ffffff;
+}

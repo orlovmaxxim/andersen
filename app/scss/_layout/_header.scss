@@ -1,5 +1,16 @@
 .header {
-  padding: 34px 0;
+  //height: 77px;
+  //padding: 20px 0;
+  width: 100%;
+  .container-main {
+    padding: 1em 0;
+  }
+}
+
+.header__desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header__left {
@@ -16,7 +27,12 @@
 
 .logo {
   float: left;
+  max-width: 11em;
   margin-right: 77px;
+}
+
+.logo__img {
+  max-width: 100%;
 }
 
 .navigation {
@@ -39,4 +55,10 @@
   font-size: 14px;
   color: _palette(base, myblue);
   text-decoration: none;
+}
+
+.call__number {
+  font-family: _font(dinmedium, family);
+  font-size: 20px;
+  color: _palette(base, myblue);
 }

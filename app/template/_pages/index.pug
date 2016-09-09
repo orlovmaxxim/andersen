@@ -4,13 +4,34 @@ block title
   | Andersen page
 
 block content
-  section.picblock
-    .picblock__advertise-container
-      .container-main
-        .advertise-block
-          .advertise-block__title
-            | ЖК "Андерсен"
-          .advertise-block__paragraph
-            | Красивая архитектура, дубовая аллея, двор без машин и всего от
-          .advertise-block__paragraph.advertise-block__paragraph_fsize-big
-            | 1280 тыс. руб.
+  .container
+    section.picblock
+      .picblock__advertise-container
+        .container-main
+          include ../_includes/_callform
+          .advertise-block
+            .advertise-block__title
+              | ЖК "Андерсен"
+            .advertise-block__paragraph
+              | Красивая архитектура, дубовая аллея, двор без машин и всего от
+            .advertise-block__paragraph.advertise-block__paragraph_fsize-big
+              | 1280 тыс. руб.
+    section.slider
+      .swiper-container
+        .swiper-wrapper
+          .swiper-slide
+            img.slide-pic(src="http://www.fillmurray.com/1396/658")
+          .swiper-slide
+            img.slide-pic(src="http://www.fillmurray.com/1396/658")
+          .swiper-slide
+            img.slide-pic(src="http://www.fillmurray.com/1396/658")
+        .swiper-button-prev
+        .swiper-button-next
+    section.picblock-secondary
+      .caption
+        h2.caption__title
+    section.picblock-secondary
+      .infomore-block
+        h2.infomore-block__title
+        p.ingomore-block__desc
+        a.infomore-block__btn Узнать подробнее

@@ -1,9 +1,6 @@
 $font: (
   body : (
-    family          : (Arial, Helvetica, sans-serif),
-    weight          : normal,
-    weight-bold     : bold,
-    text-transform  : inherit
+    family          : ('pf_dindisplay_proregular', Helvetica, sans-serif)
   ),
   heading : (
     family          : (Arial, Helvetica, sans-serif),
@@ -33,5 +30,8 @@ $font: (
     weight          : normal,
     weight-bold     : bold,
     text-transform  : inherit
+  ),
+  dinmedium: (
+    family          : ('pf_dindisplay_promedium', Helvetica, sans-serif),
   )
 );

@@ -101,9 +101,15 @@ gulp.task('scripts', function(){
 
 // --------- images task --------------
 gulp.task('images', function() {
-    return gulp.src(src + 'images/**/*')
+    return gulp.src(src + 'img/**/*')
         .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
         .pipe(gulp.dest(dest + 'img'));
+});
+
+// --------- fonts task ---------------
+gulp.task('fonts', function(){
+   return gulp.src(src + 'fonts/Fonts/webfontkit2/**/*')
+     .pipe(gulp.dest(dest + 'fonts'));
 });
 
 ///////////
@@ -182,7 +188,9 @@ gulp.task('default', gulp.series(
     gulp.parallel (
         'pug',
         'sass',
-        'scripts'
+        'scripts',
+        'images',
+        'fonts'
     ),
     gulp.parallel(
         'watch',
