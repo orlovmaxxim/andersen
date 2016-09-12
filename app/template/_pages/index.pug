@@ -6,6 +6,7 @@ block title
 block content
   .container
     section.picblock
+      .picblock__bg
       .picblock__advertise-container
         .container-main
           include ../_includes/_callform
@@ -36,6 +37,25 @@ block content
           | Собственная дубовая аллея
     section.picblock-secondary
       .infomore-block
-        h2.infomore-block__title
-        p.ingomore-block__desc
-        a.infomore-block__btn Узнать подробнее
+        h2.infomore-block__title Двухуровневые пентхаусы
+        p.infomore-block__desc с выходом на террасу и панорманым остеклением
+        p.infomore-block__desc от 2 700 000 руб.
+        a.infomore-block__btn(href="#") Узнать подробнее
+  .allwidth-block
+    .allwidth-block__bg
+    .methods-block
+      ul.buy-method-tabs
+        li.buy-method-tabs__item
+          a.buy-method-tabs__tab(href='#') Ипотека
+        li.buy-method-tabs__item
+          a.buy-method-tabs__tab(href='#') Рассрочка
+        li.buy-method-tabs__item
+          a.buy-method-tabs__tab(href='#') Материнский капитал
+      h2.methods-block__title
+        | Получите рассчёт ежемесячного платежа во всех банках-партнёрах по ипотеке
+      .brands
+        ul.brands__list
+          li.brands__item
+            a.brands__link
+      form.everymonth-pay
+        input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
