@@ -1,13 +1,28 @@
 // section picblock
 .picblock {
-  background-image: url("http://www.fillmurray.com/1396/658");
+  margin-bottom: 22px;
   height: 658px;
+  background-image: url("http://www.fillmurray.com/1396/658");
 }
 
 .advertise-block {
   width: 475px;
   margin-bottom: 22px;
+  padding: 29px 0 22px 33px;
+  font-family: _font(dinmedium, family);
   background-color: _palette(base, myred);
+  color: #fff;
+  .advertise-block__title {
+    font-size: 54px;
+  }
+}
+.advertise-block__paragraph {
+  font-family: _font(body, family);
+  font-size: 24px;
+}
+
+.advertise-block__paragraph_fsize-big {
+  font-size: 36px;
 }
 
 .picblock__advertise-container {
@@ -25,7 +40,26 @@
   }
 }
 
-//section picblock secondary
+// caption-block
+
+.caption-block {
+  position: absolute;
+  left: 50%;
+  width: 846px;
+  margin-top: 82px;
+  z-index: 2;
+  transform: translate(-50%, 0);
+  background-color: #fff;
+  .caption-block__title {
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    text-align: center;
+    color: _palette(base, myblue);;
+  }
+}
+
+// section picblock secondary
 
 .picblock-secondary {
   background-image: url("http://www.fillmurray.com/1396/658");

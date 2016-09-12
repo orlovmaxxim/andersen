@@ -4,15 +4,17 @@
 
 .callform__inner {
   padding: 1.25rem;
+  background-color: #fff;
 }
 
 .callform__input {
   width: 100%;
   padding: 0.8125rem 1.25rem;
-  border: 1px solid #dce4ea;
+  border: 2px solid #dce4ea;
   margin-bottom: 1.25rem;
   box-sizing: border-box;
   @include prefixer(border-radius, 5px, webkit ms spec);
+  color: _palette(base, mygray);
 }
 
 .callform__btn {
@@ -21,7 +23,7 @@
   background: _palette(base, myred);
   height: 2.8125rem;
   border: 0 none;
-  color: #ffffff;
+  color: #fff;
   @include prefixer(border-radius, 5px, webkit ms spec);
 }
 
@@ -30,7 +32,7 @@
   margin-right: 10px;
   margin-left: auto;
   border: 15px solid transparent;
-  border-bottom-color: red;
+  border-bottom-color: #fff;
 }
 
 .call__btn {
@@ -38,5 +40,5 @@
   padding: 0 8px;
   background: _palette(base, myred);
   @include prefixer(border-radius, 5px, webkit ms spec);
-  color: #ffffff;
+  color: #fff;
 }
