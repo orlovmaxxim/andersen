@@ -12,7 +12,7 @@ block content
           include ../_includes/_callform
           .advertise-block
             .advertise-block__title
-              | ЖК "Андерсен"
+              | ЖК &laquoАндерсен&raquo
             .advertise-block__paragraph
               | Красивая архитектура, дубовая аллея, двор без машин и всего от
             .advertise-block__paragraph.advertise-block__paragraph_fsize-big
@@ -20,17 +20,17 @@ block content
     section.slider
       .caption-block
         h2.caption-block__title
-          | ЖК "Андерсен" не такой, как все дома в округе
+          | ЖК &laquoАндерсен&raquo не такой, как все дома в округе
       .swiper-container
         .swiper-wrapper
           .swiper-slide
-            img.slide-pic(src="http://www.fillmurray.com/1396/658")
+            img.slide-pic(src="/img/dvor-1.jpg")
           .swiper-slide
-            img.slide-pic(src="http://www.fillmurray.com/1396/658")
+            img.slide-pic(src="/img/dvor-1.jpg")
           .swiper-slide
-            img.slide-pic(src="http://www.fillmurray.com/1396/658")
-        .swiper-button-prev
-        .swiper-button-next
+            img.slide-pic(src="/img/dvor-1.jpg")
+        .swiper-button-prev(id="swip-left")
+        .swiper-button-next(id="swip-right")
     section.picblock-secondary
       .caption-block
         h2.caption-block__title
@@ -42,20 +42,29 @@ block content
         p.infomore-block__desc от 2 700 000 руб.
         a.infomore-block__btn(href="#") Узнать подробнее
   .allwidth-block
-    .allwidth-block__bg
-    .methods-block
-      ul.buy-method-tabs
-        li.buy-method-tabs__item
-          a.buy-method-tabs__tab(href='#') Ипотека
-        li.buy-method-tabs__item
-          a.buy-method-tabs__tab(href='#') Рассрочка
-        li.buy-method-tabs__item
-          a.buy-method-tabs__tab(href='#') Материнский капитал
-      h2.methods-block__title
-        | Получите рассчёт ежемесячного платежа во всех банках-партнёрах по ипотеке
-      .brands
-        ul.brands__list
-          li.brands__item
-            a.brands__link
-      form.everymonth-pay
-        input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
+    .container-main
+      h2.title Способы покупки квартир
+      .methods-block
+        ul.buy-method-tabs
+          li.buy-method-tabs__item
+            a.buy-method-tabs__tab(href='#') Ипотека
+          li.buy-method-tabs__item
+            a.buy-method-tabs__tab(href='#') Рассрочка
+          li.buy-method-tabs__item
+            a.buy-method-tabs__tab(href='#') Материнский капитал
+        .buy-method-blocks
+          .mortgage
+            h2.methods-block__title
+              | Получите рассчёт ежемесячного платежа во всех банках-партнёрах по ипотеке
+            .brands
+              ul.brands__list
+                li.brands__item
+                  a.brands__link
+            form.everymonth-pay
+              .everymont-pay__inputs
+                select.everymont-pay__select(id='start-pay')
+                  option(value='hide') Первоначальный взнос
+                  option(value='first') First
+                  option(value='second') Second
+                input.everymonth-pay__input
+              input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")

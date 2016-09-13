@@ -1,5 +1,27 @@
+.slider {
+  margin-bottom: 22px;
+}
+
 .swiper-container {
-  //width: 1400px;
-  max-width: 1370px;
+  max-width: 1395px;
+  //max-width: 1370px;
   height: 660px;
+}
+
+.slide-pic {
+  width: 100%;
+}
+
+#swip-left{
+  background-image: url("/img/slide-left.png");
+  width: 116px;
+  height: 99px;
+  background-size: 69px 69px;
+}
+
+#swip-right{
+  background-image: url("/img/slide-right.png");
+  width: 116px;
+  height: 99px;
+  background-size: 69px 69px;
 }

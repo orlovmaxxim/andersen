@@ -1,0 +1,32 @@
+.buy-method-tabs {
+  width: 100%;
+  display: flex;
+
+  .buy-method-tabs__item {
+    list-style: none;
+    width: 33.3333333%;
+    text-align: center;
+    @include prefixer(border-top-left-radius, 10px, webkit ms spec);
+    @include prefixer(border-top-right-radius, 10px, webkit ms spec);
+    background-color: #e9eef1;
+    .buy-method-tabs__tab {
+      display: block;
+      height: 87px;
+      padding-top: 30px;
+    }
+  }
+}
+
+.mortgage {
+  background-color: #f6f8fa;
+}
+
+.methods-block__title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #001c3f;
+  font-size: 25px;
+  border-bottom: 1px solid #dce4ea;
+  background-color: #f1f5f8;
+}

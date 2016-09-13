@@ -37,7 +37,8 @@
 
 .call__btn {
   display: inline-block;
-  padding: 0 8px;
+  padding: 0 17px;
+  font-size: 14px;
   background: _palette(base, myred);
   @include prefixer(border-radius, 5px, webkit ms spec);
   color: #fff;

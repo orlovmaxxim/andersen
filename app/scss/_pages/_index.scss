@@ -2,7 +2,7 @@
 .picblock {
   margin-bottom: 22px;
   position: relative;
-  //height: 658px;
+  height: 660px;
   //background-image: url("http://www.fillmurray.com/1396/658");
   .picblock__bg {
     position: absolute;
@@ -12,29 +12,34 @@
     background-position: center center;
     background-repeat: no-repeat;
     z-index: -1;
-    background-image: url("http://www.fillmurray.com/1396/658");
+    //background-image: url("http://www.fillmurray.com/1396/658");
+    background-image: url("/img/view-house.jpg");
   }
 }
 
 
 .advertise-block {
   width: 475px;
+  height: 187px;
   margin-bottom: 22px;
-  padding: 29px 0 22px 33px;
+  padding: 19px 0 7px 33px;
   font-family: _font(dinmedium, family);
   background-color: _palette(base, myred);
   color: #fff;
   .advertise-block__title {
     font-size: 54px;
+    line-height: 58.9px;
   }
 }
 .advertise-block__paragraph {
   font-family: _font(body, family);
   font-size: 24px;
+  line-height: 26.9px;
 }
 
 .advertise-block__paragraph_fsize-big {
   font-size: 36px;
+  line-height: 41.9px;
 }
 
 .picblock__advertise-container {
@@ -57,7 +62,6 @@
 .caption-block {
   position: absolute;
   left: 50%;
-  width: 846px;
   margin-top: 82px;
   z-index: 2;
   transform: translate(-50%, 0);
@@ -65,6 +69,7 @@
   .caption-block__title {
     margin: 0;
     padding: 0;
+    padding: 9px 75px;
     font-size: 36px;
     text-align: center;
     color: _palette(base, myblue);
@@ -74,8 +79,13 @@
 // section picblock secondary
 
 .picblock-secondary {
-  background-image: url("http://www.fillmurray.com/1396/658");
+  background-image: url("/img/street-with-man.jpg");
   height: 658px;
+  //width: 100%;
+  margin-bottom: 22px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .infomore-block {
@@ -88,12 +98,13 @@
 
 .infomore-block__btn {
   display: block;
-  padding: 0 36px 0 42px;
+  padding: 0 42px;
   border: 0 none;
   font-size: 24px;
+  line-height: 54px;
   background: _palette(base, myred);
   color: #fff;
-  @include prefixer(border-radius, 5px, webkit ms spec);
+  @include prefixer(border-radius, 7px, webkit ms spec);
 }
 
 .infomore-block__title {
@@ -109,4 +120,19 @@
   padding: 0;
   font-size: 24px;
   color: #fff;
+}
+
+// section allwidth block
+
+.allwidth-block {
+  background: transparent url("/img/allwidth-bg.jpg") no-repeat scroll center bottom / cover;
+}
+
+.title {
+  margin: 0;
+  padding: 33px 0;
+  font-family: _font(dinmedium, family);
+  font-size: 60px;
+  text-align: center;
+  color: #ffffff;
 }
