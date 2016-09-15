@@ -43,3 +43,14 @@
   @include prefixer(border-radius, 5px, webkit ms spec);
   color: #fff;
 }
+
+//.call__view {
+//  &:before {
+//    content: '';
+//    display: inline-block;
+//    width: 26px;
+//    height: 30px;
+//    background: url("/img/phone-128.png") center bottom no-repeat;
+//    margin-right: 15px;
+//  }
+//}

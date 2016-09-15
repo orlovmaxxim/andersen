@@ -1,3 +1,7 @@
+.methods-block {
+  padding-bottom: 22px;
+}
+
 .buy-method-tabs {
   width: 100%;
   display: flex;
@@ -13,20 +17,80 @@
       display: block;
       height: 87px;
       padding-top: 30px;
+      font-family: _font(heading, family);
+      font-size: 24px;
+      color: #aab5bb;
     }
   }
 }
 
 .mortgage {
+  padding-bottom: 22px;
+  @include prefixer(border-bottom-left-radius, 10px, webkit ms spec);
+  @include prefixer(border-bottom-right-radius, 10px, webkit ms spec);
   background-color: #f6f8fa;
 }
 
 .methods-block__title {
   margin: 0;
-  padding: 0;
+  padding: 22px 0;
   text-align: center;
-  color: #001c3f;
+  font-family: _font(heading, family);
   font-size: 25px;
   border-bottom: 1px solid #dce4ea;
   background-color: #f1f5f8;
+  color: #001c3f;
+}
+
+.brands__list {
+  list-style: none;
+  .brands__item {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 40px;
+  }
+}
+
+.brands__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.everymonth-pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 28px;
+}
+
+.everymonth-pay__inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.everymonth-pay__input {
+  padding: 0.8125rem 1.25rem;
+  width: 20%;
+  margin-left: 10px;
+  border: 2px solid #dce4ea;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  color: _palette(base, mygray);
+}
+
+.everymonth-pay__btn {
+  display: block;
+  padding: 10px 36px;
+  font-family: _font(heading, family);
+  font-size: 20px;
+  background: _palette(base, myred);
+  border: 0 none;
+  color: #fff;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}
+#start-pay .selet2-default {
+  padding: 10px;
 }

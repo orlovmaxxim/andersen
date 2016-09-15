@@ -31,26 +31,30 @@ block content
             img.slide-pic(src="/img/dvor-1.jpg")
         .swiper-button-prev(id="swip-left")
         .swiper-button-next(id="swip-right")
-    section.picblock-secondary
-      .caption-block
-        h2.caption-block__title
-          | Собственная дубовая аллея
+    section.picblock-secondary-zero
+      .pickblock-view
+        .caption-block
+          h2.caption-block__title
+            | Собственная дубовая аллея
     section.picblock-secondary
       .infomore-block
-        h2.infomore-block__title Двухуровневые пентхаусы
-        p.infomore-block__desc с выходом на террасу и панорманым остеклением
-        p.infomore-block__desc от 2 700 000 руб.
+        .infomore-block__title
+          h2 Двухуровневые пентхаусы
+        .infomore-block__desc
+          p с выходом на террасу и панорманым остеклением
+        .infomore-block__desc
+          p от 2 700 000 руб.
         a.infomore-block__btn(href="#") Узнать подробнее
   .allwidth-block
     .container-main
       h2.title Способы покупки квартир
       .methods-block
         ul.buy-method-tabs
-          li.buy-method-tabs__item
+          li.buy-method-tabs__item.buy-method-tabs__item_active
             a.buy-method-tabs__tab(href='#') Ипотека
-          li.buy-method-tabs__item
+          li.buy-method-tabs__item.buy-method-tabs__item_active
             a.buy-method-tabs__tab(href='#') Рассрочка
-          li.buy-method-tabs__item
+          li.buy-method-tabs__item.buy-method-tabs__item_active
             a.buy-method-tabs__tab(href='#') Материнский капитал
         .buy-method-blocks
           .mortgage
@@ -60,11 +64,33 @@ block content
               ul.brands__list
                 li.brands__item
                   a.brands__link
+                    img.brands__img(src="/img/bank1.png")
+                li.brands__item
+                  a.brands__link
+                    img.brands__img(src="/img/bank2.png")
+                li.brands__item
+                  a.brands__link
+                    img.brands__img(src="/img/bank3.png")
+                li.brands__item
+                  a.brands__link
+                    img.brands__img(src="/img/bank4.png")
+                li.brands__item
+                  a.brands__link
+                    img.brands__img(src="/img/bank5.png")
             form.everymonth-pay
-              .everymont-pay__inputs
-                select.everymont-pay__select(id='start-pay')
+              .everymonth-pay__inputs
+                select.everymonth-pay__select(id='start-pay' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
                   option(value='hide') Первоначальный взнос
                   option(value='first') First
                   option(value='second') Second
-                input.everymonth-pay__input
+                select.everymonth-pay__select(id='type-home' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
+                  option(value='hide') Тип квартиры
+                  option(value='first') First
+                  option(value='second') Second
+                select.everymonth-pay__select(id='time-limit' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
+                  option(value='hide') На срок
+                  option(value='first') First
+                  option(value='second') Second
+                input.everymonth-pay__input(name="" placeholder="Ваше имя" type="text")
+                input.everymonth-pay__input(name="" placeholder="Ваш телефон" type="text")
               input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")

@@ -79,6 +79,29 @@
 // section picblock secondary
 
 .picblock-secondary {
+  position: relative;
+  background-image: url("/img/street-with-man.jpg");
+  height: 658px;
+  //width: 100%;
+  margin-bottom: 22px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    z-index: 1;
+    display: block;
+    opacity: .46;
+  }
+}
+
+.pickblock-view {
   background-image: url("/img/street-with-man.jpg");
   height: 658px;
   //width: 100%;
@@ -89,6 +112,8 @@
 }
 
 .infomore-block {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -108,16 +133,14 @@
 }
 
 .infomore-block__title {
-  margin: 0;
-  padding: 0;
-  font-family: _font(dinmedium, family);
-  font-size: 54px;
-  color: _palette(base, myred);
+  h2 {
+    font-family: _font(dinmedium, family);
+    font-size: 54px;
+    color: _palette(base, myred);
+  }
 }
 
 .infomore-block__desc {
-  margin: 0;
-  padding: 0;
   font-size: 24px;
   color: #fff;
 }
@@ -130,7 +153,7 @@
 
 .title {
   margin: 0;
-  padding: 33px 0;
+  padding: 10px 0;
   font-family: _font(dinmedium, family);
   font-size: 60px;
   text-align: center;
