@@ -3,10 +3,18 @@ require('./modules/select.js')();
 
 $(document).ready(function(){
   var mySwiper = new Swiper ('.swiper-container', {
-    // Optional parameters
     loop: true,
     nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev'
+    prevButton: '.swiper-button-prev',
+    effect: 'fade'
+  });
+
+  var mySwiperManager = new Swiper ('.swiper-container-manager', {
+    slidesPerView: 4,
+    width: 1200,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 10
   });
 
   ymaps.ready(init);

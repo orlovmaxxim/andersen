@@ -14,6 +14,9 @@ body {
 
 .wrapper {
   //min-width: 970px;
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
 }
 
 ul {

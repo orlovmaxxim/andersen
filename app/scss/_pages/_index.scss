@@ -148,6 +148,7 @@
 // section allwidth block
 
 .allwidth-block {
+  margin-bottom: 22px;
   background: transparent url("/img/allwidth-bg.jpg") no-repeat scroll center bottom / cover;
 }
 
@@ -171,4 +172,131 @@
 .mapblock {
   width: 100%;
   height: 660px;
+  margin-bottom: 40px;
+}
+
+// questions block
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.questions__title {
+  h2 {
+    font-family: _font(dinmedium, family);
+    font-size: 54px;
+    line-height: 63px;
+    color: _palette(base, myred);
+  }
+}
+
+.questions__desc {
+  margin-bottom: 15px;
+  font-family: _font(heading, family);
+  font-size: 36px;
+  color: _palette(base, myblue);
+}
+
+.questions__btn {
+  display: block;
+  padding: 0 48px;
+  border: 0 none;
+  font-family: _font(heading, family);
+  font-size: 24px;
+  line-height: 54px;
+  background: _palette(base, myred);
+  color: #fff;
+  @include prefixer(border-radius, 7px, webkit ms spec);
+}
+
+//allwidth-slider block
+
+.allwidth-slider {
+  background: #f1f5f8;
+  .container {
+    position: relative;
+  }
+  .allwidth-slider__title {
+    font-family: _font(heading, family);
+    font-size: 36px;
+    text-align: center;
+    color: _palette(base, myblue);
+  }
+}
+
+.swiper-container-manager {
+  overflow: hidden;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.manager__foto {
+  overflow: hidden;
+  width: 9.0625rem;
+  height: 9.0625rem;
+  margin-left: 10px;
+  @include prefixer(border-radius, 50%, webkit ms spec);
+  border: 5px solid #d8dae0;
+  .manager__img {
+    width: 100%;
+  }
+}
+
+.manager__name {
+  font-family: _font(heading, family);
+  font-size: 24px;
+  text-align: center;
+  color: _palette(base, myblue);
+}
+
+.consult-link {
+  font-family: _font(heading, family);
+  font-size: 16px;
+  text-decoration: underline;
+  color: _palette(base, myred);
+}
+
+// documents block
+
+.subtitle {
+  font-family: _font(dinmedium, family);
+  font-size: 36px;
+  text-align: center;
+  color: _palette(base, myred);
+}
+
+.documents-block__list {
+  display: flex;
+  list-style: none;
+  .documents-block__item {
+    width: 50%;
+    .documents-block__link {
+      display: block;
+      position: relative;
+      margin-bottom: 51px;
+      font-family: _font(heading, family);
+      font-size: 16px;
+      text-decoration: underline;
+      color: _palette(base, myblue);
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -47px;
+        top: -5px;
+        width: 26px;
+        height: 34px;
+        background-image: url(/img/doc-icon.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+  }
 }
