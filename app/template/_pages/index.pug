@@ -9,15 +9,15 @@ block content
       .picblock__bg
       .picblock__advertise-container
         .container-main
-          include ../_includes/_callform
+          //include ../_includes/_callform
           .advertise-block
             .advertise-block__title
               | ЖК &laquoАндерсен&raquo
             .advertise-block__paragraph
               | Красивая архитектура, дубовая аллея, двор без машин и всего от
             .advertise-block__paragraph.advertise-block__paragraph_fsize-big
-              | 1 280 тыс. руб.
-    section.slider
+              | #[span 1 280] тыс. руб.
+    section.slider(id="fotogal")
       .caption-block
         h2.caption-block__title
           | ЖК &laquoАндерсен&raquo не такой, как все дома в округе
@@ -42,8 +42,8 @@ block content
           h2 Двухуровневые пентхаусы
         .infomore-block__desc
           p с выходом на террасу и панорманым остеклением
-        .infomore-block__desc
-          p от 2 700 000 руб.
+        .infomore-block__desc.infomore-block__desc_fsize-big
+          p от #[span 2 700 000] руб.
         a.infomore-block__btn(href="#") Узнать подробнее
   .allwidth-block
     .container-main
@@ -94,7 +94,7 @@ block content
                 input.everymonth-pay__input(name="" placeholder="Ваше имя" type="text")
                 input.everymonth-pay__input(name="" placeholder="Ваш телефон" type="text")
               input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
-  section.infoblock
+  section.infoblock(id="contacts")
     .container-main
       .documents-block
         h2.subtitle Документация

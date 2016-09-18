@@ -2,6 +2,11 @@
   //height: 77px;
   //padding: 20px 0;
   width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: #fff;
+  top: 0;
+  left: 0;
   .container-main {
     padding: 23px 0 10px 0;
   }
@@ -62,6 +67,10 @@
   font-size: 14px;
   color: _palette(base, myblue);
   text-decoration: none;
+}
+
+.call {
+  position: relative;
 }
 
 .call__number {

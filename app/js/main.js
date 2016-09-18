@@ -1,4 +1,5 @@
 var hello = require('./modules/firstModule.js');
+var triggers = require('./modules/triggers.js');
 require('./modules/select.js')();
 
 $(document).ready(function(){
@@ -39,5 +40,7 @@ $(document).ready(function(){
       });
     myMap.geoObjects.add(myPlacemark);
   }
+
+  triggers.callForm();
 
 });

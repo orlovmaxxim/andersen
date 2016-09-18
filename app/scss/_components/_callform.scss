@@ -1,5 +1,9 @@
 .callform {
-  max-width: 315px;
+  //max-width: 315px;
+  display: none;
+  position: absolute;
+  width: 312px;
+  right: 0;
 }
 
 .callform__inner {
@@ -11,7 +15,8 @@
   width: 100%;
   padding: 0.8125rem 1.25rem;
   border: 2px solid #dce4ea;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.7rem;
+  font-family: _font(heading, family);
   box-sizing: border-box;
   @include prefixer(border-radius, 5px, webkit ms spec);
   color: _palette(base, mygray);
@@ -21,15 +26,17 @@
   display: block;
   width: 100%;
   background: _palette(base, myred);
-  height: 2.8125rem;
+  height: 3.5rem;
   border: 0 none;
+  font-family: _font(heading, family);
+  font-size: 20px;
   color: #fff;
   @include prefixer(border-radius, 5px, webkit ms spec);
 }
 
 .callform__triangle {
   width: 0;
-  margin-right: 10px;
+  margin-right: 44px;
   margin-left: auto;
   border: 15px solid transparent;
   border-bottom-color: #fff;
