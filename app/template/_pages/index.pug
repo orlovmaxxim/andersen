@@ -53,20 +53,22 @@ block content
     .container-main
       .documents-block
         h2.subtitle Документация
-        ul.documents-block__list
-          li.documents-block__item
-            a.documents-block__link(href="#") Разрешение на строительство
-            a.documents-block__link(href="#") Проектная декларация
-          li.documents-block__item
-            a.documents-block__link(href="#") Внесение изменнений в проектную декларацию
-            a.documents-block__link(href="#") Свидетельство о государственной регистрации права
+        .contacts-block__container
+          ul.documents-block__list
+            li.documents-block__item
+              a.documents-block__link(href="#") Разрешение на строительство
+              a.documents-block__link(href="#") Проектная декларация
+            li.documents-block__item
+              a.documents-block__link(href="#") Внесение изменнений в проектную декларацию
+              a.documents-block__link(href="#") Свидетельство о государственной регистрации права
       .contacts-block
         h2.subtitle Контакты
-        .contacts-block__adress
-          p г. Краснодар,
-          p ул. Героев-Разведчиков, д. 48
-        .contacts-block__tel
-          | 8 800 2000 600
+        .contacts-block__container
+          .contacts-block__adress
+            p г. Краснодар,
+            p ул. Героев-Разведчиков, д. 48
+          .contacts-block__tel
+            | 8 800 2000 600
 
   .allwidth-slider
     .container

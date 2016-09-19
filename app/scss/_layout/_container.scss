@@ -9,3 +9,10 @@
 	margin: 0 auto;
 	//@include clearfix;
 }
+
+.contacts-block__container {
+	width: 100%;
+	max-width: 730px;
+	margin: 0 auto;
+	@include clearfix;
+}

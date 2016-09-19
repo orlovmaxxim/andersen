@@ -292,6 +292,20 @@
   color: _palette(base, myred);
 }
 
+.documents-block {
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #f1f5f8;
+    //box-shadow: inset 0 1px 0 rgba(128,128,128,.29),0 0 2px 2px rgba(251,251,251,.75);
+  }
+}
+
 .documents-block__list {
   display: flex;
   list-style: none;
@@ -318,5 +332,48 @@
         background-position: center center;
       }
     }
+  }
+}
+
+.contacts-block__adress {
+  position: relative;
+  float: left;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -53px;
+    top: 4px;
+    width: 24px;
+    height: 34px;
+    background-image: url(/img/geo-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  p {
+    font-size: 16px;
+    font-family: _font(heading, family);
+    line-height: 20px;
+    color: _palette(base, myblue);
+  }
+}
+
+.contacts-block__tel {
+  position: relative;
+  float: right;
+  font-size: 24px;
+  font-family: _font(heading, family);
+  color: _palette(base, myblue);
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -48px;
+    top: 4px;
+    width: 33px;
+    height: 33px;
+    background-image: url(/img/phone-circle-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 }
