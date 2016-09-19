@@ -24,11 +24,27 @@
   }
 }
 
+.buy-method-tabs__item.buy-method-tabs__item_active {
+  border-right: 1px solid #e9e7e9;
+  background-color: #f6f8fa;
+  .buy-method-tabs__tab {
+    //color: red;
+  }
+}
+
+.buy-method-tabs__item.buy-method-tabs__item_color-dark {
+  background-color: #dce3e7;
+}
+
 .mortgage {
+  display: none;
   padding-bottom: 22px;
   @include prefixer(border-bottom-left-radius, 10px, webkit ms spec);
   @include prefixer(border-bottom-right-radius, 10px, webkit ms spec);
   background-color: #f6f8fa;
+  &.active {
+    display: block;
+  }
 }
 
 .methods-block__title {
@@ -38,7 +54,7 @@
   font-family: _font(heading, family);
   font-size: 25px;
   border-bottom: 1px solid #dce4ea;
-  background-color: #f1f5f8;
+  background-color: #f6f8fa;
   color: #001c3f;
 }
 
@@ -63,20 +79,14 @@
   padding: 0 28px;
 }
 
-.everymonth-pay__inputs {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
 .everymonth-pay__input {
-  padding: 0.8125rem 1.25rem;
+  padding: 0.6225rem 1.25rem;
   width: 20%;
   margin-left: 10px;
   border: 2px solid #dce4ea;
   margin-bottom: 1.25rem;
   box-sizing: border-box;
+  font-family: _font(heading, family);
   @include prefixer(border-radius, 5px, webkit ms spec);
   color: _palette(base, mygray);
 }
@@ -93,4 +103,32 @@
 }
 #start-pay .selet2-default {
   padding: 10px;
+}
+
+//selectors
+
+.everymonth-pay__inputs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 19px;
+  .select2-container {
+    margin-left: 9px;
+    .select2-selection--single {
+      padding: 0 0 0 10px;
+      height: 50px;
+      .select2-selection__rendered {
+        padding: 11px 0;
+        font-family: _font(heading, family);
+        color: _palette(base, mygray);
+      }
+    }
+  }
+  .select2-container--default .select2-selection--single {
+    border: 2px solid #dce4ea;
+    .select2-selection__arrow {
+      height: 49px;
+    }
+  }
 }

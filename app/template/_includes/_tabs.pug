@@ -1,0 +1,8 @@
+.methods-block
+  - var items = ['Ипотека', 'Рассрочка', 'Материнский капитал']
+  ul.buy-method-tabs
+    each item in items
+      li.buy-method-tabs__item(class= item == 'Ипотека' ? 'buy-method-tabs__item_active' : '', class= item == 'Материнский капитал' ? 'buy-method-tabs__item_color-dark' : '')
+        a(href='#').buy-method-tabs__tab= item
+  .buy-method-blocks
+    block tab-content

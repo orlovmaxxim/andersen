@@ -1,4 +1,4 @@
-var hello = require('./modules/firstModule.js');
+var tabs = require('./modules/tabs.js');
 var triggers = require('./modules/triggers.js');
 require('./modules/select.js')();
 
@@ -42,5 +42,6 @@ $(document).ready(function(){
   }
 
   triggers.callForm();
+  tabs.init();
 
 });
