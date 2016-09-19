@@ -1,5 +1,6 @@
 var tabs = require('./modules/tabs.js');
 var triggers = require('./modules/triggers.js');
+var map = require('./modules/map.js');
 require('./modules/select.js')();
 
 $(document).ready(function(){
@@ -19,7 +20,7 @@ $(document).ready(function(){
   });
 
   ymaps.ready(init);
-  var myMap;
+   var myMap;
 
   function init(){
     myMap = new ymaps.Map("map", {
@@ -35,11 +36,12 @@ $(document).ready(function(){
       }, {
         iconLayout: 'default#image',
         iconImageHref: '../img/map-marker.png',
-        iconImageSize: [95, 80],
-        iconImageOffset: [0, 0]
+        iconImageSize: [102, 80],
+        iconImageOffset: [-34, -80]
       });
     myMap.geoObjects.add(myPlacemark);
   }
+
 
   triggers.callForm();
   tabs.init();

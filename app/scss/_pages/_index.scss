@@ -236,11 +236,15 @@
 //allwidth-slider block
 
 .allwidth-slider {
+  height: 352px;
+  margin-bottom: 22px;
+  padding-top: 15px;
   background: #f1f5f8;
   .container {
     position: relative;
   }
   .allwidth-slider__title {
+    margin-bottom: 25px;
     font-family: _font(heading, family);
     font-size: 36px;
     text-align: center;
@@ -294,6 +298,10 @@
 
 .documents-block {
   position: relative;
+  margin-bottom: 16px;
+  .subtitle {
+    margin-bottom: 38px;
+  }
   &:after {
     content: '';
     position: absolute;
@@ -309,8 +317,9 @@
 .documents-block__list {
   display: flex;
   list-style: none;
+  justify-content: space-between;
   .documents-block__item {
-    width: 50%;
+    //width: 50%;
     .documents-block__link {
       display: block;
       position: relative;
@@ -332,6 +341,13 @@
         background-position: center center;
       }
     }
+  }
+}
+
+.contacts-block {
+  height: 173px;
+  .subtitle {
+    margin-bottom: 32px;
   }
 }
 
@@ -361,6 +377,7 @@
 .contacts-block__tel {
   position: relative;
   float: right;
+  margin-right: 41px;
   font-size: 24px;
   font-family: _font(heading, family);
   color: _palette(base, myblue);
