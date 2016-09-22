@@ -18,5 +18,17 @@ module.exports = {
         });
       }
     });
+
+    $(document).on('click touchstart', function(e){
+      var target = $(e.target),
+        notPlank = !target.closest('.callform').length,
+        notBtn = !target.hasClass('callform__btn');
+      if(callform.hasClass('active') && notPlank && notBtn) {
+        callform.fadeOut(function(){
+          callform.removeClass('active');
+        });
+      }
+    });
+
   }
 };
