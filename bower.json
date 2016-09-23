@@ -21,6 +21,7 @@
     "bourbon": "^4.2.7",
     "neat": "^1.8.0",
     "Swiper": "swiper#^3.3.1",
-    "select2": "^4.0.3"
+    "select2": "^4.0.3",
+    "bootstrap": "^4.0"
   }
 }
