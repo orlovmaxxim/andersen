@@ -42,7 +42,29 @@ block tab-content
       input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
   .mortgage
     h2.methods-block__title
-      | Mortgage2
+      | Получите рассчёт ежемесячного платежа по рассрочке
+    form.everymonth-pay
+      .everymonth-pay__inputs
+        select.everymonth-pay__select(id='start-pay' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
+          option(value='hide') Первоначальный взнос
+          option(value='first') First
+          option(value='second') Second
+        select.everymonth-pay__select(id='type-home' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
+          option(value='hide') Тип квартиры
+          option(value='first') First
+          option(value='second') Second
+        select.everymonth-pay__select(id='time-limit' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
+          option(value='hide') На срок
+          option(value='first') First
+          option(value='second') Second
+        input.everymonth-pay__input(name="" placeholder="Ваше имя" type="text")
+        input.everymonth-pay__input(name="" placeholder="Ваш телефон" type="text")
+      input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
   .mortgage
     h2.methods-block__title
-      | Mortgage3
+      | Узнайте, как воспользоваться материнским капиталом
+    form.everymonth-pay
+      .everymonth-pay__inputs
+        input.everymonth-pay__input(name="" placeholder="Ваше имя" type="text")
+        input.everymonth-pay__input(name="" placeholder="Ваш телефон" type="text")
+      input.everymonth-pay__btn(name="" value="Получить консультацию" type="submit")
