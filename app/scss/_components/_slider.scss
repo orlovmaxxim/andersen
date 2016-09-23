@@ -18,6 +18,11 @@
   width: 116px;
   height: 99px;
   background-size: 69px 69px;
+  @include breakpoint(x-small) {
+    width: 50px;
+    height: 50px;
+    background-size: 39px 39px;
+  }
 }
 
 #swip-right{
@@ -25,4 +30,9 @@
   width: 116px;
   height: 99px;
   background-size: 69px 69px;
+  @include breakpoint(x-small) {
+    width: 50px;
+    height: 50px;
+    background-size: 39px 39px;
+  }
 }

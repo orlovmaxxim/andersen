@@ -8,6 +8,9 @@
   position: relative;
   height: 660px;
   //background-image: url("http://www.fillmurray.com/1396/658");
+  @include breakpoint(x-small) {
+    height: 150px;
+  }
   .picblock__bg {
     position: absolute;
     width: 100%;
@@ -30,15 +33,27 @@
   font-family: _font(dinmedium, family);
   background-color: _palette(base, myred);
   color: #fff;
+  @include breakpoint(x-small) {
+    width: 70%;
+    height: 22%;
+  }
   .advertise-block__title {
     font-size: 54px;
     line-height: 58.9px;
+    @include breakpoint(x-small) {
+      font-size: 20px;
+      line-height: inherit;
+    }
   }
 }
 .advertise-block__paragraph {
   font-family: _font(body, family);
   font-size: 24px;
   line-height: 26.9px;
+  @include breakpoint(x-small) {
+    font-size: 10px;
+    line-height: inherit;
+  }
   span {
     font-family: _font(dinbold, family);
   }
@@ -47,6 +62,10 @@
 .advertise-block__paragraph_fsize-big {
   font-size: 36px;
   line-height: 41.9px;
+  @include breakpoint(x-small) {
+    font-size: 21px;
+    line-height: inherit;
+  }
 }
 
 .picblock__advertise-container {
@@ -73,6 +92,9 @@
   z-index: 2;
   transform: translate(-50%, 0);
   background-color: #fff;
+  @include breakpoint(x-small) {
+    margin-top: 14px;
+  }
   .caption-block__title {
     margin: 0;
     padding: 0;
@@ -80,6 +102,10 @@
     font-size: 36px;
     text-align: center;
     color: _palette(base, myblue);
+    @include breakpoint(x-small) {
+      padding: 0;
+      font-size: 14px;
+    }
   }
 }
 
@@ -94,6 +120,9 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  @include breakpoint(x-small) {
+    height: 150px;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -116,6 +145,9 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  @include breakpoint(x-small) {
+    height: 150px;
+  }
 }
 
 .infomore-block {
@@ -138,6 +170,11 @@
   background: _palette(base, myred);
   color: #fff;
   @include prefixer(border-radius, 7px, webkit ms spec);
+  @include breakpoint(x-small) {
+    padding: 0 22px;
+    font-size: 14px;
+    line-height: inherit;
+  }
 }
 
 .infomore-block__title {
@@ -146,6 +183,10 @@
     font-size: 54px;
     line-height: 85px;
     color: _palette(base, myred);
+    @include breakpoint(x-small) {
+      font-size: 18px;
+      line-height: inherit;
+    }
   }
 }
 
@@ -154,6 +195,11 @@
   font-size: 24px;
   line-height: 39px;
   color: #fff;
+  @include breakpoint(x-small) {
+    font-size: 14px;
+    line-height: inherit;
+    text-align: center;
+  }
   span {
     font-family: _font(dinbold, family);
   }
@@ -163,6 +209,10 @@
   margin-bottom: 24px;
   font-size: 36px;
   line-height: 50px;
+  @include breakpoint(x-small) {
+    font-size: 16px;
+    line-height: inherit;
+  }
 }
 
 // section allwidth block
@@ -179,6 +229,9 @@
   font-size: 60px;
   text-align: center;
   color: #ffffff;
+  @include breakpoint(x-small) {
+    font-size: 30px;
+  }
 }
 
 // map block
@@ -203,6 +256,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 54px;
+  text-align: center;
 }
 
 .questions__title {
@@ -340,8 +394,16 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
+  @include breakpoint(x-small) {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
   .documents-block__item {
     //width: 50%;
+    @include breakpoint(x-small) {
+      width: 50%;
+    }
     .documents-block__link {
       display: block;
       position: relative;
@@ -368,6 +430,10 @@
 
 .contacts-block {
   height: 173px;
+  @include breakpoint(x-small) {
+    height: auto;
+    margin-bottom: 60px;
+  }
   .subtitle {
     margin-bottom: 32px;
   }
@@ -376,6 +442,11 @@
 .contacts-block__adress {
   position: relative;
   float: left;
+  @include breakpoint(x-small) {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+  }
   &:before {
     content: '';
     display: block;
@@ -387,6 +458,9 @@
     background-image: url(/img/geo-icon.png);
     background-repeat: no-repeat;
     background-position: center center;
+    @include breakpoint(x-small) {
+      left: -30px;
+    }
   }
   p {
     font-size: 16px;
@@ -403,6 +477,12 @@
   font-size: 24px;
   font-family: _font(heading, family);
   color: _palette(base, myblue);
+  @include breakpoint(x-small) {
+    float: none;
+    margin-right: 0;
+    width: 50%;
+    margin: 0 auto;
+  }
   &:before {
     content: '';
     display: block;
@@ -420,6 +500,9 @@
 // nearplace block
 .title_color-blue {
   color: _palette(base, myblue);
+  @include breakpoint(x-small) {
+    font-size: 36px;
+  }
 }
 
 .nearplaces {
@@ -440,16 +523,25 @@
     margin-bottom: 22px;
     font-family: _font(heading, family);
     font-size: 25px;
+    @include breakpoint(x-small) {
+      font-size: 18px;
+    }
   }
 }
 
 .nearplace {
   width: 362px;
+  @include breakpoint(x-small) {
+    width: 262px;
+  }
 }
 
 .nearplace__pic {
   overflow: hidden;
   height: 253px;
+  @include breakpoint(x-small) {
+    height: 192px;
+  }
   .nearplace__img {
     width: 100%;
     height: auto;
@@ -473,6 +565,14 @@
   padding: 5px;
   .liq-block_size-small {
     width: 40%;
+    @include breakpoint(x-small) {
+      width: auto;
+    }
+  }
+  @include breakpoint(x-small) {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -482,8 +582,15 @@
   flex-direction: column;
   width: 60%;
   border: 1px solid #DCE4EA;
+  @include breakpoint(x-small) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   &:first-child {
     margin-right: 11px;
+    @include breakpoint(x-small) {
+      margin-right: 0;
+    }
   }
 }
 
@@ -491,5 +598,5 @@
   width: 50%;
   margin-left: 52px;
   margin-bottom: 60px;
-  color: _palette(base, myblue);;
+  color: _palette(base, myblue);
 }
