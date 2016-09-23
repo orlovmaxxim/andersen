@@ -261,15 +261,37 @@
   }
 }
 
+.manager {
+	&:hover {
+		.manager__foto {
+			border: 3px solid _palette(base, myred);
+
+			.manager__img {
+				width: 110%;
+				margin-left: -5%;
+			}
+
+		}
+	}
+}
+
 .manager__foto {
   overflow: hidden;
   width: 9.0625rem;
   height: 9.0625rem;
   margin-left: 10px;
   @include prefixer(border-radius, 50%, webkit ms spec);
-  border: 5px solid #d8dae0;
+  border: 3px solid #d8dae0;
+
+	@include transition-property(border-color);
+	@include transition-duration(.3s);
+	@include transition-timing-function(ease-in);
+
   .manager__img {
     width: 100%;
+		@include transition-property(all);
+		@include transition-duration(.4s);
+		@include transition-timing-function(ease-in-out);
   }
 }
 
