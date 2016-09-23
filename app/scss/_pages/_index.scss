@@ -471,6 +471,9 @@
   display: flex;
   height: 286px;
   padding: 5px;
+  .liq-block_size-small {
+    width: 40%;
+  }
 }
 
 .liq-block {
@@ -481,9 +484,6 @@
   border: 1px solid #DCE4EA;
   &:first-child {
     margin-right: 11px;
-  }
-  .liq-block_size-small {
-    width: 40%;
   }
 }
 
