@@ -1,15 +1,30 @@
 .header {
   //height: 77px;
   //padding: 20px 0;
+  background-color: #fff;
   width: 100%;
   position: fixed;
   z-index: 100;
-  background-color: #fff;
   top: 0;
   left: 0;
   .container-main {
-    padding: 23px 0 10px 0;
+    background-color: #fff;
+    padding: 13px 0 10px 0;
   }
+}
+
+.header__shader {
+  width: 80%;
+  height: 40px;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 10%;
+  z-index: -1;
+  @include border-left-radius(50%);
+  @include border-right-radius(50%);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
 }
 
 .header__desktop {
