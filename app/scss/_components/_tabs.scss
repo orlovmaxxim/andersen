@@ -58,9 +58,11 @@
   text-align: center;
   font-family: _font(heading, family);
   font-size: 25px;
-  border-bottom: 1px solid #dce4ea;
   background-color: #f6f8fa;
   color: #001c3f;
+  &.methods-block__title_border {
+    border-bottom: 1px solid #dce4ea;
+  }
 }
 
 .brands__list {

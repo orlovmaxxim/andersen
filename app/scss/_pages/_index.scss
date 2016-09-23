@@ -506,7 +506,18 @@
 }
 
 .nearplaces {
+  position: relative;
   padding: 0 19px;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #f1f5f8;
+    //box-shadow: inset 0 1px 0 rgba(128,128,128,.29),0 0 2px 2px rgba(251,251,251,.75);
+  }
 }
 
 .nearplaces__list {
@@ -532,7 +543,7 @@
 .nearplace {
   width: 362px;
   @include breakpoint(x-small) {
-    width: 262px;
+    width: 236px;
   }
 }
 
@@ -540,18 +551,24 @@
   overflow: hidden;
   height: 253px;
   @include breakpoint(x-small) {
-    height: 192px;
+    height: 143px;
   }
   .nearplace__img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
 .nearplace__preview {
+  height: 77px;
   text-align: center;
   color: #fff;
   background-color: _palette(base, myred);
+  p {
+    margin-bottom: -19px;
+    padding-top: 10px;
+  }
   span {
     font-size: 16px;
   }
@@ -577,9 +594,10 @@
 }
 
 .liq-block {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  position: relative;
+  //display: flex;
+  //justify-content: flex-end;
+  //flex-direction: column;
   width: 60%;
   border: 1px solid #DCE4EA;
   @include breakpoint(x-small) {
@@ -595,8 +613,55 @@
 }
 
 .liq-block__text {
+  position: absolute;
+  top: 150px;
+  left: 48px;
   width: 50%;
-  margin-left: 52px;
-  margin-bottom: 60px;
+  //margin-left: 52px;
+  //margin-bottom: 60px;
   color: _palette(base, myblue);
+}
+
+// prizes
+.prizes {
+  margin-bottom: 48px;
+}
+
+.prizes__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  .prizes__item {
+    margin-bottom: 22px;
+    width: 49%;
+  }
+}
+
+.prize__pic {
+  height: 232px;
+  overflow: hidden;
+}
+
+.prize__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prize__preview {
+  height: 80px;
+  font-family: _font(dinmedium, family);
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: _palette(base, myred);
+  p {
+    margin-bottom: -19px;
+    padding-top: 10px;
+  }
+  span {
+    font-size: 16px;
+  }
 }
