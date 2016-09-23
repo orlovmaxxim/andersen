@@ -20,6 +20,11 @@
       font-family: _font(heading, family);
       font-size: 24px;
       color: #aab5bb;
+      @include breakpoint(x-small) {
+        height: 65px;
+        padding-top: 16px;
+        font-size: 14px;
+      }
     }
   }
 }

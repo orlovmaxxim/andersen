@@ -10,6 +10,9 @@
   .container-main {
     background-color: #fff;
     padding: 13px 0 10px 0;
+    @include breakpoint(x-small) {
+      padding: 13px 16px 13px 16px;
+    }
   }
 }
 
@@ -37,12 +40,18 @@
   float: left;
   width: 80%;
   @include clearfix;
+  @include breakpoint(x-small) {
+    width: 50%;
+  }
 }
 
 .header__right {
   float: right;
   width: 20%;
   text-align: right;
+  @include breakpoint(x-small) {
+    width: 50%;
+  }
 }
 
 .logo {
@@ -58,6 +67,9 @@
 .navigation {
   float: left;
   font-family: _font(heading, family);
+  @include breakpoint(x-small) {
+    display: none;
+  }
 }
 
 .navigation__list {
@@ -93,4 +105,7 @@
   font-size: 20px;
   line-height: 28.45px;
   color: _palette(base, myblue);
+  @include breakpoint(x-small) {
+    font-size: 16px;
+  }
 }
