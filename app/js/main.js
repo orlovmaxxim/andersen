@@ -1,6 +1,7 @@
 var tabs = require('./modules/tabs.js');
 var triggers = require('./modules/triggers.js');
 var map = require('./modules/map.js');
+var request = require('./modules/requests.js');
 require('./modules/select.js')();
 
 $(document).ready(function(){
@@ -87,4 +88,6 @@ $(document).ready(function(){
     $grid.isotope({ filter: filterValue });
   });
 
+  request.callForm();
+  request.everymonthPay();
 });

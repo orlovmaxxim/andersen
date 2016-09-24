@@ -8,6 +8,9 @@
   position: relative;
   height: 660px;
   //background-image: url("http://www.fillmurray.com/1396/658");
+  @include breakpoint(small) {
+    height: 385px;
+  }
   @include breakpoint(x-small) {
     height: 150px;
   }
@@ -33,16 +36,23 @@
   font-family: _font(dinmedium, family);
   background-color: _palette(base, myred);
   color: #fff;
+  @include breakpoint(small) {
+    width: 289px;
+    height: 145px;
+  }
   @include breakpoint(x-small) {
-    width: 70%;
-    height: 22%;
+    width: 200px;
+    height: 100px;
   }
   .advertise-block__title {
     font-size: 54px;
     line-height: 58.9px;
+    @include breakpoint(small) {
+      font-size: 28px;
+      line-height: 26.9px;
+    }
     @include breakpoint(x-small) {
       font-size: 20px;
-      line-height: inherit;
     }
   }
 }
@@ -50,9 +60,13 @@
   font-family: _font(body, family);
   font-size: 24px;
   line-height: 26.9px;
+  @include breakpoint(small) {
+    font-size: 14px;
+    line-height: 21.9px;
+  }
   @include breakpoint(x-small) {
     font-size: 10px;
-    line-height: inherit;
+    line-height: 1.5;
   }
   span {
     font-family: _font(dinbold, family);
@@ -62,9 +76,12 @@
 .advertise-block__paragraph_fsize-big {
   font-size: 36px;
   line-height: 41.9px;
+  @include breakpoint(small) {
+    font-size: 23px;
+    line-height: 21.9px;
+  }
   @include breakpoint(x-small) {
     font-size: 21px;
-    line-height: inherit;
   }
 }
 
@@ -102,6 +119,13 @@
     font-size: 36px;
     text-align: center;
     color: _palette(base, myblue);
+    @include breakpoint(medium) {
+      font-size: 24px;
+    }
+    @include breakpoint(small) {
+      padding: 0;
+      font-size: 18px;
+    }
     @include breakpoint(x-small) {
       padding: 0;
       font-size: 14px;
@@ -116,10 +140,13 @@
   background-image: url("/img/viewfoto1.jpg");
   height: 658px;
   //width: 100%;
-  margin-bottom: 22px;
+  margin-bottom: 5px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  @include breakpoint(small) {
+    height: 385px;
+  }
   @include breakpoint(x-small) {
     height: 150px;
   }
@@ -145,6 +172,9 @@
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+  @include breakpoint(small) {
+    height: 385px;
+  }
   @include breakpoint(x-small) {
     height: 150px;
   }
@@ -183,6 +213,11 @@
     font-size: 54px;
     line-height: 85px;
     color: _palette(base, myred);
+    @include breakpoint(small) {
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+    }
     @include breakpoint(x-small) {
       font-size: 18px;
       line-height: inherit;
@@ -195,6 +230,11 @@
   font-size: 24px;
   line-height: 39px;
   color: #fff;
+  @include breakpoint(small) {
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+  }
   @include breakpoint(x-small) {
     font-size: 14px;
     line-height: inherit;
@@ -209,7 +249,12 @@
   margin-bottom: 24px;
   font-size: 36px;
   line-height: 50px;
+  @include breakpoint(small) {
+    font-size: 23px;
+    line-height: 35px;
+  }
   @include breakpoint(x-small) {
+    margin-bottom: 0;
     font-size: 16px;
     line-height: inherit;
   }
@@ -226,9 +271,12 @@
   margin: 0;
   padding: 10px 0;
   font-family: _font(dinmedium, family);
-  font-size: 60px;
+  font-size: 54px;
   text-align: center;
   color: #ffffff;
+  @include breakpoint(medium) {
+    font-size: 42px;
+  }
   @include breakpoint(x-small) {
     font-size: 30px;
   }
@@ -246,6 +294,9 @@
   width: 100%;
   height: 660px;
   margin-bottom: 40px;
+  @include breakpoint(small) {
+    height: 460px;
+  }
 }
 
 // questions block
@@ -394,14 +445,14 @@
   display: flex;
   list-style: none;
   justify-content: space-between;
-  @include breakpoint(x-small) {
+  @include breakpoint(small) {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
   }
   .documents-block__item {
     //width: 50%;
-    @include breakpoint(x-small) {
+    @include breakpoint(small) {
       width: 50%;
     }
     .documents-block__link {
@@ -430,7 +481,7 @@
 
 .contacts-block {
   height: 173px;
-  @include breakpoint(x-small) {
+  @include breakpoint(small) {
     height: auto;
     margin-bottom: 60px;
   }
@@ -442,7 +493,7 @@
 .contacts-block__adress {
   position: relative;
   float: left;
-  @include breakpoint(x-small) {
+  @include breakpoint(small) {
     width: 50%;
     margin: 0 auto;
     float: none;
@@ -477,7 +528,7 @@
   font-size: 24px;
   font-family: _font(heading, family);
   color: _palette(base, myblue);
-  @include breakpoint(x-small) {
+  @include breakpoint(small) {
     float: none;
     margin-right: 0;
     width: 50%;
@@ -500,18 +551,18 @@
 // nearplace block
 .title_color-blue {
   color: _palette(base, myblue);
-  @include breakpoint(x-small) {
+  @include breakpoint(small) {
     font-size: 36px;
   }
 }
 
 .nearplaces {
   position: relative;
-  padding: 0 19px;
+  //padding: 0 19px;
   &:after {
     content: '';
     position: absolute;
-    bottom: -14px;
+    bottom: -9px;
     left: 0;
     height: 2px;
     width: 100%;
@@ -521,35 +572,48 @@
 }
 
 .nearplaces__list {
-  margin: 0;
-  padding: 0;
-  margin-left: -38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  //margin: 0;
+  //padding: 0;
+  //margin-left: -23px;
+  //margin-bottom: 15px;
   list-style: none;
-  font-size: 0;
+  //font-size: 0;
 
   .nearplaces__item {
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 38px;
+    //display: inline-block;
+    //vertical-align: top;
+    //margin-left: 23px;
+    width: 32.333%;
     margin-bottom: 22px;
     font-family: _font(heading, family);
     font-size: 25px;
-    @include breakpoint(x-small) {
+    @include breakpoint(medium) {
       font-size: 18px;
+    }
+    @include breakpoint(small) {
+      width: 48.333%;
+    }
+    @include breakpoint(x-small) {
+      width: 100.333%;
+      //font-size: 18px;
     }
   }
 }
 
-.nearplace {
-  width: 362px;
-  @include breakpoint(x-small) {
-    width: 236px;
-  }
-}
+//.nearplace {
+//  //width: 384px;
+//  @include breakpoint(x-small) {
+//    width: 236px;
+//  }
+//}
 
 .nearplace__pic {
   overflow: hidden;
-  height: 253px;
+  height: 234px;
   @include breakpoint(x-small) {
     height: 143px;
   }
@@ -568,9 +632,15 @@
   p {
     margin-bottom: -19px;
     padding-top: 10px;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
   }
   span {
     font-size: 16px;
+    @include breakpoint(medium) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -578,19 +648,31 @@
 
 .liquid-blocks {
   display: flex;
-  height: 286px;
-  padding: 5px;
-  .liq-block_size-small {
-    width: 40%;
-    @include breakpoint(x-small) {
-      width: auto;
-    }
-  }
-  @include breakpoint(x-small) {
-    height: auto;
+  //height: 286px;
+  height: 252px;
+  padding: 5px 0;
+  @include breakpoint(small) {
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
   }
+  .liq-block_size-small {
+    width: 42%;
+    background-image: url(/img/tree.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    @include breakpoint(small) {
+      width: 100%;
+    }
+    //@include breakpoint(x-small) {
+    //  width: auto;
+    //}
+  }
+  //@include breakpoint(x-small) {
+  //  height: auto;
+  //  flex-direction: column;
+  //  align-items: center;
+  //}
 }
 
 .liq-block {
@@ -598,14 +680,25 @@
   //display: flex;
   //justify-content: flex-end;
   //flex-direction: column;
-  width: 60%;
+  width: 58%;
   border: 1px solid #DCE4EA;
+  background-image: url(/img/parking.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include breakpoint(small) {
+    width: 100%;
+    height: 100%;
+  }
   @include breakpoint(x-small) {
     width: 100%;
     margin-bottom: 10px;
   }
   &:first-child {
     margin-right: 11px;
+    @include breakpoint(small) {
+      margin-bottom: 10px;
+    }
     @include breakpoint(x-small) {
       margin-right: 0;
     }
@@ -613,13 +706,37 @@
 }
 
 .liq-block__text {
+  font-family: _font(heading, family);
   position: absolute;
-  top: 150px;
-  left: 48px;
+  top: 147px;
+  left: 27px;
   width: 50%;
   //margin-left: 52px;
   //margin-bottom: 60px;
   color: _palette(base, myblue);
+  @include breakpoint(small) {
+    top: auto;
+    bottom: 10px;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    @include breakpoint(medium) {
+      font-size: 18px;
+    }
+    @include breakpoint(small) {
+      font-size: 12px;
+    }
+  }
+  p {
+    font-size: 16px;
+    @include breakpoint(medium) {
+      font-size: 14px;
+    }
+    @include breakpoint(small) {
+      font-size: 9px;
+    }
+  }
 }
 
 // prizes
@@ -636,6 +753,9 @@
   .prizes__item {
     margin-bottom: 22px;
     width: 49%;
+    @include breakpoint(small) {
+      width: 100%;
+    }
   }
 }
 
@@ -657,9 +777,15 @@
   text-align: center;
   color: #fff;
   background-color: _palette(base, myred);
+  @include breakpoint(medium) {
+    font-size: 20px;
+  }
   p {
     margin-bottom: -19px;
     padding-top: 10px;
+    @include breakpoint(medium) {
+      margin-bottom: 0;
+    }
   }
   span {
     font-size: 16px;
