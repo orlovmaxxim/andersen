@@ -1,0 +1,155 @@
+//question manager form
+#question-form {
+  display: none;
+}
+
+.question-form__wrap {
+  width: 662px;
+  padding: 10px;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.35);
+  background: #eff3f7 none repeat scroll 0% 0%;
+}
+
+.question-manager-form__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.question-manager-form__left {
+  width: 48%;
+  textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+  }
+}
+
+.question-manager-form__right {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.question-manager-form__input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0.8125rem 1.25rem;
+  border: 2px solid #dce4ea;
+  font-family: _font(heading, family);
+  box-sizing: border-box;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  color: #a3a9ae;
+}
+
+.question-manager-form__btn {
+  display: block;
+  width: 100%;
+  background: _palette(base, myred);
+  height: 3.5rem;
+  border: 0 none;
+  font-family: _font(heading, family);
+  font-size: 20px;
+  color: #fff;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}
+
+// consult forms
+
+#consult-form {
+  display: none;
+  .question-form__wrap {
+    //background: lightgreen none repeat scroll 0% 0%;
+  }
+}
+
+.popup-header__title {
+  font-family: _font(heading, family);
+  font-size: 36px;
+  text-align: center;
+}
+
+.manager-consult-form__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.manager-consult-form__left {
+  width: 48%;
+  .manager__foto {
+    margin: 0 auto;
+    width: 11.063rem;
+    height: 11.063rem;
+  }
+}
+
+.manager-consult-form__right {
+  width: 48%;
+}
+
+.manager-consult-form__input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0.8125rem 1.25rem;
+  border: 2px solid #dce4ea;
+  font-family: _font(heading, family);
+  box-sizing: border-box;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  color: #a3a9ae;
+}
+
+.manager-consult-form__btn {
+  display: block;
+  width: 100%;
+  background: _palette(base, myred);
+  height: 3.5rem;
+  border: 0 none;
+  font-family: _font(heading, family);
+  font-size: 20px;
+  color: #fff;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}
+
+// addition form
+
+#addition-form {
+  display: none;
+  .question-form__wrap {
+  }
+}
+
+.addition-manager-form__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.addition-manager-form__inputs {
+  display: flex;
+  justify-content: center;
+}
+.addition-manager-form__input {
+  width: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 0.8125rem 1.25rem;
+  border: 2px solid #dce4ea;
+  font-family: _font(heading, family);
+  box-sizing: border-box;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  color: #a3a9ae;
+}
+.addition-manager-form__btn {
+  display: block;
+  width: 100%;
+  background: _palette(base, myred);
+  height: 3.5rem;
+  border: 0 none;
+  font-family: _font(heading, family);
+  font-size: 20px;
+  color: #fff;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}
+
+
+
+

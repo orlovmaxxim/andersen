@@ -1,0 +1,19 @@
+.question-form(id="consult-form")
+  .question-form__wrap
+    header.popup-header
+      .popup-header__close
+      h2.popup-header__title Получите консультацию #[span]
+    form.manager-consult-form(id="manager-consult-form" role="form" action="mail.php" method="post")
+      .manager-consult-form__inner
+        .manager-consult-form__left
+          .manager
+            .manager__foto
+              img.manager__img(src="/img/manager/kupchinskaya_irina.jpg")
+        .manager-consult-form__right
+          .manager-consult-form__about
+            p.manager-consult-form__parag О себе:
+            p.manager-consult-form__parag #[span]
+          h2.manager-consult-form__title
+          input.manager-consult-form__input(name="name" placeholder="Ваше имя" type="text")
+          input.manager-consult-form__input(name="call" placeholder="Ваш телефон" type="tel")
+          input.manager-consult-form__btn(name="" value="Получить консультацию" type="submit")

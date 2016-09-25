@@ -1,0 +1,14 @@
+.question-form(id="question-form")
+  .question-form__wrap
+    header.popup-header
+      .popup-header__close
+      h2.popup-header__title Задайте вопрос менеджеру
+    form.question-manager-form(id="question-manager-form" role="form" action="mail.php" method="post")
+      .question-manager-form__inner
+        .question-manager-form__left
+          textarea.question-manager-form__input(name="desc" placeholder="Ваш вопрос")
+        .question-manager-form__right
+          input.question-manager-form__input(name="name" placeholder="Ваше имя" type="text")
+          input.question-manager-form__input(name="email" placeholder="Ваш e-mail" type="email")
+          input.question-manager-form__input(name="call" placeholder="Ваш телефон" type="tel")
+          input.question-manager-form__btn(name="" value="Задать вопрос" type="submit")

@@ -2,6 +2,9 @@ var tabs = require('./modules/tabs.js');
 var triggers = require('./modules/triggers.js');
 var map = require('./modules/map.js');
 var request = require('./modules/requests.js');
+var questionManagerForm = require('./modules/questionManagerForm.js');
+var consult = require('./modules/managerConsult.js');
+var addition = require('./modules/additionForm.js');
 require('./modules/select.js')();
 
 $(document).ready(function(){
@@ -51,43 +54,72 @@ $(document).ready(function(){
 
   // isotope - test
 
-  var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows',
-    getSortData: {
-      name: '.name',
-      symbol: '.symbol',
-      number: '.number parseInt',
-      category: '[data-category]',
-      weight: function( itemElem ) {
-        var weight = $( itemElem ).find('.weight').text();
-        return parseFloat( weight.replace( /[\(\)]/g, '') );
-      }
-    }
-  });
+//   var $grid = $('.grid').isotope({
+//     itemSelector: '.element-item',
+//     layoutMode: 'fitRows',
+//     getSortData: {
+//       name: '.name',
+//       symbol: '.symbol',
+//       number: '.number parseInt',
+//       category: '[data-category]',
+//       weight: function( itemElem ) {
+//         var weight = $( itemElem ).find('.weight').text();
+//         return parseFloat( weight.replace( /[\(\)]/g, '') );
+//       }
+//     }
+//   });
+//
+//   // filter functions
+//   var filterFns = {
+//     // show if number is greater than 50
+//     numberGreaterThan50: function() {
+//       var number = $(this).find('.number').text();
+//       return parseInt( number, 10 ) > 50;
+//     },
+//     // show if name ends with -ium
+//     ium: function() {
+//       var name = $(this).find('.name').text();
+//       return name.match( /ium$/ );
+//     }
+//   };
+//
+// // bind filter button click
+//   $('#filters').on( 'click', 'button', function() {
+//     var filterValue = $( this ).attr('data-filter');
+//     // use filterFn if matches value
+//     filterValue = filterFns[ filterValue ] || filterValue;
+//     $grid.isotope({ filter: filterValue });
+//   });
 
-  // filter functions
-  var filterFns = {
-    // show if number is greater than 50
-    numberGreaterThan50: function() {
-      var number = $(this).find('.number').text();
-      return parseInt( number, 10 ) > 50;
-    },
-    // show if name ends with -ium
-    ium: function() {
-      var name = $(this).find('.name').text();
-      return name.match( /ium$/ );
+  var $container = $('.planing-view__list');
+  // filter buttons
+  $('.planing-block__btn').click(function(e){
+    e.preventDefault();
+    var $this = $(this);
+    // don't proceed if already selected
+    if ( !$this.hasClass('is-checked') ) {
+      $this.parents('#options').find('.is-checked').removeClass('is-checked');
+      $this.addClass('is-checked');
     }
-  };
-
-// bind filter button click
-  $('#filters').on( 'click', 'button', function() {
-    var filterValue = $( this ).attr('data-filter');
-    // use filterFn if matches value
-    filterValue = filterFns[ filterValue ] || filterValue;
-    $grid.isotope({ filter: filterValue });
+    var selector = $this.attr('data-filter');
+    $container.isotope({  itemSelector: '.planing-view__item', filter: selector });
+    return false;
   });
 
   request.callForm();
   request.everymonthPay();
+  request.additionSend();
+  request.consultCall();
+  request.questionSend();
+
+  // questions form
+
+  questionManagerForm.showForm();
+
+  // consult form
+  consult.showConsultForm();
+
+  // addition form
+
+  addition.showForm();
 });

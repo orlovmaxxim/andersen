@@ -1,0 +1,13 @@
+.question-form(id="addition-form")
+  .question-form__wrap
+    header.popup-header
+      .popup-header__close
+      h2.popup-header__title Таких квартир осталось немного
+    form.addition-manager-form(id="addition-manager-form" role="form" action="mail.php" method="post")
+      .addition-manager-form__inner
+        .addition-manager-form__content
+          h2.addition-manager-form__title Узнайте подробности у менеджера по телефону 8 800 2000 600 или оставьте заявку - мы перезвоним
+          .addition-manager-form__inputs
+            input.addition-manager-form__input(name="name" placeholder="Ваше имя" type="text")
+            input.addition-manager-form__input(name="call" placeholder="Ваш телефон" type="tel")
+            input.addition-manager-form__btn(name="" value="Заказать звонок" type="submit")

@@ -8,10 +8,14 @@ html
 
         block content
     include _includes/_footer
+    include _includes/_questionManagerForm
+    include _includes/_consultform
+    include _includes/_additionform
     // build:js js/plugins.main.min.js
     script(src='../../bower_components/jquery/dist/jquery.js')
     script(src='../../bower_components/Swiper/dist/js/swiper.js')
     script(src='../../bower_components/select2/dist/js/select2.js')
     script(src='../../bower_components/isotope/dist/isotope.pkgd.min.js')
+    script(src='../../bower_components/bPopup/jquery.bpopup.min.js')
     // endbuild
     script(src='js/main.min.js')

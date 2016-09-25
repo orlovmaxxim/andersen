@@ -108,6 +108,92 @@ block content
             h2 Детские и спортивные площадки
   section.infoblock
     .container-main
+      h2.title.title_color-blue Планировки и цены квартир
+      .planing-block(id="prices")
+        .planing-block__nav
+          .planing-block__list(id="filters")
+            //button.planing-block__btn(data-filter="*") Все
+            //button.planing-block__btn(data-filter=".one") 1 комнатные
+            //button.planing-block__btn(data-filter=".two") 2 комнатные
+            //button.planing-block__btn(data-filter=".three") 3 комнатные
+            //button.planing-block__btn(data-filter=".four") 4 комнатные
+            //button.planing-block__btn(data-filter=".penthaus") Пентхаусы
+            li.planing-block__item
+              a.planing-block__btn(data-filter="*" href="#") Все
+            li.planing-block__item
+              a.planing-block__btn(data-filter=".one" href="#") 1 комнатные
+            li.planing-block__item
+              a.planing-block__btn(data-filter=".two" href="#") 2 комнатные
+            li.planing-block__item
+              a.planing-block__btn(data-filter=".three" href="#") 3 комнатные
+            li.planing-block__item
+              a.planing-block__btn(data-filter=".four" href="#") 4 комнатные
+            li.planing-block__item
+              a.planing-block__btn(data-filter=".penthaus" href="#") Пентхаусы
+        .planing-view
+          ul.planing-view__list
+            li.planing-view__item.one(data-category="one")
+              .view
+                h2.view__title Однокомнатная квартира
+                .view__pic
+                  img.view__img(src="/img/school.jpg" alt="near-pic-1")
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                a.view__btn(href="#") Узнать стоимость
+            li.planing-view__item.two(data-category="two")
+              .view
+                h2.view__title Двухкомнатная квартира
+                .view__pic
+                  img.view__img(src="/img/school.jpg" alt="near-pic-1")
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                a.view__btn(href="#") Узнать стоимость
+            li.planing-view__item.one(data-category="one")
+              .view
+                h2.view__title Однокомнатная квартира
+                .view__pic
+                  img.view__img(src="/img/school.jpg" alt="near-pic-1")
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                a.view__btn(href="#") Узнать стоимость
+            li.planing-view__item.three(data-category="three")
+              .view
+                h2.view__title Трёхкомнатная квартира
+                .view__pic
+                  img.view__img(src="/img/school.jpg" alt="near-pic-1")
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                a.view__btn(href="#") Узнать стоимость
+            li.planing-view__item.four(data-category="four")
+              .view
+                h2.view__title Четырёхкомнатная квартира
+                .view__pic
+                  img.view__img(src="/img/school.jpg" alt="near-pic-1")
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                a.view__btn(href="#") Узнать стоимость
+            li.planing-view__item.penthaus(data-category="penthaus")
+              .view
+                h2.view__title Пентхаус
+                .view__pic
+                  img.view__img(src="/img/school.jpg" alt="near-pic-1")
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                .view__info
+                  p.view__parag Общая площадь 40,73 м2
+                a.view__btn(href="#") Узнать стоимость
+  section.infoblock
+    .container-main
       h2.title.title_color-blue А ещё вас порадует:
       .prizes
         ul.prizes__list
@@ -174,37 +260,37 @@ block content
                 .manager__foto
                   img.manager__img(src="/img/manager/kupchinskaya_irina.jpg")
                 .manager__name Ирина
-                a.consult-link(href="#") Получить консультацию
+                a.consult-link.firstManager(href="#") Получить консультацию
             .swiper-slide
               .manager
                 .manager__foto
                   img.manager__img(src="/img/manager/bocharnikov_andrey.jpg")
                 .manager__name Андрей
-                a.consult-link(href="#") Получить консультацию
+                a.consult-link.secondManager(href="#") Получить консультацию
             .swiper-slide
               .manager
                 .manager__foto
                   img.manager__img(src="/img/manager/dikopoltseva_svetlana.jpg")
                 .manager__name Светлана
-                a.consult-link(href="#") Получить консультацию
+                a.consult-link.thirdManager(href="#") Получить консультацию
             .swiper-slide
               .manager
                 .manager__foto
                   img.manager__img(src="/img/manager/stanislav_shipilov.jpg")
                 .manager__name Станислав
-                a.consult-link(href="#") Получить консультацию
+                a.consult-link.fourthManager(href="#") Получить консультацию
             .swiper-slide
               .manager
                 .manager__foto
                   img.manager__img(src="/img/manager/titarenko_anastasiya.jpg")
-                .manager__name Аастасия
-                a.consult-link(href="#") Получить консультацию
+                .manager__name Анастасия
+                a.consult-link.fifthManager(href="#") Получить консультацию
             .swiper-slide
               .manager
                 .manager__foto
                   img.manager__img(src="/img/manager/titova_svetlana.jpg")
                 .manager__name Светлана
-                a.consult-link(href="#") Получить консультацию
+                a.consult-link.sixthManager(href="#") Получить консультацию
           .swiper-button-prev(id="swip-left")
           .swiper-button-next(id="swip-right")
   .container
