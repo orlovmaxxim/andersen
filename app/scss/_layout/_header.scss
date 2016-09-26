@@ -69,10 +69,9 @@
 .logo {
   float: left;
   max-width: 11em;
-  margin-right: 77px;
-  @include breakpoint(large) {
+  margin-right: 5%;
+  @include breakpoint(medium) {
     max-width: 8em;
-    margin-right: 34px;
   }
 }
 
@@ -83,17 +82,28 @@
 .navigation {
   float: left;
   font-family: _font(heading, family);
-  @include breakpoint(x-small) {
+  width: calc(100% - 5% - 11em);
+
+
+  @include breakpoint(medium) {
+    width: calc(100% - 5% - 8em);
+  }
+
+  @include breakpoint(small) {
     display: none;
   }
 }
 
 .navigation__list {
+  margin: 0 auto;
+  max-width: 650px;
   font-size: 0;
   line-height: 42px;
   @include breakpoint(large) {
     line-height: inherit;
   }
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation__item {
@@ -108,13 +118,12 @@
 
 .navigation__link {
   display: inline-block;
-  padding-right: 5vw;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 15px;
   color: _palette(base, myblue);
   text-decoration: none;
+
   @include breakpoint(medium) {
-    padding-right: 50px;
   }
 }
 
