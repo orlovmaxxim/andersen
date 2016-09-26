@@ -24,6 +24,6 @@
     "select2": "^4.0.3",
     "bootstrap": "^4.0",
     "bpopup": "^0.11.0",
-    "isotope": "^1.7.9"
+    "isotope": "^3.0.1"
   }
 }
