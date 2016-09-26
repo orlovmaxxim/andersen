@@ -38,7 +38,8 @@
   color: #fff;
   @include breakpoint(small) {
     width: 289px;
-    height: 145px;
+    height: 115px;
+    padding: 15px 10px 0 10px;
   }
   @include breakpoint(x-small) {
     width: 200px;
@@ -60,13 +61,14 @@
   font-family: _font(body, family);
   font-size: 24px;
   line-height: 26.9px;
+
   @include breakpoint(small) {
-    font-size: 14px;
-    line-height: 21.9px;
+    font-size: 15px;
+    line-height: 120%;
+    padding-bottom: 3px;
   }
   @include breakpoint(x-small) {
     font-size: 10px;
-    line-height: 1.5;
   }
   span {
     font-family: _font(dinbold, family);
@@ -272,7 +274,7 @@
 
 .title {
   margin: 0;
-  padding: 10px 0;
+  padding: 50px 0 30px 0;
   font-family: _font(dinmedium, family);
   line-height: 110%;
   font-size: 54px;
@@ -284,7 +286,9 @@
   }
 
   @include breakpoint(small) {
-    font-size: 20px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    font-size: 30px;
   }
 }
 
@@ -358,8 +362,13 @@
     margin-bottom: 25px;
     font-family: _font(heading, family);
     font-size: 36px;
+    line-height: 110%;
     text-align: center;
     color: _palette(base, myblue);
+
+    @include breakpoint(small) {
+      font-size: 25px;
+    }
   }
 }
 
@@ -512,6 +521,9 @@
   }
   .subtitle {
     margin-bottom: 32px;
+    @include breakpoint(small) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -519,9 +531,14 @@
   position: relative;
   float: left;
   @include breakpoint(small) {
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 15px;
+    margin-left: 25%;
     float: none;
+
+    p {
+      text-align: left;
+    }
   }
   &:before {
     content: '';
@@ -534,8 +551,9 @@
     background-image: url(/img/geo-icon.png);
     background-repeat: no-repeat;
     background-position: center center;
-    @include breakpoint(x-small) {
-      left: -30px;
+
+    @include breakpoint(small) {
+      left: -43px;
     }
   }
   p {
@@ -553,11 +571,12 @@
   font-size: 24px;
   font-family: _font(heading, family);
   color: _palette(base, myblue);
+
   @include breakpoint(small) {
     float: none;
-    margin-right: 0;
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
+    margin-left: 25%;
+    text-align: left;
   }
   &:before {
     content: '';
@@ -583,8 +602,8 @@
 
 .nearplaces {
   position: relative;
-  //padding: 0 19px;
-  &:after {
+
+  /*&:after {
     content: '';
     position: absolute;
     bottom: -9px;
@@ -592,8 +611,7 @@
     height: 2px;
     width: 100%;
     background: #f1f5f8;
-    //box-shadow: inset 0 1px 0 rgba(128,128,128,.29),0 0 2px 2px rgba(251,251,251,.75);
-  }
+  }*/
 }
 
 .nearplaces__list {
@@ -676,6 +694,10 @@
   //height: 286px;
   height: 252px;
   padding: 5px 0;
+
+  @include breakpoint(small) {
+    padding: 5px 0;
+  }
   &:last-child {
     .liq-block {
       &:last-child {
@@ -762,7 +784,7 @@
       font-size: 18px;
     }
     @include breakpoint(small) {
-      font-size: 12px;
+      //font-size: 12px;
     }
   }
   p {
@@ -772,7 +794,7 @@
       font-size: 14px;
     }
     @include breakpoint(small) {
-      font-size: 9px;
+      //font-size: 9px;
     }
   }
 }

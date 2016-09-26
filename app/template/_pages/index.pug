@@ -24,9 +24,14 @@ block content
       .swiper-container
         .swiper-wrapper
           .swiper-slide
-            img.slide-pic(src="/img/dvor-1.jpg")
+            img.slide-pic.swiper-lazy(src="/img/dvor-1.jpg")
+            div.swiper-lazy-preloader
           .swiper-slide
-            img.slide-pic(src="/img/view-house.jpg")
+            img.slide-pic.swiper-lazy(src="/img/view-house.jpg")
+            div.swiper-lazy-preloader
+          .swiper-slide
+            img.slide-pic.swiper-lazy(src="/img/night.jpg")
+            div.swiper-lazy-preloader
         .swiper-button-prev(id="swip-left")
         .swiper-button-next(id="swip-right")
     section.picblock-secondary-zero

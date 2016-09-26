@@ -11,6 +11,11 @@
     margin: 0 auto;
   }
 
+  @include breakpoint(large) {
+    width: 97%;
+    margin: 0 auto;
+  }
+
   .buy-method-tabs__item {
     list-style: none;
     width: 33.3333333%;
@@ -20,8 +25,8 @@
     background-color: #e9eef1;
     .buy-method-tabs__tab {
       display: block;
-      height: 87px;
-      padding-top: 30px;
+      height: 67px;
+      padding-top: 20px;
       font-family: _font(heading, family);
       line-height: 120%;
       font-size: 24px;
@@ -68,6 +73,11 @@
 
   @include breakpoint(small) {
     width: 95%;
+    margin: 0 auto;
+  }
+
+  @include breakpoint(large) {
+    width: 97%;
     margin: 0 auto;
   }
 }
@@ -149,6 +159,11 @@
   border: 0 none;
   color: #fff;
   @include prefixer(border-radius, 5px, webkit ms spec);
+
+  @include breakpoint(small) {
+    font-size: 16px;
+    padding: 10px 17px;
+  }
 }
 #start-pay .selet2-default {
   padding: 10px;
@@ -166,7 +181,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 19px;
+  margin-bottom: 10px;
 
   @include breakpoint(small) {
     flex-direction: column;
