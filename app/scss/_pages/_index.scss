@@ -506,9 +506,14 @@
   position: relative;
   float: left;
   @include breakpoint(small) {
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
+    padding-bottom: 15px;
+    margin-left: 25%;
     float: none;
+
+    p {
+      text-align: left;
+    }
   }
   &:before {
     content: '';
@@ -521,8 +526,9 @@
     background-image: url(/img/geo-icon.png);
     background-repeat: no-repeat;
     background-position: center center;
-    @include breakpoint(x-small) {
-      left: -30px;
+
+    @include breakpoint(small) {
+      left: -43px;
     }
   }
   p {
@@ -540,11 +546,12 @@
   font-size: 24px;
   font-family: _font(heading, family);
   color: _palette(base, myblue);
+
   @include breakpoint(small) {
     float: none;
-    margin-right: 0;
-    width: 50%;
-    margin: 0 auto;
+    width: 60%;
+    margin-left: 25%;
+    text-align: left;
   }
   &:before {
     content: '';
