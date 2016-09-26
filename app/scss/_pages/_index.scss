@@ -117,6 +117,7 @@
     padding: 0;
     //padding: 9px 75px;
     padding: 9px 35px;
+    line-height: 110%;
     font-size: 36px;
     text-align: center;
     color: _palette(base, myblue);
@@ -272,14 +273,17 @@
   margin: 0;
   padding: 10px 0;
   font-family: _font(dinmedium, family);
+  line-height: 110%;
   font-size: 54px;
   text-align: center;
   color: #ffffff;
+
   @include breakpoint(medium) {
     font-size: 42px;
   }
-  @include breakpoint(x-small) {
-    font-size: 30px;
+
+  @include breakpoint(small) {
+    font-size: 20px;
   }
 }
 
@@ -553,7 +557,7 @@
 .title_color-blue {
   color: _palette(base, myblue);
   @include breakpoint(small) {
-    font-size: 36px;
+    //font-size: 36px;
   }
 }
 
@@ -792,7 +796,9 @@
   color: #fff;
   background-color: _palette(base, myred);
   @include breakpoint(medium) {
-    font-size: 20px;
+    font-size: 23px;
+    line-height: 110%;
+    padding-top: 5px;
   }
   p {
     margin-bottom: -19px;
