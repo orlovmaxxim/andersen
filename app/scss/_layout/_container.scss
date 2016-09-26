@@ -1,6 +1,11 @@
 .container {
 	//max-width: 1400px;
 	max-width: 1425px;
+
+	@include breakpoint(small) {
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 .container-main {

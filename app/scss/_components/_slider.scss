@@ -15,24 +15,30 @@
 
 #swip-left{
   background-image: url("/img/slide-left.png");
-  width: 116px;
-  height: 99px;
+  width: 69px;
+  height: 69px;
+  margin-top: -34.5px;
   background-size: 69px 69px;
-  @include breakpoint(x-small) {
+
+  @include breakpoint(small) {
     width: 50px;
     height: 50px;
-    background-size: 39px 39px;
+    margin-top: -25px;
+    background-size: 50px 50px;
   }
 }
 
 #swip-right{
   background-image: url("/img/slide-right.png");
-  width: 116px;
-  height: 99px;
+  width: 69px;
+  height: 69px;
+  margin-top: -34.5px;
   background-size: 69px 69px;
-  @include breakpoint(x-small) {
+
+  @include breakpoint(small) {
     width: 50px;
     height: 50px;
-    background-size: 39px 39px;
+    margin-top: -25px;
+    background-size: 50px 50px;
   }
 }
