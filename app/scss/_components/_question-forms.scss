@@ -12,7 +12,14 @@
 }
 
 .popup-header__close {
-
+  cursor: pointer;
+  position: absolute;
+  right: 7px;
+  top: 5px;
+  font-size: 21px;
+  line-height: 1;
+  color: #797777;
+  text-shadow: 0 1px 0 #fff;
 }
 
 .question-manager-form__inner {

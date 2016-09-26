@@ -17,6 +17,7 @@ $(document).ready(function(){
 
   var mySwiperManager = new Swiper ('.swiper-container-manager', {
     slidesPerView: 4,
+    loop: true,
     width: 1200,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
@@ -90,6 +91,26 @@ $(document).ready(function(){
 //     filterValue = filterFns[ filterValue ] || filterValue;
 //     $grid.isotope({ filter: filterValue });
 //   });
+
+    var $grid = $('.planing-view__list').isotope({
+    itemSelector: '.planing-view__item',
+    layoutMode: 'masonry',
+      masonry: {
+        // columnWidth: 110,
+        gutter: 30
+      },
+    getSortData: {
+      name: '.name',
+      symbol: '.symbol',
+      number: '.number parseInt',
+      category: '[data-category]',
+      weight: function( itemElem ) {
+        var weight = $( itemElem ).find('.weight').text();
+        return parseFloat( weight.replace( /[\(\)]/g, '') );
+      }
+    }
+  });
+
 
   var $container = $('.planing-view__list');
   // filter buttons
