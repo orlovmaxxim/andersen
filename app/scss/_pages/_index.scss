@@ -387,10 +387,11 @@
 }
 
 .manager__foto {
+  margin: 0 auto;
   overflow: hidden;
   width: 9.0625rem;
   height: 9.0625rem;
-  margin-left: 10px;
+  //margin-left: 10px;
   @include prefixer(border-radius, 50%, webkit ms spec);
   border: 3px solid #d8dae0;
 
@@ -414,15 +415,29 @@
 }
 
 .consult-link {
+  display: block;
   font-family: _font(heading, family);
   font-size: 16px;
+  text-align: center;
   text-decoration: underline;
   color: _palette(base, myred);
 }
 
 // slick slider
 
+#slick-p {
+  background-image: url("/img/slide-left.png");
+  width: 69px;
+  height: 69px;
+  background-size: 69px 69px;
+}
 
+#slick-n {
+  background-image: url("/img/slide-right.png");
+  width: 69px;
+  height: 69px;
+  background-size: 69px 69px;
+}
 
 // documents block
 

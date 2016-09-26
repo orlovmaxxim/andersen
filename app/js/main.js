@@ -29,8 +29,11 @@ $(document).ready(function(){
 
 
   $('.slick-container-manager').slick({
-    dots: true,
-    infinite: false,
+    dots: false,
+    infinite: true,
+    arrows: true,
+    nextArrow: '<button id="slick-n" type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>',
+    prevArrow: '<button id="slick-p" type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="display: block;">Previous</button>',
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
@@ -41,7 +44,7 @@ $(document).ready(function(){
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
@@ -58,9 +61,6 @@ $(document).ready(function(){
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -74,10 +74,11 @@ $(document).ready(function(){
     myMap = new ymaps.Map("map", {
       center: [45.068512, 39.033317],
       zoom: 15,
-      controls: []
+      controls: ['zoomControl']
     }, {
       searchControlProvider: 'yandex#search'
     });
+      myMap.behaviors.disable(['scrollZoom']);
       myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
         // hintContent: 'Anderson mark',
         // balloonContent: 'Это красивая метка'

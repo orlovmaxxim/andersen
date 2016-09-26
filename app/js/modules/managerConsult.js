@@ -39,7 +39,7 @@ module.exports = {
     };
     
 
-    $('.consult-link').on('click touchstart', function(e){
+    $('.manager').on('click touchstart', function(e){
       e.preventDefault();
 
       var $this = $(this);
