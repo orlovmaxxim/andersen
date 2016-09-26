@@ -52,8 +52,9 @@
   float: left;
   width: 80%;
   @include clearfix;
-  @include breakpoint(x-small) {
-    width: 50%;
+
+  @include breakpoint(small) {
+    width: auto;
   }
 }
 
@@ -61,8 +62,8 @@
   float: right;
   width: 20%;
   text-align: right;
-  @include breakpoint(x-small) {
-    width: 50%;
+  @include breakpoint(small) {
+    width: auto;
   }
 }
 
