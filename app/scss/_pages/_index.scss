@@ -115,7 +115,8 @@
   .caption-block__title {
     margin: 0;
     padding: 0;
-    padding: 9px 75px;
+    //padding: 9px 75px;
+    padding: 9px 35px;
     font-size: 36px;
     text-align: center;
     color: _palette(base, myblue);
@@ -651,6 +652,14 @@
   //height: 286px;
   height: 252px;
   padding: 5px 0;
+  &:last-child {
+    .liq-block {
+      &:last-child {
+        background-image: url(/img/sport-square.jpg);
+      }
+    }
+  }
+
   @include breakpoint(small) {
     flex-direction: column;
     justify-content: space-between;
@@ -667,6 +676,9 @@
     //@include breakpoint(x-small) {
     //  width: auto;
     //}
+  }
+  .alcove {
+    background-image: url(/img/alcove.jpg);
   }
   //@include breakpoint(x-small) {
   //  height: auto;
@@ -720,6 +732,7 @@
   }
   h2 {
     font-size: 24px;
+    line-height: 1.2;
     text-transform: uppercase;
     @include breakpoint(medium) {
       font-size: 18px;
@@ -730,6 +743,7 @@
   }
   p {
     font-size: 16px;
+    line-height: 1.2;
     @include breakpoint(medium) {
       font-size: 14px;
     }

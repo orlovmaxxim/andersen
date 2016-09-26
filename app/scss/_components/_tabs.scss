@@ -53,6 +53,11 @@
   &.active {
     display: block;
   }
+  &:last-child {
+    .everymonth-pay__inputs {
+      justify-content: center;
+    }
+  }
 }
 
 .methods-block__title {
