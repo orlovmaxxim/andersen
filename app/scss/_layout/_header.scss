@@ -67,6 +67,9 @@
     justify-content: space-between;
     align-items: center;
   }
+  .logo_min {
+    margin-right: 0;
+  }
 }
 
 .header__left {
@@ -157,6 +160,9 @@
 
 .call {
   position: relative;
+  @include breakpoint(x-small) {
+    display: none;
+  }
 }
 
 .call__number {
@@ -166,5 +172,24 @@
   color: _palette(base, myblue);
   @include breakpoint(x-small) {
     font-size: 16px;
+  }
+}
+
+.mobile-navigation {
+  display: none;
+  font-family: _font(heading, family);
+}
+
+.mobile-navigation__link {
+  color: _palette(base, myblue);
+}
+
+.mobile-call {
+  display: none;
+  @include breakpoint(x-small) {
+    display: block;
+    background-image: url(/img/phone-circle-icon.png);
+    width: 33px;
+    height: 33px;
   }
 }
