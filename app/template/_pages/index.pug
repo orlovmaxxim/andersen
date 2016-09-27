@@ -119,20 +119,20 @@ block content
             //button.planing-block__btn(data-filter=".four") 4 комнатные
             //button.planing-block__btn(data-filter=".penthaus") Пентхаусы
             li.planing-block__item
-              a.planing-block__btn(data-filter="*" href="#") Все
+              .planing-block__btn(id="all" data-filter="*") Все
             li.planing-block__item
-              a.planing-block__btn(data-filter=".one" href="#") 1 комнатные
+              .planing-block__btn(id="one" data-filter=".one") 1 комнатные
             li.planing-block__item
-              a.planing-block__btn(data-filter=".two" href="#") 2 комнатные
+              .planing-block__btn(id="two" data-filter=".two") 2 комнатные
             li.planing-block__item
-              a.planing-block__btn(data-filter=".three" href="#") 3 комнатные
+              .planing-block__btn(id="three" data-filter=".three") 3 комнатные
             li.planing-block__item
-              a.planing-block__btn(data-filter=".four" href="#") 4 комнатные
+              .planing-block__btn(id="four" data-filter=".four") 4 комнатные
             li.planing-block__item
-              a.planing-block__btn(data-filter=".penthaus" href="#") Пентхаусы
-        .planing-view
-          ul.planing-view__list
-            li.planing-view__item.one(data-category="one")
+              .planing-block__btn(id="five" data-filter=".penthaus") Пентхаусы
+        .planing-view.wp-project-wrapper
+          ul.planing-view__list.grid
+            li.wp-project.planing-view__item.one(data-category="one")
               .view
                 h2.view__title Однокомнатная квартира
                 .view__pic
@@ -142,7 +142,7 @@ block content
                 .view__info
                   p.view__parag Общая площадь 40,73 м2
                 a.view__btn(href="#") Узнать стоимость
-            li.planing-view__item.two(data-category="two")
+            li.wp-project.planing-view__item.two(data-category="two")
               .view
                 h2.view__title Двухкомнатная квартира
                 .view__pic
@@ -152,7 +152,7 @@ block content
                 .view__info
                   p.view__parag Общая площадь 40,73 м2
                 a.view__btn(href="#") Узнать стоимость
-            li.planing-view__item.one(data-category="one")
+            li.wp-project.planing-view__item.one(data-category="one")
               .view
                 h2.view__title Однокомнатная квартира
                 .view__pic
@@ -162,7 +162,7 @@ block content
                 .view__info
                   p.view__parag Общая площадь 40,73 м2
                 a.view__btn(href="#") Узнать стоимость
-            li.planing-view__item.three(data-category="three")
+            li.wp-project.planing-view__item.three(data-category="three")
               .view
                 h2.view__title Трёхкомнатная квартира
                 .view__pic
@@ -172,7 +172,7 @@ block content
                 .view__info
                   p.view__parag Общая площадь 40,73 м2
                 a.view__btn(href="#") Узнать стоимость
-            li.planing-view__item.four(data-category="four")
+            li.wp-project.planing-view__item.four(data-category="four")
               .view
                 h2.view__title Четырёхкомнатная квартира
                 .view__pic
@@ -182,7 +182,7 @@ block content
                 .view__info
                   p.view__parag Общая площадь 40,73 м2
                 a.view__btn(href="#") Узнать стоимость
-            li.planing-view__item.penthaus(data-category="penthaus")
+            li.wp-project.planing-view__item.penthaus(data-category="penthaus")
               .view
                 h2.view__title Пентхаус
                 .view__pic

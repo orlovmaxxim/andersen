@@ -99,78 +99,74 @@ $(document).ready(function(){
 
 
   // isotope - test
+  $('.grid').isotope({
+    itemSelector: '.wp-project',
+    layoutMode: 'fitRows'
+  });
 
-//   var $grid = $('.grid').isotope({
-//     itemSelector: '.element-item',
-//     layoutMode: 'fitRows',
-//     getSortData: {
-//       name: '.name',
-//       symbol: '.symbol',
-//       number: '.number parseInt',
-//       category: '[data-category]',
-//       weight: function( itemElem ) {
-//         var weight = $( itemElem ).find('.weight').text();
-//         return parseFloat( weight.replace( /[\(\)]/g, '') );
-//       }
-//     }
-//   });
-//
-//   // filter functions
-//   var filterFns = {
-//     // show if number is greater than 50
-//     numberGreaterThan50: function() {
-//       var number = $(this).find('.number').text();
-//       return parseInt( number, 10 ) > 50;
-//     },
-//     // show if name ends with -ium
-//     ium: function() {
-//       var name = $(this).find('.name').text();
-//       return name.match( /ium$/ );
-//     }
-//   };
-//
-// // bind filter button click
-//   $('#filters').on( 'click', 'button', function() {
-//     var filterValue = $( this ).attr('data-filter');
-//     // use filterFn if matches value
-//     filterValue = filterFns[ filterValue ] || filterValue;
-//     $grid.isotope({ filter: filterValue });
-//   });
+  $('#all').click(function(){
+    $('.grid').isotope({ filter: '*' });
+  });
 
-    var $grid = $('.planing-view__list').isotope({
-    itemSelector: '.planing-view__item',
-    layoutMode: 'masonry',
-      masonry: {
-        // columnWidth: 16,
-        gutter: 8
-      },
-    getSortData: {
-      name: '.name',
-      symbol: '.symbol',
-      number: '.number parseInt',
-      category: '[data-category]',
-      weight: function( itemElem ) {
-        var weight = $( itemElem ).find('.weight').text();
-        return parseFloat( weight.replace( /[\(\)]/g, '') );
-      }
-    }
+  $('#one').click(function(){
+    $('.grid').isotope({ filter: '.one' });
+  });
+
+  $('#two').click(function(){
+    $('.grid').isotope({ filter: '.two' });
+  });
+
+  $('#three').click(function(){
+    $('.grid').isotope({ filter: '.three' });
   });
 
 
-  var $container = $('.planing-view__list');
-  // filter buttons
-  $('.planing-block__btn').click(function(e){
-    e.preventDefault();
-    var $this = $(this);
-    // don't proceed if already selected
-    if ( !$this.hasClass('is-checked') ) {
-      $this.parents('#options').find('.is-checked').removeClass('is-checked');
-      $this.addClass('is-checked');
-    }
-    var selector = $this.attr('data-filter');
-    $container.isotope({  itemSelector: '.planing-view__item', filter: selector });
-    return false;
-  });
+    // var $grid = $('.planing-view__list').isotope({
+    // itemSelector: '.planing-view__item',
+    // layoutMode: 'fitRows',
+
+
+    // layoutMode: 'masonry',
+      // masonry: {
+      //   // columnWidth: 16,
+      //   gutter: 8
+      // },
+
+
+  //     fitRows: {
+  //       gutter: 10
+  //     },
+  //   getSortData: {
+  //     name: '.name',
+  //     symbol: '.symbol',
+  //     number: '.number parseInt',
+  //     category: '[data-category]',
+  //     weight: function( itemElem ) {
+  //       var weight = $( itemElem ).find('.weight').text();
+  //       return parseFloat( weight.replace( /[\(\)]/g, '') );
+  //     }
+  //   }
+  // });
+
+
+  // var $container = $('.planing-view__list');
+  // // filter buttons
+  // $('.planing-block__btn').click(function(e){
+  //   e.preventDefault();
+  //   var $this = $(this);
+  //   // don't proceed if already selected
+  //   if ( !$this.hasClass('is-checked') ) {
+  //     $this.parents('#options').find('.is-checked').removeClass('is-checked');
+  //     $this.addClass('is-checked');
+  //   }
+  //   var selector = $this.attr('data-filter');
+  //   $container.isotope({  itemSelector: '.planing-view__item', filter: selector });
+  //   return false;
+  // });
+
+  // end isotope
+
+  // requests
 
   request.callForm();
   request.tabSend();
