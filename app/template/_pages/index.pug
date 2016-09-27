@@ -24,9 +24,14 @@ block content
       .swiper-container
         .swiper-wrapper
           .swiper-slide
-            img.slide-pic(src="/img/dvor-1.jpg")
+            img.swiper-lazy.slide-pic(data-src="/img/dvor-1.jpg")
+            .swiper-lazy-preloader
           .swiper-slide
-            img.slide-pic(src="/img/view-house.jpg")
+            img.swiper-lazy.slide-pic(data-src="/img/view-house.jpg")
+            .swiper-lazy-preloader
+          .swiper-slide
+            img.swiper-lazy.slide-pic(data-src="/img/night.jpg")
+            .swiper-lazy-preloader
         .swiper-button-prev(id="swip-left")
         .swiper-button-next(id="swip-right")
     section.picblock-secondary-zero
@@ -235,9 +240,9 @@ block content
         .contacts-block__container
           ul.documents-block__list
             li.documents-block__item
-              a.documents-block__link(href="#") Разрешение на строительство
+              a.documents-block__link(href="/static/building_permission.pdf", target="_blank") Разрешение на строительство
             li.documents-block__item
-              a.documents-block__link(href="#") Проектная декларация
+              a.documents-block__link(href="/static/project_declaration.pdf", target="_blank") Проектная декларация
       .contacts-block
         h2.subtitle Контакты
         .contacts-block__container
