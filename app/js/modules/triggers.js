@@ -19,6 +19,8 @@ module.exports = {
       }
     });
 
+
+
     $(document).on('click touchstart', function(e){
       var target = $(e.target),
         notPlank = !target.closest('.callform').length,
@@ -54,6 +56,28 @@ module.exports = {
       });
 
     });
+
+    $('.mobile-call').on('click touchstart', function(e){
+      e.preventDefault();
+
+
+      var form = popupBlock.find('.callform');
+
+      popupBlock.bPopup({
+        // fadeSpeed: 'slow',
+        // followSpeed: 1000,
+        modalColor: '#818e9b',
+        // transition: 'slideIn',
+        // transitionClose: 'slideBack',
+        escClose: true,
+        onClose: function () {
+          // form.find('.response-alert').hide();
+          form.trigger('reset');
+        }
+      });
+
+    });
+
     $('#call-form .popup-header__close').on('click touchstart', function(){
       popupBlock.close();
     });
@@ -61,8 +85,13 @@ module.exports = {
   },
 
   burgerMenu: function() {
-    $(".header__burg").click(function () {
-      $(this).toggleClass("menu-on");
-    });
+    $('.header__burg').click(function () {
+      $(this).toggleClass('menu-on');
+      if($('.header__burg').hasClass('menu-on')) {
+        $('.mobile-navigation').fadeIn();
+    } else {
+        $('.mobile-navigation').fadeOut();
+      }
+      });
   }
 };
