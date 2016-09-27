@@ -101,7 +101,16 @@ $(document).ready(function(){
   // isotope - test
   $('.grid').isotope({
     itemSelector: '.wp-project',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    hiddenStyle: {
+      opacity: 0
+      /* , transform: 'scale(0.001)' -- disabled scaling */
+    },
+    visibleStyle: {
+      opacity: 1
+      /* , transform: 'scale(1)' -- disabled scaling */
+    },
+    transitionDuration: '0s'
   });
 
   $('#all').click(function(){
