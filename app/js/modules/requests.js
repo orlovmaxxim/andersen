@@ -8,8 +8,8 @@ module.exports = {
       console.log(data);
 
       var data = {
-        name: $('[name=name]').val(),
-        call: $('[name=call]').val()
+        name: $('[name=name]').closest('.callform__input').val(),
+        call: $('[name=call]').closest('.callform__input').val()
       };
 
       console.log(data.call);
