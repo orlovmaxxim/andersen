@@ -12,10 +12,7 @@ $(document).ready(function(){
     loop: true,
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-    effect: 'fade',
-    preloadImages: false,
-    // Enable lazy loading
-    lazyLoading: true
+    effect: 'fade'
   });
 
   var mySwiperManager = new Swiper ('.swiper-container-manager', {
@@ -95,7 +92,8 @@ $(document).ready(function(){
   }
 
 
-  triggers.callForm();
+  //triggers.callForm();
+  triggers.showCallForm();
   tabs.init();
 
 

@@ -1,9 +1,15 @@
 .callform {
   //max-width: 315px;
-  display: none;
-  position: absolute;
-  width: 312px;
-  right: 0;
+  //display: none;
+  //position: absolute;
+  //width: 312px;
+  //right: 0;
+}
+
+#call-form {
+  .question-form__wrap {
+    background: #fff;
+  }
 }
 
 .callform__inner {

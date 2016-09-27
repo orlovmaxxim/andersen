@@ -1,9 +1,10 @@
 module.exports = {
   showForm: function() {
+    var popupBlock = $('#question-form');
     $('.questions__btn').on('click touchstart', function(e){
       e.preventDefault();
 
-      var popupBlock = $('#question-form');
+
       var form = popupBlock.find('#question-manager-form');
 
       popupBlock.bPopup({
@@ -19,6 +20,10 @@ module.exports = {
         }
       });
 
+    });
+
+    $('.popup-header__close').on('click touchstart', function(){
+      popupBlock.close();
     });
   }
 };

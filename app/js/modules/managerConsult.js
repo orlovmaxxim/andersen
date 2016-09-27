@@ -37,15 +37,14 @@ module.exports = {
         aboutme: "Умею слышть других и принимать обратную связь."
       }
     };
-    
 
-    $('.manager').on('click touchstart', function(e){
+    var popupBlock = $('#consult-form');
+    $('.consult-link').on('click touchstart', function(e){
       e.preventDefault();
 
       var $this = $(this);
       $.each(managers, function(key, value){
         if($this.hasClass(key)) {
-          var popupBlock = $('#consult-form');
           var form = popupBlock.find('#manager-consult-form');
           var titleManager = popupBlock.find('.popup-header__title').find('span');
           var fotManager = form.find('.manager__foto').find('img');
@@ -68,11 +67,9 @@ module.exports = {
 
         }
       });
-      
-      
-
-
-
+    });
+    $('.popup-header__close').on('click touchstart', function(){
+      popupBlock.close();
     });
   }
 };

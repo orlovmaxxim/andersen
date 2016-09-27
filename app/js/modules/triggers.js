@@ -30,5 +30,33 @@ module.exports = {
       }
     });
 
+  },
+
+  showCallForm: function() {
+    var popupBlock = $('#call-form');
+    $('.call__btn').on('click touchstart', function(e){
+      e.preventDefault();
+
+
+      var form = popupBlock.find('.callform');
+
+      popupBlock.bPopup({
+        fadeSpeed: 'slow',
+        followSpeed: 1000,
+        modalColor: '#818e9b',
+        transition: 'slideIn',
+        transitionClose: 'slideBack',
+        escClose: true,
+        onClose: function () {
+          // form.find('.response-alert').hide();
+          form.trigger('reset');
+        }
+      });
+
+    });
+    $('.popup-header__close').on('click touchstart', function(){
+      popupBlock.close();
+    });
+
   }
 };

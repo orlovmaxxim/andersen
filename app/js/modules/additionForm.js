@@ -1,9 +1,11 @@
 module.exports = {
+
   showForm: function() {
+    var popupBlock = $('#addition-form');
     $('.infomore-block__btn').on('click touchstart', function(e){
       e.preventDefault();
 
-      var popupBlock = $('#addition-form');
+
       var form = popupBlock.find('#addition-manager-form');
 
       popupBlock.bPopup({
@@ -20,5 +22,9 @@ module.exports = {
       });
 
     });
+    $('.popup-header__close').on('click touchstart', function(){
+       popupBlock.close();
+    });
+
   }
 };
