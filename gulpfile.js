@@ -13,6 +13,7 @@ global.$ = {
             './gulp/tasks/clean.js',
             './gulp/tasks/sass.js',
             './gulp/tasks/fonts.js',
+            './gulp/tasks/files.static.js',
             './gulp/tasks/pug.js',
             './gulp/tasks/js.process.js',
             './gulp/tasks/images.js',
@@ -46,6 +47,7 @@ $.gulp.task('default', $.gulp.series(
     ),
     $.gulp.parallel(
         'fonts',
+        'files.static',
         'sass',
         'pug',
         'js.process',
