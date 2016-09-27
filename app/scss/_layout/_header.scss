@@ -123,7 +123,11 @@
   font-size: 15px;
   color: _palette(base, myblue);
   text-decoration: none;
+  border-bottom: 1px solid rgba(_palette(base, myblue), 0);
 
+  &:hover {
+    border-bottom: 1px solid rgba(_palette(base, myblue), .3);
+  }
   @include breakpoint(medium) {
   }
 }
