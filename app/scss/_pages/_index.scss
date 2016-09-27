@@ -326,6 +326,11 @@
     font-size: 54px;
     line-height: 63px;
     color: _palette(base, myred);
+
+    @include breakpoint(small) {
+      font-size: 36px;
+      line-height: 1.1;
+    }
   }
 }
 
@@ -334,6 +339,10 @@
   font-family: _font(heading, family);
   font-size: 36px;
   color: _palette(base, myblue);
+
+  @include breakpoint(small) {
+    font-size: 25px;
+  }
 }
 
 .questions__btn {
@@ -385,12 +394,6 @@
 	&:hover {
 		.manager__foto {
 			border: 3px solid _palette(base, myred);
-
-			.manager__img {
-				width: 110%;
-				margin-left: -5%;
-			}
-
 		}
 	}
 }
