@@ -4,12 +4,18 @@
   background: #f1f5f8;
 
   @include breakpoint(large) {
+     .container-main {
+       width: 98%;
+       margin: 0 1%;
+     }
+  }
+  @include breakpoint(small) {
     .container-main {
-      width: 98%;
-      margin: 0 1%;
-      //@include clearfix;
+      width: 95%;
+      margin: 0 2.5%;
     }
   }
+
 }
 
 .footer__copyright {
