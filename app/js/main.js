@@ -92,7 +92,7 @@ $(document).ready(function(){
   }
 
 
-  //triggers.callForm();
+  // triggers.callForm();
   triggers.showCallForm();
   tabs.init();
 
@@ -141,8 +141,8 @@ $(document).ready(function(){
     itemSelector: '.planing-view__item',
     layoutMode: 'masonry',
       masonry: {
-        // columnWidth: 110,
-        gutter: 30
+        // columnWidth: 16,
+        gutter: 8
       },
     getSortData: {
       name: '.name',

@@ -12,8 +12,14 @@
   margin: 0 60px;
   padding: 0;
   list-style: none;
+  @include breakpoint(small) {
+    flex-direction: column;
+  }
   .planing-block__item {
     //width: 10%;
+    @include breakpoint(small) {
+      margin-bottom: 10px;
+    }
     .planing-block__btn {
       display: block;
       padding: 0 15px;
@@ -52,6 +58,9 @@
     font-family: _font(heading, family);
     font-size: 21px;
     text-align: center;
+    @include breakpoint(small) {
+      font-size: 12px;
+    }
   }
 }
 

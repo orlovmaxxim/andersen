@@ -8,11 +8,11 @@ module.exports = {
       var form = popupBlock.find('#question-manager-form');
 
       popupBlock.bPopup({
-        fadeSpeed: 'slow',
-        followSpeed: 1000,
+        // fadeSpeed: 'slow',
+        // followSpeed: 1000,
         modalColor: '#818e9b',
-        transition: 'slideIn',
-        transitionClose: 'slideBack',
+        // transition: 'slideIn',
+        // transitionClose: 'slideBack',
         escClose: true,
         onClose: function () {
           // form.find('.response-alert').hide();
@@ -22,7 +22,7 @@ module.exports = {
 
     });
 
-    $('.popup-header__close').on('click touchstart', function(){
+    $('#question-form .popup-header__close').on('click touchstart', function(){
       popupBlock.close();
     });
   }
