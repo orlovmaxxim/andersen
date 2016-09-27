@@ -58,5 +58,11 @@ module.exports = {
       popupBlock.close();
     });
 
+  },
+
+  burgerMenu: function() {
+    $(".header__burg").click(function () {
+      $(this).toggleClass("menu-on");
+    });
   }
 };

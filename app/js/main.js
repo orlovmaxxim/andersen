@@ -98,6 +98,7 @@ $(document).ready(function(){
 
   // triggers.callForm();
   triggers.showCallForm();
+  triggers.burgerMenu();
   tabs.init();
 
 

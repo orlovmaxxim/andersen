@@ -1,3 +1,5 @@
+
+
 .header {
   background-color: #fff;
   width: 100%;
@@ -46,6 +48,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include breakpoint(x-large) {
+    display: flex;
+  }
+  @include breakpoint(small) {
+    display: none;
+  }
+}
+
+.header__mobile {
+    display: none;
+  @include breakpoint(small) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header__left {
