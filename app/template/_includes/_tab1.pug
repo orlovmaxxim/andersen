@@ -23,7 +23,7 @@ block tab-content
         li.brands__item
           img.brands__img(src="/img/uralsib@1x.png")
 
-    form.everymonth-pay
+    form.everymonth-pay(id="ipoteka" action="mail.php" role="form" method="post")
       .everymonth-pay__inputs
         select.everymonth-pay__select(id='start-pay' name='first' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Первоначальный взнос
@@ -43,7 +43,7 @@ block tab-content
   .mortgage
     h2.methods-block__title
       | Получите рассчёт ежемесячного платежа по рассрочке
-    form.everymonth-pay
+    form.everymonth-pay(id="rass" action="mail.php" role="form" method="post")
       .everymonth-pay__inputs
         select.everymonth-pay__select(id='start-pay' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Первоначальный взнос
@@ -57,14 +57,14 @@ block tab-content
           option(value='hide') На срок
           option(value='first') First
           option(value='second') Second
-        input.everymonth-pay__input(name="" placeholder="Ваше имя" type="text")
-        input.everymonth-pay__input(name="" placeholder="Ваш телефон" type="text")
+        input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
+        input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="text")
       input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
   .mortgage
     h2.methods-block__title
       | Узнайте, как воспользоваться материнским капиталом
-    form.everymonth-pay
+    form.everymonth-pay(id="mat-kap" action="mail.php" role="form" method="post")
       .everymonth-pay__inputs
-        input.everymonth-pay__input(name="" placeholder="Ваше имя" type="text")
-        input.everymonth-pay__input(name="" placeholder="Ваш телефон" type="text")
+        input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
+        input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="text")
       input.everymonth-pay__btn(name="" value="Получить консультацию" type="submit")

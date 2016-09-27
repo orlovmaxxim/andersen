@@ -173,7 +173,7 @@ $(document).ready(function(){
   });
 
   request.callForm();
-  request.everymonthPay();
+  request.tabSend();
   request.additionSend();
   request.consultCall();
   request.questionSend();

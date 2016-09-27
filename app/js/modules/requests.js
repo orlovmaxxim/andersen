@@ -41,22 +41,22 @@ module.exports = {
     })
   },
 
-  everymonthPay: function() {
-    $('.everymonth-pay').on('submit', function(e){
-      e.preventDefault();
-
-      var form = $(this),
-        data = form.serialize();
-      console.log(data);
-
-      var data = {
-        first: $('[name=first]').val(),
-        second: $('[name=second]').val(),
-        third: $('[name=third]').val()
-      };
-      console.log(data);
-    })
-  },
+  // everymonthPay: function() {
+  //   $('.everymonth-pay').on('submit', function(e){
+  //     e.preventDefault();
+  //
+  //     var form = $(this),
+  //       data = form.serialize();
+  //     console.log(data);
+  //
+  //     var data = {
+  //       first: $('[name=first]').val(),
+  //       second: $('[name=second]').val(),
+  //       third: $('[name=third]').val()
+  //     };
+  //     console.log(data);
+  //   })
+  // },
 
   additionSend: function() {
     $('.addition-manager-form').on('submit', function(e){
@@ -153,6 +153,51 @@ module.exports = {
         call: $('[name=call]').closest('.question-manager-form__input').val(),
         questionText: $('[name=desc]').closest('.question-manager-form__input').val()
       };
+      console.log(data);
+
+      jQuery.ajax({
+        url: 'mail.php',
+        data: JSON.stringify(data),
+        type: 'POST',
+        contentType: 'application/json',
+        beforeSend: function() {
+          console.log(data);
+        },
+        success: function(data) {
+          if(data.error) {
+            console.log('data error');
+          } else {
+            console.log("good job");
+            console.log(data.status);
+            form.find('.suc-alert').text('Запрос отправлен').show();
+          }
+        },
+        error: function() {
+          form.trigger('reset');
+          console.log("last error");
+          form.find('.error-alert').text('Ошибка на сервере').show();
+        }
+      });
+    })
+  },
+
+  tabSend: function() {
+    $('.everymonth-pay').on('submit', function(e){
+      e.preventDefault();
+
+      var form = $(this),
+        data = form.serialize();
+      console.log(data);
+
+        var data = {
+          first: $('[name=first]').val(),
+          second: $('[name=second]').val(),
+          third: $('[name=third]').val(),
+          name: $('[name=name]').closest('.everymonth-pay__input').val(),
+          call: $('[name=call]').closest('.everymonth-pay__input').val()
+        };
+
+
       console.log(data);
 
       jQuery.ajax({
