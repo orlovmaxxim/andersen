@@ -72,6 +72,11 @@ module.exports = {
         destination : dest + 'fonts'
     },
 
+    static : {
+        location    : src  + 'static/**/*',
+        destination : dest + 'static'
+    },
+
     images: {
         location    : src + 'img/**/*',
         destination : dest + 'img',
