@@ -2,6 +2,12 @@
   //margin-top: -150px;
   height: 75px;
   background: #f1f5f8;
+
+  .container-main {
+    width: 95%;
+    margin: 0 2.5%;
+    //@include clearfix;
+  }
 }
 
 .footer__copyright {
