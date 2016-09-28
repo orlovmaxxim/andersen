@@ -30,7 +30,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	}
 	
 	if (!isset($manager)) {
-		$manager = 'Менеджер не выбран'
+		$manager = 'Менеджер не выбран';
 	}
 	
 	//TODO geeneate message
