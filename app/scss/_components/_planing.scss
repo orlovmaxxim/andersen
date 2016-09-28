@@ -98,6 +98,41 @@
   height: 100%;
 }
 
+// planning form
+
+.planing-choose-form__inner {
+  display: flex;
+  justify-content: space-around;
+  .planing-choose-form__left {
+    width: 48%;
+  }
+  .planing-choose-form__right {
+    width: 48%;
+  }
+}
+
+.planing-choose-form__input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 0.8125rem 1.25rem;
+  border: 2px solid #dce4ea;
+  font-family: _font(heading, family);
+  box-sizing: border-box;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+  color: #a3a9ae;
+}
+.planing-choose-form__btn {
+  display: block;
+  width: 100%;
+  background: _palette(base, myred);
+  height: 3.5rem;
+  border: 0 none;
+  font-family: _font(heading, family);
+  font-size: 20px;
+  color: #fff;
+  @include prefixer(border-radius, 5px, webkit ms spec);
+}
+
 // planing neat bourbon test
 
 ///////
