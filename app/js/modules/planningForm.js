@@ -25,15 +25,24 @@ module.exports = {
     var popupBlock = $('#planing-form');
     $('.view__btn').on('click touchstart', function(e){
       e.preventDefault();
-      console.log("1");
 
       var $this = $(this);
-      $.each(plannings, function(key, value){
-        if($this.parents().hasClass(key)) {
-          var form = popupBlock.find('#planing-choose-form');
-          var fotPlan = form.find('.plan__foto').find('img');
+      // Собираем данные для формы
+      var dataCategory = $this.closest('.planing-view__item').attr('data-category');
+      var view = $this.closest('.view');
+      var title = view.find('h2').text();
+      var fotoPlan = view.find('img').attr('src');
+      var squareAll = view.find('.view__parag_all').text();
+      var squareLive = view.find('.view__parag_live').text();
 
-          fotPlan.attr("src", value.fot);
+
+
+          var form = popupBlock.find('#planing-choose-form');
+          var formFoto = form.find('.plan__foto').find('img');
+          var formTitle = $('#planing-form').find('.popup-header__title');
+
+          formFoto.attr("src", fotoPlan);
+          formTitle.text(title);
 
           popupBlock.bPopup({
             // fadeSpeed: 'slow',
@@ -48,11 +57,9 @@ module.exports = {
             }
           });
 
-        }
-      });
+
       $('#planing-form .popup-header__close').on('click touchstart', function(){
-        console.log("close");
-        popupBlock.close();
+        bPopup().close();
       });
     });
 

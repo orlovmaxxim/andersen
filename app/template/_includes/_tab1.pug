@@ -27,16 +27,19 @@ block tab-content
       .everymonth-pay__inputs
         select.everymonth-pay__select(id='start-pay' name='first' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Первоначальный взнос
-          option(value='first') First
-          option(value='second') Second
+          - var ipoteks = ['200 000', '300 000', '400 000', '500 000', '600 000', '700 000', '800 000', '1000 000', '1200 000', '1500 000']
+          each ipot in ipoteks
+            option(value= ipot)= ipot
         select.everymonth-pay__select(id='type-home' name='second' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Тип квартиры
-          option(value='first') First
-          option(value='second') Second
+          - var types = ['1 комнатная', '2 комнатная', '3 комнатная', '4 комнатная', 'пентхаус']
+          each type in types
+            option(value= type)= type
         select.everymonth-pay__select(id='time-limit' name='third' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') На срок
-          option(value='first') First
-          option(value='second') Second
+          - var entity = ['5 лет', '6 лет', '7 лет', '8 лет', '9 лет', '10 лет', '15 лет', '20 лет', '25 лет', '30 лет']
+          each ent in entity
+            option(value= ent)= ent
         input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
         input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="tel")
       input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
@@ -47,16 +50,19 @@ block tab-content
       .everymonth-pay__inputs
         select.everymonth-pay__select(id='start-pay' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Первоначальный взнос
-          option(value='first') First
-          option(value='second') Second
+          - var ipoteks = ['200 000', '300 000', '400 000', '500 000', '600 000', '700 000', '800 000', '1000 000', '1200 000', '1500 000']
+          each ipot in ipoteks
+            option(value= ipot)= ipot
         select.everymonth-pay__select(id='type-home' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Тип квартиры
-          option(value='first') First
-          option(value='second') Second
+          - var types = ['1 комнатная', '2 комнатная', '3 комнатная', '4 комнатная', 'пентхаус']
+          each type in types
+            option(value= type)= type
         select.everymonth-pay__select(id='time-limit' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') На срок
-          option(value='first') First
-          option(value='second') Second
+          - var entity = ['6 мес.', '9 мес.', '12 мес.', '15 мес.', '18 мес.', '21 мес.', '24 мес.']
+          each ent in entity
+            option(value= ent)= ent
         input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
         input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="text")
       input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")

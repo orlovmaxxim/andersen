@@ -136,67 +136,39 @@ block content
             li.planing-block__item
               .planing-block__btn(id="penthaus" data-filter=".penthaus") Пентхаусы
         .planing-view.wp-project-wrapper
+          -
+            var planings = {
+            'Однокомнатная квартира': {
+                'category' : 'one',
+                'fot' : '/img/2.png',
+                'square-all': '2',
+                'square-live': '3'
+            },
+            'Двухкомнатная квартира': {
+            'category' : 'two',
+            'fot' : '/img/5.png',
+            'square-all': '4',
+            'square-live': '5'
+            },
+            'Трёхкомнатная квартира': {
+            'category' : 'three',
+            'fot' : '/img/12.png',
+            'square-all': '6',
+            'square-live': '7'
+            }
+            }
           ul.planing-view__list.grid
-            li.wp-project.planing-view__item.one(data-category="one")
-              .view
-                h2.view__title Однокомнатная квартира
-                .view__pic
-                  img.view__img(src="/img/2.png" alt="near-pic-1")
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                a.view__btn(href="#") Узнать стоимость
-            li.wp-project.planing-view__item.two(data-category="two")
-              .view
-                h2.view__title Двухкомнатная квартира
-                .view__pic
-                  img.view__img(src="/img/5.png" alt="near-pic-1")
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                a.view__btn(href="#") Узнать стоимость
-            li.wp-project.planing-view__item.one(data-category="one")
-              .view
-                h2.view__title Однокомнатная квартира
-                .view__pic
-                  img.view__img(src="/img/8.png" alt="near-pic-1")
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                a.view__btn(href="#") Узнать стоимость
-            li.wp-project.planing-view__item.three(data-category="three")
-              .view
-                h2.view__title Трёхкомнатная квартира
-                .view__pic
-                  img.view__img(src="/img/12.png" alt="near-pic-1")
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                a.view__btn(href="#") Узнать стоимость
-            li.wp-project.planing-view__item.four(data-category="four")
-              .view
-                h2.view__title Четырёхкомнатная квартира
-                .view__pic
-                  img.view__img(src="/img/16.png" alt="near-pic-1")
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                a.view__btn(href="#") Узнать стоимость
-            li.wp-project.planing-view__item.penthaus(data-category="penthaus")
-              .view
-                h2.view__title Пентхаус
-                .view__pic
-                  img.view__img(src="/img/2.png" alt="near-pic-1")
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                .view__info
-                  p.view__parag Общая площадь 40,73 м2
-                a.view__btn(href="#") Узнать стоимость
+            each info, title in planings
+              li.wp-project.planing-view__item(class= info['category'], data-category= info['category'])
+                .view
+                  h2.view__title= title
+                  .view__pic
+                    img.view__img(src= info['fot'])
+                  .view__info
+                    p.view__parag.view__parag_all= "Общая площадь: " + info['square-all']
+                  .view__info
+                    p.view__parag.view__parag_live= "Жилая площадь: " + info['square-live']
+                  a.view__btn(href="#") Узнать стоимость
   section.infoblock
     .container-main
       h2.title.title_color-blue А ещё вас порадует:
