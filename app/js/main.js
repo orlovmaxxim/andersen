@@ -135,6 +135,14 @@ $(document).ready(function(){
     $('.grid').isotope({ filter: '.three' });
   });
 
+  $('#four').click(function(){
+    $('.grid').isotope({ filter: '.four' });
+  });
+
+  $('#penthaus').click(function(){
+    $('.grid').isotope({ filter: '.penthaus' });
+  });
+
 
     // var $grid = $('.planing-view__list').isotope({
     // itemSelector: '.planing-view__item',

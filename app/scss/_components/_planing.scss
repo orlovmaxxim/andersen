@@ -133,6 +133,9 @@
   @include prefixer(border-radius, 5px, webkit ms spec);
 }
 
+.plan__img {
+  width: 100%;
+}
 // planing neat bourbon test
 
 ///////
