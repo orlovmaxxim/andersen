@@ -892,6 +892,9 @@
     @include breakpoint(medium) {
       margin-bottom: 0;
     }
+    @include breakpoint(small) {
+      padding-top: 0;
+    }
   }
   span {
     font-size: 16px;

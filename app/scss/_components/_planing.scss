@@ -28,6 +28,10 @@
       @include prefixer(border-radius, 7px, webkit ms spec);
       color: #fff;
       background: _palette(base, myred);
+      &:hover {
+        cursor: pointer;
+        color: _palette(base, myblue);
+      }
     }
   }
 }
@@ -50,6 +54,9 @@
 
 .view {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 380px;
   margin: 0 auto;
   padding: 15px;
@@ -58,6 +65,7 @@
   .view__title {
     font-family: _font(heading, family);
     font-size: 21px;
+    line-height: 1.2;
     text-align: center;
     @include breakpoint(small) {
       font-size: 12px;
@@ -67,9 +75,9 @@
 
 .view__btn {
   display: block;
-  padding: 5px 10px;
+  padding: 5px 60px;
   margin: 0 auto;
-  margin-top: 45px;
+  //margin-top: 45px;
   text-align: center;
   font-family: _font(heading, family);
   font-size: 12px;

@@ -5,6 +5,7 @@ var request = require('./modules/requests.js');
 var questionManagerForm = require('./modules/questionManagerForm.js');
 var consult = require('./modules/managerConsult.js');
 var addition = require('./modules/additionForm.js');
+var plan = require('./modules/planningForm.js');
 require('./modules/select.js')();
 
 $(document).ready(function(){
@@ -198,4 +199,9 @@ $(document).ready(function(){
   // addition form
 
   addition.showForm();
+
+  //planning form
+
+  plan.showPlanningForm();
+
 });
