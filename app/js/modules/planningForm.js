@@ -50,9 +50,11 @@ module.exports = {
 
         }
       });
+      $('#planing-form .popup-header__close').on('click touchstart', function(){
+        console.log("close");
+        popupBlock.close();
+      });
     });
-    $('#planing-form .popup-header__close').on('click touchstart', function(){
-      popupBlock.close();
-    });
+
   }
 };
