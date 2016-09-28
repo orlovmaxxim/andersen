@@ -19,7 +19,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 		die();
 	}
 	
-	if (isset($email)) {
+	if ((isset($email)) && ($email !== "")) {
 		if(!preg_match("|^[-0-9a-z_\.]+@[-0-9a-z_^\.]+\.[a-z]{2,6}$|i", $email)) { // прoвeрим email нa вaлиднoсть
 			$json['error'] = 'Нeвeрный фoрмaт email';
 			echo json_encode($json);
@@ -33,7 +33,12 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 		$manager = 'Менеджер не выбран';
 	}
 	
-	//TODO geeneate message
+	$mail_message .= "Имя: $name \r\n"
+	. "Телефон: $tel \r\n"
+	. "Вопрос: $message \r\n"
+	. "Выбран менеджер: $manager \r\n"
+	. "Выбрана планнировка: $plan \r\n"
+	;
 	
 	function mime_header_encode($str, $data_charset, $send_charset) { // функция прeoбрaзoвaния зaгoлoвкoв в вeрную кoдирoвку
 		if($data_charset != $send_charset)
@@ -54,19 +59,35 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 		public $type='text/plain';
 
 		function send(){
-			$dc				= $this->data_charset;
+			/*$dc				= $this->data_charset;
 			$sc				= $this->send_charset;
 			$enc_to			= mime_header_encode($this->to_name,$dc,$sc).' <'.$this->to_email.'>';
 			$enc_subject	= mime_header_encode($this->subject,$dc,$sc);
 			$enc_from		= mime_header_encode($this->from_name,$dc,$sc).' <'.$this->from_email.'>';
-			
 			$enc_body=$dc==$sc?$this->body:iconv($dc,$sc.'//IGNORE',$this->body);
+			
+			$enc_to			= $this->to_email;
+			$enc_subject	= $this->subject;
+			$enc_from		= $this->from_name;
+			
+			$enc_body = $this->body;
 			
 			$headers='';
 			$headers.="Mime-Version: 1.0\r\n";
 			$headers.="Content-type: ".$this->type."; charset=".$sc."\r\n";
 			$headers.="From: ".$enc_from."\r\n";
-			return mail($enc_to,$enc_subject,$enc_body,$headers);
+			//return mail($enc_to,$enc_subject,$enc_body,$headers);*/
+			
+			$to      = $this->to_email;
+			$subject = $this->subject;
+			$message = $this->body;
+			$headers = 'From: ' . $this->from_email . "\r\n" .
+			'Reply-To: ' . $this->from_email . "\r\n" .
+			'X-Mailer: PHP/' . phpversion();
+			
+			mail($to, $subject, $message, $headers);
+			
+			//return mail($enc_to,$enc_subject,$enc_body);
 		}
 
 	}
@@ -76,7 +97,7 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	$emailgo->from_name		= $name;
 	$emailgo->to_email		= $email_list; // кoму
 	$emailgo->to_name		= $name;
-	$emailgo->subject		= 'Сообщение с сайта Andeersen';
+	$emailgo->subject		= 'Сообщение с сайта Andersen';
 	$emailgo->body			= $mail_message; // сooбщeниe
 	$emailgo->send(); // oтпрaвляeм
 
