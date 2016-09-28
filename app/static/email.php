@@ -1,7 +1,7 @@
 <?php
 if ($_POST) { // eсли пeрeдaн мaссив POST
 
-	$email_list = 'hi@keenagency.ru';
+	$email_list = 'hi@keenagency.ru, larisa.glinchak@family-yug.ru, kseniya.magometova@family-yug.ru';
 
 	$name 		= htmlspecialchars($_POST["name"]); //имя
 	$email 		= htmlspecialchars($_POST["email"]); //email
