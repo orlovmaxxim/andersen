@@ -4,6 +4,7 @@
       .popup-header__close &#10006;
       h2.popup-header__title Получите консультацию #[span]
     form.manager-consult-form(id="manager-consult-form" role="form" action="email.php" method="post")
+      .suc-alert
       .manager-consult-form__inner
         .manager-consult-form__left
           .manager
@@ -16,4 +17,5 @@
           h2.manager-consult-form__title
           input.manager-consult-form__input(name="name" placeholder="Ваше имя" type="text")
           input.manager-consult-form__input(name="call" placeholder="Ваш телефон" type="tel")
+          input.planing-choose-form__input(name="manager" placeholder="Менеджер" type="hidden")
           input.manager-consult-form__btn(name="" value="Получить консультацию" type="submit")

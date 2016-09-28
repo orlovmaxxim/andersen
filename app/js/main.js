@@ -196,6 +196,7 @@ $(document).ready(function(){
   request.additionSend();
   request.consultCall();
   request.questionSend();
+  request.planSend();
 
   // questions form
 

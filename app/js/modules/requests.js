@@ -4,27 +4,20 @@ module.exports = {
       e.preventDefault();
 
       var form = $(this),
-        data = form.serialize();
-      console.log(data);
+        alldata = form.serialize();
 
-      var data = {
-        name: $('[name=name]').closest('.callform__input').val(),
-        tel: $('[name=tel]').closest('.callform__input').val()
-      };
-
-      console.log(data.call);
-
-
-
-
+      // var data = {
+      //   name: $('[name=name]').closest('.callform__input').val(),
+      //   tel: $('[name=tel]').closest('.callform__input').val()
+      // };
 
       $.ajax({
         url: 'static/email.php',
-        data: data,
+        data: alldata,
         type: 'POST',
         dataType: 'json',
         beforeSend: function() {
-          console.log(data);
+          console.log(alldata);
         },
         success: function(data) {
           if(data.error) {
@@ -33,7 +26,7 @@ module.exports = {
           } else {
             console.log("good job");
             console.log(data.sucess);
-            form.find('.suc-alert').text('Запрос отправлен').show();
+            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
           }
         },
         error: function() {
@@ -68,22 +61,20 @@ module.exports = {
       e.preventDefault();
 
       var form = $(this),
-        data = form.serialize();
-      console.log(data);
+        alldata = form.serialize();
 
-      var data = {
-        name: $('[name=name]').closest('.addition-manager-form__input').val(),
-        call: $('[name=call]').closest('.addition-manager-form__input').val()
-      };
-      console.log(data);
+      // var data = {
+      //   name: $('[name=name]').closest('.addition-manager-form__input').val(),
+      //   call: $('[name=call]').closest('.addition-manager-form__input').val()
+      // };
 
       jQuery.ajax({
         url: 'static/email.php',
-        data: JSON.stringify(data),
+        data: alldata,
         type: 'POST',
-        contentType: 'application/json',
+        dataType: 'json',
         beforeSend: function() {
-          console.log(data);
+          console.log(alldata);
         },
         success: function(data) {
           if(data.error) {
@@ -108,27 +99,29 @@ module.exports = {
       e.preventDefault();
 
       var form = $(this),
-        data = form.serialize();
+        alldata = form.serialize();
       console.log(data);
 
       var data = {
         name: $('[name=name]').closest('.manager-consult-form__input').val(),
         call: $('[name=call]').closest('.manager-consult-form__input').val(),
-        nameManager: "Консультация " + $('#consult-form').find('h2 span').text()
+        manager: "Консультация " + $('#consult-form').find('h2 span').text()
       };
       console.log(data);
 
+      alldata = alldata + data.manager;
+
       jQuery.ajax({
         url: 'static/email.php',
-        data: JSON.stringify(data),
+        data: alldata,
         type: 'POST',
-        contentType: 'application/json',
+        dataType: 'json',
         beforeSend: function() {
-          console.log(data);
+          console.log(alldata);
         },
         success: function(data) {
           if(data.error) {
-            console.log('data error');
+            console.log(data.error);
           } else {
             console.log("good job");
             console.log(data.status);
@@ -149,8 +142,7 @@ module.exports = {
       e.preventDefault();
 
       var form = $(this),
-        data = form.serialize();
-      console.log(data);
+        alldata = form.serialize();
 
       // var data = {
       //   name: $('[name=name]').closest('.question-manager-form__input').val(),
@@ -162,11 +154,11 @@ module.exports = {
 
       jQuery.ajax({
         url: 'static/email.php',
-        data: data,
+        data: alldata,
         type: 'POST',
         dataType: 'json',
         beforeSend: function() {
-          console.log(data);
+          console.log(alldata);
         },
         success: function(data) {
           if(data.error) {
@@ -191,7 +183,7 @@ module.exports = {
       e.preventDefault();
 
       var form = $(this),
-        data = form.serialize();
+        alldata = form.serialize();
       console.log(data);
 
         var data = {
@@ -207,9 +199,9 @@ module.exports = {
 
       jQuery.ajax({
         url: 'static/email.php',
-        data: JSON.stringify(data),
+        data: alldata,
         type: 'POST',
-        contentType: 'application/json',
+        dataType: 'json',
         beforeSend: function() {
           console.log(data);
         },
@@ -229,5 +221,59 @@ module.exports = {
         }
       });
     })
+  },
+
+  planSend: function() {
+    $('.planing-choose-form').on('submit', function(e){
+      e.preventDefault();
+
+      var form = $(this),
+         alldata = form.serialize();
+      console.log(alldata);
+
+      var data = {
+        name: $('[name=name]').closest('.planing-choose-form__input').val(),
+        tel: "test=" + $('[name=tel]').closest('.planing-choose-form__input').val(),
+        plan: $('#planing-form .popup-header__title').text(),
+        hight: $('#planing-form .planing-choose-form__title').text(),
+        foto: $('#planing-form .plan__img').attr('src')
+      };
+
+      alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
+
+
+      console.log(data);
+
+        // url: 'static/email.php',
+        // data: JSON.stringify(alldata),
+        // type: 'POST',
+        // contentType: 'application/json',
+
+      jQuery.ajax({
+        url: 'static/email.php',
+        data: alldata,
+        type: 'POST',
+        dataType: 'json',
+        beforeSend: function() {
+          console.log(alldata);
+        },
+        success: function(data) {
+          if(data.error) {
+            console.log('data error');
+          } else {
+            console.log("good job");
+            console.log(data.status);
+            //$('#planing-form').fadeOut();
+            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+          }
+        },
+        error: function() {
+          form.trigger('reset');
+          console.log("last error");
+          form.find('.error-alert').text('Ошибка на сервере').show();
+        }
+      });
+    })
   }
+
 };

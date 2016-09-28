@@ -4,6 +4,7 @@
       .popup-header__close.close-plan &#10006;
       h2.popup-header__title Двухкомнатная квартира
     form.planing-choose-form(id="planing-choose-form" role="form" action="email.php" method="post")
+      .suc-alert
       .planing-choose-form__inner
         .planing-choose-form__left
           .plan
@@ -21,5 +22,6 @@
               p.planing-choose-form__parag Кухня
           h2.planing-choose-form__main-title
           input.planing-choose-form__input(name="name" placeholder="Ваше имя" type="text")
-          input.planing-choose-form__input(name="call" placeholder="Ваш телефон" type="tel")
+          input.planing-choose-form__input(name="tel" placeholder="Ваш телефон" type="tel")
+          input.planing-choose-form__input(name="plan" placeholder="Ваш телефон" type="hidden")
           input.planing-choose-form__btn(name="" value="Узнать стоимость" type="submit")
