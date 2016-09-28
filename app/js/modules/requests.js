@@ -9,25 +9,30 @@ module.exports = {
 
       var data = {
         name: $('[name=name]').closest('.callform__input').val(),
-        call: $('[name=call]').closest('.callform__input').val()
+        tel: $('[name=tel]').closest('.callform__input').val()
       };
 
       console.log(data.call);
 
-      jQuery.ajax({
-        url: 'mail.php',
-        data: JSON.stringify(data),
+
+
+
+
+      $.ajax({
+        url: 'static/email.php',
+        data: data,
         type: 'POST',
-        contentType: 'application/json',
+        dataType: 'json',
         beforeSend: function() {
           console.log(data);
         },
         success: function(data) {
           if(data.error) {
             console.log('data error');
+            console.log(data.error);
           } else {
             console.log("good job");
-            console.log(data.status);
+            console.log(data.sucess);
             form.find('.suc-alert').text('Запрос отправлен').show();
           }
         },
@@ -73,7 +78,7 @@ module.exports = {
       console.log(data);
 
       jQuery.ajax({
-        url: 'mail.php',
+        url: 'static/email.php',
         data: JSON.stringify(data),
         type: 'POST',
         contentType: 'application/json',
@@ -114,7 +119,7 @@ module.exports = {
       console.log(data);
 
       jQuery.ajax({
-        url: 'mail.php',
+        url: 'static/email.php',
         data: JSON.stringify(data),
         type: 'POST',
         contentType: 'application/json',
@@ -147,19 +152,19 @@ module.exports = {
         data = form.serialize();
       console.log(data);
 
-      var data = {
-        name: $('[name=name]').closest('.question-manager-form__input').val(),
-        email: $('[name=email]').closest('.question-manager-form__input').val(),
-        call: $('[name=call]').closest('.question-manager-form__input').val(),
-        questionText: $('[name=desc]').closest('.question-manager-form__input').val()
-      };
-      console.log(data);
+      // var data = {
+      //   name: $('[name=name]').closest('.question-manager-form__input').val(),
+      //   email: $('[name=email]').closest('.question-manager-form__input').val(),
+      //   call: $('[name=call]').closest('.question-manager-form__input').val(),
+      //   questionText: $('[name=desc]').closest('.question-manager-form__input').val()
+      // };
+      // console.log(data);
 
       jQuery.ajax({
-        url: 'mail.php',
-        data: JSON.stringify(data),
+        url: 'static/email.php',
+        data: data,
         type: 'POST',
-        contentType: 'application/json',
+        dataType: 'json',
         beforeSend: function() {
           console.log(data);
         },
@@ -201,7 +206,7 @@ module.exports = {
       console.log(data);
 
       jQuery.ajax({
-        url: 'mail.php',
+        url: 'static/email.php',
         data: JSON.stringify(data),
         type: 'POST',
         contentType: 'application/json',

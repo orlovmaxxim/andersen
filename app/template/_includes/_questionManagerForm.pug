@@ -3,12 +3,12 @@
     header.popup-header
       .popup-header__close &#10006;
       h2.popup-header__title Задайте вопрос менеджеру
-    form.question-manager-form(id="question-manager-form" role="form" action="mail.php" method="post")
+    form.question-manager-form(id="question-manager-form" role="form" action="email.php" method="post")
       .question-manager-form__inner
         .question-manager-form__left
-          textarea.question-manager-form__input(name="desc" placeholder="Ваш вопрос")
+          textarea.question-manager-form__input(name="message" placeholder="Ваш вопрос")
         .question-manager-form__right
           input.question-manager-form__input(name="name" placeholder="Ваше имя" type="text")
           input.question-manager-form__input(name="email" placeholder="Ваш e-mail" type="email")
-          input.question-manager-form__input(name="call" placeholder="Ваш телефон" type="tel")
+          input.question-manager-form__input(name="tel" placeholder="Ваш телефон" type="tel")
           input.question-manager-form__btn(name="" value="Задать вопрос" type="submit")
