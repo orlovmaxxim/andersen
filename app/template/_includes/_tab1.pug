@@ -41,7 +41,7 @@ block tab-content
           each ent in entity
             option(value= ent)= ent
         input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
-        input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="tel")
+        input.everymonth-pay__input(name="tel" placeholder="Ваш телефон" type="tel")
       input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
   .mortgage
     h2.methods-block__title
@@ -64,7 +64,7 @@ block tab-content
           each ent in entity
             option(value= ent)= ent
         input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
-        input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="text")
+        input.everymonth-pay__input(name="tel" placeholder="Ваш телефон" type="text")
       input.everymonth-pay__btn(name="" value="Узнать ежемесячный платёж" type="submit")
   .mortgage
     h2.methods-block__title
@@ -72,5 +72,5 @@ block tab-content
     form.everymonth-pay(id="mat-kap" action="email.php" role="form" method="post")
       .everymonth-pay__inputs
         input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
-        input.everymonth-pay__input(name="call" placeholder="Ваш телефон" type="text")
+        input.everymonth-pay__input(name="tel" placeholder="Ваш телефон" type="text")
       input.everymonth-pay__btn(name="" value="Получить консультацию" type="submit")

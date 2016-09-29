@@ -52,6 +52,8 @@ module.exports = {
         onClose: function () {
           // form.find('.response-alert').hide();
           form.trigger('reset');
+          form.find('.suc-alert').css('display', 'none');
+          form.find('.error-alert').css('display', 'none');
         }
       });
 
@@ -73,6 +75,8 @@ module.exports = {
         onClose: function () {
           // form.find('.response-alert').hide();
           form.trigger('reset');
+          form.find('.suc-alert').css('display', 'none');
+          form.find('.error-alert').css('display', 'none');
         }
       });
 

@@ -212,5 +212,6 @@ $(document).ready(function(){
   //planning form
 
   plan.showPlanningForm();
+  plan.activeBtn();
 
 });

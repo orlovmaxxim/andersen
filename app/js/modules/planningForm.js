@@ -1,26 +1,5 @@
 module.exports = {
   showPlanningForm: function() {
-    var plannings = {
-      one : {
-        fot: "/img/2.png"
-      },
-
-      two : {
-        fot: "/img/5.png"
-      },
-
-      three : {
-        fot: "/img/12.png"
-      },
-
-      four : {
-        fot: "/img/16.png"
-      },
-
-      penthaus : {
-        fot: "/img/2.png"
-      }
-    };
 
     var popupBlock = $('#planing-form');
     $('.view__btn').on('click touchstart', function(e){
@@ -40,9 +19,13 @@ module.exports = {
           var form = popupBlock.find('#planing-choose-form');
           var formFoto = form.find('.plan__foto').find('img');
           var formTitle = $('#planing-form').find('.popup-header__title');
+          var allsq = form.find('.allsq').find('span');
+          var livesq = form.find('.livesq').find('span');
 
           formFoto.attr("src", fotoPlan);
           formTitle.text(title);
+          allsq.text(squareAll);
+          livesq.text(squareLive);
 
           popupBlock.bPopup({
             // fadeSpeed: 'slow',
@@ -55,6 +38,7 @@ module.exports = {
               // form.find('.response-alert').hide();
               form.trigger('reset');
               form.find('.suc-alert').css('display', 'none');
+              form.find('.error-alert').css('display', 'none');
             }
           });
 
@@ -64,5 +48,20 @@ module.exports = {
       });
     });
 
+  },
+  activeBtn: function() {
+
+    $('.planing-block__btn').on('click touchstart', function (e) {
+      e.preventDefault();
+
+      var $this = $(this);
+
+      if ($(this).hasClass('active')) {
+        return;
+      }
+      $('.planing-block__list').find('.planing-block__btn.active').removeClass('active');
+      $(this).addClass('active');
+    });
   }
+
 };

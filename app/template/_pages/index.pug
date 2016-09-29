@@ -124,7 +124,7 @@ block content
             //button.planing-block__btn(data-filter=".four") 4 комнатные
             //button.planing-block__btn(data-filter=".penthaus") Пентхаусы
             li.planing-block__item
-              .planing-block__btn(id="all" data-filter="*") Все
+              .planing-block__btn.active(id="all" data-filter="*") Все
             li.planing-block__item
               .planing-block__btn(id="one" data-filter=".one") 1 комнатные
             li.planing-block__item
@@ -138,32 +138,316 @@ block content
         .planing-view.wp-project-wrapper
           -
             var planings = {
-            'Однокомнатная квартира': {
+            'Однокомнатная квартира1': {
+                'tit': 'Однокомнатная квартира',
                 'category' : 'one',
-                'fot' : '/img/2.png',
-                'square-all': '2',
-                'square-live': '3'
+                'fot' : '/img/apartments/oneroom/30-03.png',
+                'square-all': '30,03 м2',
+                'square-live': '10,31 м2'
             },
-            'Двухкомнатная квартира': {
+            'Однокомнатная квартира2': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/30-45.png',
+            'square-all': '30,45 м2',
+            'square-live': '11,48 м2'
+            },
+            'Однокомнатная квартира3': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/30-98.png',
+            'square-all': '30,98 м2',
+            'square-live': '8,65 м2'
+            },
+            'Однокомнатная квартира4': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/31-27.png',
+            'square-all': '31,27 м2',
+            'square-live': '12,01 м2'
+            },
+            'Однокомнатная квартира5': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/32-65.png',
+            'square-all': '32,65 м2',
+            'square-live': '13,11 м2'
+            },
+            'Однокомнатная квартира6': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/33-33.png',
+            'square-all': '33,33 м2',
+            'square-live': '9,44 м2'
+            },
+            'Однокомнатная квартира7': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/34-94.png',
+            'square-all': '34,94 м2',
+            'square-live': '13,11 м2'
+            },
+            'Однокомнатная квартира8': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/34-98.png',
+            'square-all': '34,98 м2',
+            'square-live': '11,55 м2'
+            },
+            'Однокомнатная квартира9': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/37-27.png',
+            'square-all': '37,27 м2',
+            'square-live': '15,29 м2'
+            },
+            'Однокомнатная квартира10': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/38-70.png',
+            'square-all': '38,70 м2',
+            'square-live': '14,28 м2'
+            },
+            'Однокомнатная квартира11': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/40-17.png',
+            'square-all': '40,17 м2',
+            'square-live': '12,20 м2'
+            },
+
+            'Двухкомнатная квартира1': {
+            'tit': 'Двухкомнатная квартира',
             'category' : 'two',
-            'fot' : '/img/5.png',
-            'square-all': '4',
-            'square-live': '5'
+            'fot' : '/img/apartments/tworoom/49-89.png',
+            'square-all': '49,89 м2',
+            'square-live': '21,96 м2'
             },
-            'Трёхкомнатная квартира': {
+            'Двухкомнатная квартира2': {
+            'tit': 'Двухкомнатная квартира',
+            'category' : 'two',
+            'fot' : '/img/apartments/tworoom/50-10.png',
+            'square-all': '50,10 м2',
+            'square-live': '21,66 м2'
+            },
+            'Двухкомнатная квартира3': {
+            'tit': 'Двухкомнатная квартира',
+            'category' : 'two',
+            'fot' : '/img/apartments/tworoom/52-00.png',
+            'square-all': '52,00 м2',
+            'square-live': '26,71 м2'
+            },
+            'Двухкомнатная квартира4': {
+            'tit': 'Двухкомнатная квартира',
+            'category' : 'two',
+            'fot' : '/img/apartments/tworoom/55-73.png',
+            'square-all': '55,73 м2',
+            'square-live': '26,91 м2'
+            },
+            'Двухкомнатная квартира5': {
+            'tit': 'Двухкомнатная квартира',
+            'category' : 'two',
+            'fot' : '/img/apartments/tworoom/65-32.png',
+            'square-all': '65,32 м2',
+            'square-live': '25,72 м2'
+            },
+            'Трёхкомнатная квартира1': {
+            'tit': 'Трёхкомнатная квартира',
             'category' : 'three',
-            'fot' : '/img/12.png',
-            'square-all': '6',
-            'square-live': '7'
+            'fot' : '/img/apartments/threeroom/56-50.png',
+            'square-all': '56,50 м2',
+            'square-live': '25,49 м2'
+            },
+            'Трёхкомнатная квартира2': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/56-80.png',
+            'square-all': '56,80 м2',
+            'square-live': '29,18 м2'
+            },
+            'Трёхкомнатная квартира3': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/57-34.png',
+            'square-all': '57,34 м2',
+            'square-live': '29,21 м2'
+            },
+            'Трёхкомнатная квартира4': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/60-74.png',
+            'square-all': '60,74 м2',
+            'square-live': '34,07 м2'
+            },
+            'Трёхкомнатная квартира5': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/61-61.png',
+            'square-all': '61,61 м2',
+            'square-live': '34,21 м2'
+            },
+            'Трёхкомнатная квартира6': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/64-77.png',
+            'square-all': '64,77 м2',
+            'square-live': '38,39 м2'
+            },
+            'Трёхкомнатная квартира7': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/75-20.png',
+            'square-all': '75,20 м2',
+            'square-live': '39,77 м2'
+            },
+            'Трёхкомнатная квартира8': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/75-93.png',
+            'square-all': '75,93 м2',
+            'square-live': '37,82 м2'
+            },
+            'Трёхкомнатная квартира9': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/76-21.png',
+            'square-all': '76,21 м2',
+            'square-live': '36,88 м2'
+            },
+            'Трёхкомнатная квартира10': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/84-05.png',
+            'square-all': '84,05 м2',
+            'square-live': '40,14 м2'
+            },
+            'Трёхкомнатная квартира11': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/87-12.png',
+            'square-all': '87,12 м2',
+            'square-live': '35,26 м2'
+            },
+            'Трёхкомнатная квартира12': {
+            'tit': 'Трёхкомнатная квартира',
+            'category' : 'three',
+            'fot' : '/img/apartments/threeroom/100-68.png',
+            'square-all': '100,68 м2',
+            'square-live': '41,48 м2'
+            },
+            'Четырёхкомнатная квартира1': {
+            'tit': 'Четырёхкомнатная квартира',
+            'category' : 'four',
+            'fot' : '/img/apartments/fourroom/77-10.png',
+            'square-all': '77,10 м2',
+            'square-live': '46,26 м2'
+            },
+            'Четырёхкомнатная квартира2': {
+            'tit': 'Четырёхкомнатная квартира',
+            'category' : 'four',
+            'fot' : '/img/apartments/fourroom/92-88.png',
+            'square-all': '92,88 м2',
+            'square-live': '43,43 м2'
+            },
+            'Пентхаус1': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/56-50.png',
+            'square-all': '56,50 м2',
+            'square-live': '25,49 м2'
+            },
+            'Пентхаус2': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/60-74.png',
+            'square-all': '60,74 м2',
+            'square-live': '34,07 м2'
+            },
+            'Пентхаус3': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/61-61.png',
+            'square-all': '61,61 м2',
+            'square-live': '34,21 м2'
+            },
+            'Пентхаус4': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/64-77.png',
+            'square-all': '64,77 м2',
+            'square-live': '38,93 м2'
+            },
+            'Пентхаус5': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/65-32.png',
+            'square-all': '65,32 м2',
+            'square-live': '25,72 м2'
+            },
+            'Пентхаус6': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/75-20.png',
+            'square-all': '75,20 м2',
+            'square-live': '39,77 м2'
+            },
+            'Пентхаус7': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/75-93.png',
+            'square-all': '75,93 м2',
+            'square-live': '37,82 м2'
+            },
+            'Пентхаус8': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/76-21.png',
+            'square-all': '76,21 м2',
+            'square-live': '36,88 м2'
+            },
+            'Пентхаус9': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/77-10.png',
+            'square-all': '77,10 м2',
+            'square-live': '46,26 м2'
+            },
+            'Пентхаус10': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/84-05.png',
+            'square-all': '84,05 м2',
+            'square-live': '40,14 м2'
+            },
+            'Пентхаус11': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/87-12.png',
+            'square-all': '87,12 м2',
+            'square-live': '35,26 м2'
+            },
+            'Пентхаус12': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/92-88.png',
+            'square-all': '92,88 м2',
+            'square-live': '43,43 м2'
+            },
+            'Пентхаус13': {
+            'tit': 'Пентхаус',
+            'category' : 'penthaus',
+            'fot' : '/img/apartments/penthaus/100-68.png',
+            'square-all': '100,68 м2',
+            'square-live': '41,48 м2'
             }
             }
           ul.planing-view__list.grid
             each info, title in planings
               li.wp-project.planing-view__item(class= info['category'], data-category= info['category'])
                 .view
-                  h2.view__title= title
+                  h2.view__title= info['tit']
                   .view__pic
-                    img.view__img(src= info['fot'])
+                    img.view__img(src= info['fot'] id="chromeimg")
                   .view__info
                     p.view__parag.view__parag_all= "Общая площадь: " + info['square-all']
                   .view__info

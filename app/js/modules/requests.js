@@ -82,7 +82,7 @@ module.exports = {
           } else {
             console.log("good job");
             console.log(data.status);
-            form.find('.suc-alert').text('Запрос отправлен').show();
+            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
           }
         },
         error: function() {
@@ -125,7 +125,7 @@ module.exports = {
           } else {
             console.log("good job");
             console.log(data.status);
-            form.find('.suc-alert').text('Запрос отправлен').show();
+            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
           }
         },
         error: function() {
@@ -166,7 +166,7 @@ module.exports = {
           } else {
             console.log("good job");
             console.log(data.status);
-            form.find('.suc-alert').text('Запрос отправлен').show();
+            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
           }
         },
         error: function() {
@@ -187,15 +187,17 @@ module.exports = {
       console.log(data);
 
         var data = {
-          first: $('[name=first]').val(),
-          second: $('[name=second]').val(),
-          third: $('[name=third]').val(),
-          name: $('[name=name]').closest('.everymonth-pay__input').val(),
-          call: $('[name=call]').closest('.everymonth-pay__input').val()
+          startpay: $('[name=startpay]').val(),
+          typehome: $('[name=typehome]').val(),
+          timelimit: $('[name=timelimit]').val()
         };
 
+     var formId = form.attr('id');
 
-      console.log(data);
+      alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
+
+
+      console.log(alldata);
 
       jQuery.ajax({
         url: 'static/email.php',
@@ -211,7 +213,7 @@ module.exports = {
           } else {
             console.log("good job");
             console.log(data.status);
-            form.find('.suc-alert').text('Запрос отправлен').show();
+            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
           }
         },
         error: function() {
