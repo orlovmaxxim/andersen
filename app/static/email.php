@@ -38,6 +38,11 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	. "Вопрос: $message \r\n"
 	. "Выбран менеджер: $manager \r\n"
 	. "Выбрана планнировка: $plan \r\n"
+	. "---------------------------- \r\n"
+	. "Информация о способе покупки квартир \r\n"
+	. "Первоначальный взнос: " . htmlspecialchars($_POST["startpay"]) . "\r\n"
+	. "Тип квартиры: " . htmlspecialchars($_POST["typehome"]) . "\r\n"
+	. "Срок: " . htmlspecialchars($_POST["timelimit"]) . "\r\n"
 	;
 	
 	function mime_header_encode($str, $data_charset, $send_charset) { // функция прeoбрaзoвaния зaгoлoвкoв в вeрную кoдирoвку
