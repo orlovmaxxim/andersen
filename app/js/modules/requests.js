@@ -193,8 +193,9 @@ module.exports = {
         };
 
      var formId = form.attr('id');
+      console.log(formId);
 
-      alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
+      // alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
 
 
       console.log(alldata);

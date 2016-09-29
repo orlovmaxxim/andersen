@@ -24,6 +24,8 @@ block tab-content
           img.brands__img(src="/img/uralsib@1x.png")
 
     form.everymonth-pay(id="ipoteka" action="email.php" role="form" method="post")
+      .suc-alert
+      .error-alert
       .everymonth-pay__inputs
         select.everymonth-pay__select(id='start-pay' name='startpay' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Первоначальный взнос
@@ -47,6 +49,8 @@ block tab-content
     h2.methods-block__title
       | Получите рассчёт ежемесячного платежа по рассрочке
     form.everymonth-pay(id="rass" action="email.php" role="form" method="post")
+      .suc-alert
+      .error-alert
       .everymonth-pay__inputs
         select.everymonth-pay__select(id='start-pay' name='startpay' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 20%")
           option(value='hide') Первоначальный взнос
@@ -70,6 +74,8 @@ block tab-content
     h2.methods-block__title
       | Узнайте, как воспользоваться материнским капиталом
     form.everymonth-pay(id="mat-kap" action="email.php" role="form" method="post")
+      .suc-alert
+      .error-alert
       .everymonth-pay__inputs
         input.everymonth-pay__input(name="name" placeholder="Ваше имя" type="text")
         input.everymonth-pay__input(name="tel" placeholder="Ваш телефон" type="text")
