@@ -160,7 +160,7 @@ $desktop: new-breakpoint(max-width 1400px 12);
   li.wp-project {
     @include span-columns(4);
     @include omega(3n);
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
     @include media($mobile) {
       @include span-columns(12);
       @include omega(1n);

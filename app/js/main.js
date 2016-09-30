@@ -119,16 +119,45 @@ $(document).ready(function(){
     transitionDuration: '0s'
   });
 
+
+  var bbb = function() {
+
+  }
+
   $('#all').click(function(){
     $('.grid').isotope({ filter: '*' });
+
   });
 
   $('#one').click(function(){
     $('.grid').isotope({ filter: '.one' });
+
+    $('.planing-view__item').each(function(indx, elem) {
+      console.log('i am here');
+      console.log($(this));
+      console.log($(this).css('display'));
+      if($(this).css('display') !== 'none') {
+        $(this).addClass('disp');
+      } else {
+        $(this).css('display','none');
+        $(this).removeClass('disp');
+      }
+    });
   });
 
   $('#two').click(function(){
     $('.grid').isotope({ filter: '.two' });
+
+    $('.planing-view__item').each(function(indx, elem) {
+      console.log($(this));
+      console.log($(this).css('display'));
+      if($(this).css('display') !== 'none') {
+        $(this).addClass('disp');
+      } else {
+        $(this).css('display','none');
+        $(this).removeClass('disp');
+      }
+    });
   });
 
   $('#three').click(function(){

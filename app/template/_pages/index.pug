@@ -379,7 +379,7 @@ block content
             },
             'Пентхаус5': {
             'tit': 'Пентхаус',
-            'category' : 'penthaus',
+            'category' : 'penthaus two',
             'fot' : '/img/apartments/penthaus/65-32.png',
             'square-all': '65,32 м2',
             'square-live': '25,72 м2'
@@ -443,7 +443,7 @@ block content
             }
           ul.planing-view__list.grid
             each info, title in planings
-              li.wp-project.planing-view__item(class= info['category'], data-category= info['category'])
+              li.wp-project.planing-view__item.disp(class= info['category'], data-category= info['category'])
                 .view
                   h2.view__title= info['tit']
                   .view__pic
