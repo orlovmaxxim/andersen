@@ -8,6 +8,14 @@ var addition = require('./modules/additionForm.js');
 var plan = require('./modules/planningForm.js');
 require('./modules/select.js')();
 
+$(window).resize(function(){
+  var burger = $('.header__burg');
+  if(burger.hasClass('menu-on')) {
+    burger.toggleClass('menu-on');
+    $('.mobile-navigation').fadeOut();
+  }
+});
+
 $(document).ready(function(){
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
@@ -132,32 +140,18 @@ $(document).ready(function(){
   $('#one').click(function(){
     $('.grid').isotope({ filter: '.one' });
 
-    $('.planing-view__item').each(function(indx, elem) {
-      console.log('i am here');
-      console.log($(this));
-      console.log($(this).css('display'));
-      if($(this).css('display') !== 'none') {
-        $(this).addClass('disp');
-      } else {
-        $(this).css('display','none');
-        $(this).removeClass('disp');
-      }
-    });
+    // $('.planing-view__item').each(function(indx, elem) {
+    //   if($(this).css('display') !== 'none') {
+    //     $(this).addClass('disp');
+    //   } else {
+    //     $(this).css('display','none');
+    //     $(this).removeClass('disp');
+    //   }
+    // });
   });
 
   $('#two').click(function(){
     $('.grid').isotope({ filter: '.two' });
-
-    $('.planing-view__item').each(function(indx, elem) {
-      console.log($(this));
-      console.log($(this).css('display'));
-      if($(this).css('display') !== 'none') {
-        $(this).addClass('disp');
-      } else {
-        $(this).css('display','none');
-        $(this).removeClass('disp');
-      }
-    });
   });
 
   $('#three').click(function(){

@@ -138,6 +138,14 @@ block content
         .planing-view.wp-project-wrapper
           -
             var planings = {
+
+            'Однокомнатная квартираt': {
+            'tit': 'Однокомнатная квартира',
+            'category' : 'one',
+            'fot' : '/img/apartments/oneroom/30-03.png',
+            'square-all': '30,03 м2',
+            'square-live': '10,31 м2'
+            },
             'Однокомнатная квартира1': {
                 'tit': 'Однокомнатная квартира',
                 'category' : 'one',
@@ -214,6 +222,13 @@ block content
             'fot' : '/img/apartments/oneroom/40-17.png',
             'square-all': '40,17 м2',
             'square-live': '12,20 м2'
+            },
+            'Двухкомнатная квартираt': {
+            'tit': 'Двухкомнатная квартира',
+            'category' : 'two',
+            'fot' : '/img/apartments/tworoom/49-89.png',
+            'square-all': '49,89 м2',
+            'square-live': '21,96 м2'
             },
 
             'Двухкомнатная квартира1': {
@@ -489,7 +504,7 @@ block content
     .container-main
       h2.title Способы покупки квартир
       include ../_includes/_tab1
-  section.infoblock(id="contacts")
+  section.infoblock
     .container-main
       .documents-block
         h2.subtitle Документация
@@ -499,7 +514,7 @@ block content
               a.documents-block__link(href="/static/building_permission.pdf", target="_blank") Разрешение на строительство
             li.documents-block__item
               a.documents-block__link(href="/static/project_declaration.pdf", target="_blank") Проектная декларация
-      .contacts-block
+      .contacts-block(id="contacts")
         h2.subtitle Контакты
         .contacts-block__container
           .contacts-block__adress

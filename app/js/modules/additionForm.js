@@ -24,7 +24,7 @@ module.exports = {
       });
 
     });
-    $('.popup-header__close').on('click touchstart', function(){
+    $('#addition-form .popup-header__close').on('click touchstart', function(){
        popupBlock.close();
     });
 

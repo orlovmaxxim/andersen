@@ -2,7 +2,7 @@ module.exports = {
   showPlanningForm: function() {
 
     var popupBlock = $('#planing-form');
-    $('.view__btn').on('click touchstart', function(e){
+    $('.view').on('click touchstart', function(e){
       e.preventDefault();
 
       var $this = $(this);
@@ -44,7 +44,8 @@ module.exports = {
 
 
       $('#planing-form .popup-header__close').on('click touchstart', function(){
-        bPopup().close();
+        console.log('I am click');
+        popupBlock.close();
       });
     });
 

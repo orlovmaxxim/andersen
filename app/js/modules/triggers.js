@@ -97,5 +97,9 @@ module.exports = {
         $('.mobile-navigation').fadeOut();
       }
       });
+    $('.mobile-navigation__link').click(function(){
+      $('.header__burg').toggleClass('menu-on');
+      $('.mobile-navigation').fadeOut();
+    })
   }
 };

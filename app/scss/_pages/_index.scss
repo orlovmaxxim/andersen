@@ -130,6 +130,7 @@
     }
     @include breakpoint(small) {
       font-size: 20px;
+      padding: 0;
     }
     @include breakpoint(x-small) {
       padding: 0;
@@ -447,6 +448,7 @@
 // slick slider
 
 #slick-p {
+  margin-top: -25px;
   background-image: url("/img/slide-left.png");
   width: 69px;
   height: 69px;
@@ -462,19 +464,30 @@
     background-size: 45px 45px;
   }
   @include breakpoint(small) {
-    width: 25px;
-    height: 25px;
-    background-size: 25px 25px;
+    width: 33px;
+    height: 33px;
+    background-size: 33px 33px;
+  }
+  @include media($mobile) {
+    width: 27px;
+    height: 27px;
+    background-size: 27px 27px;
+  }
+  @include media($addit) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
   }
   @include breakpoint(x-small) {
     left: 7px;
-    width: 37px;
-    height: 37px;
-    background-size: 37px 37px;
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px;
   }
 }
 
 #slick-n {
+  margin-top: -25px;
   background-image: url("/img/slide-right.png");
   width: 69px;
   height: 69px;
@@ -489,15 +502,26 @@
     background-size: 45px 45px;
   }
   @include breakpoint(small) {
-    width: 25px;
-    height: 25px;
-    background-size: 25px 25px;
+    width: 33px;
+    height: 33px;
+    background-size: 33px 33px;
+  }
+  @include media($mobile) {
+    width: 27px;
+    height: 27px;
+    background-size: 27px 27px;
+  }
+  @include media($addit) {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
   }
   @include breakpoint(x-small) {
     right: 26px;
-    width: 37px;
-    height: 37px;
-    background-size: 37px 37px;
+    width: 50px;
+    height: 50px;
+    margin-right: -15px;
+    background-size: 50px 50px;
   }
 }
 
@@ -567,7 +591,8 @@
 }
 
 .contacts-block {
-  height: 173px;
+  //height: 173px;
+  margin-bottom: 40px;
   @include breakpoint(small) {
     height: auto;
     margin-bottom: 60px;
@@ -909,5 +934,41 @@
   span {
     font-size: 16px;
     vertical-align: top;
+  }
+}
+
+// id anchors
+
+#fotogal {
+  &:before {
+    display: block;
+    content: "";
+    height: 70px;
+    margin: -70px 0 0;
+  }
+}
+
+#prices {
+  &:before {
+    display: block;
+    content: "";
+    height: 220px;
+    margin: -220px 0 0;
+  }
+}
+
+#buy {
+  padding-top: 55px;
+  margin-top: -55px;
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+}
+
+#contacts {
+  &:before {
+    display: block;
+    content: "";
+    height: 100px;
+    margin: -100px 0 0;
   }
 }
