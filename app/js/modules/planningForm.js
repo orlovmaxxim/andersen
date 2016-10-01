@@ -51,17 +51,19 @@ module.exports = {
 
   },
   activeBtn: function() {
-
+    
+    // document.addEventListener('touchstart', handler, {capture: true});
+    
     $('.planing-block__btn').on('click touchstart', function (e) {
       e.preventDefault();
 
       var $this = $(this);
 
-      if ($(this).hasClass('active')) {
+      if ($this.hasClass('active')) {
         return;
       }
       $('.planing-block__list').find('.planing-block__btn.active').removeClass('active');
-      $(this).addClass('active');
+      $this.addClass('active');
     });
   }
 

@@ -972,3 +972,13 @@
     margin: -100px 0 0;
   }
 }
+
+.light-error {
+  color: red;
+  border: solid 1px red; }
+
+// outline for slider in chrome
+
+.slick-slide {
+  outline: none;
+}

@@ -84,6 +84,7 @@
   }
 }
 
+
 .view__btn {
   display: block;
   padding: 5px 60px;
@@ -103,6 +104,12 @@
   height: 60%;
   text-align: center; // for IE11
   //margin: 0 auto;
+  @include breakpoint(small) {
+    height: 50%;
+  }
+  @include breakpoint(x-small) {
+    height: 45%;
+  }
 }
 
 .view__img {

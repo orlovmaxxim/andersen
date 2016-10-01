@@ -6,6 +6,7 @@ var questionManagerForm = require('./modules/questionManagerForm.js');
 var consult = require('./modules/managerConsult.js');
 var addition = require('./modules/additionForm.js');
 var plan = require('./modules/planningForm.js');
+
 require('./modules/select.js')();
 
 $(window).resize(function(){
@@ -128,10 +129,6 @@ $(document).ready(function(){
   });
 
 
-  var bbb = function() {
-
-  }
-
   $('#all').click(function(){
     $('.grid').isotope({ filter: '*' });
 
@@ -212,8 +209,15 @@ $(document).ready(function(){
 
   // end isotope
 
-  // requests
 
+  // delete error border of validation
+  
+  $('form').on('keydown', '.light-error', function(){
+    $(this).removeClass('light-error');
+  });
+
+  // requests
+  
   request.callForm();
   request.tabSend();
   request.additionSend();
@@ -235,6 +239,35 @@ $(document).ready(function(){
   //planning form
 
   plan.showPlanningForm();
+
+
+  // functions is mobile
+  var isMobile = {
+    Android: function() {
+      return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+      return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+      return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+      return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+      return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+  };
+
+  if (isMobile.any()) {
+    console.log('mobile');
+    document.addEventListener('touchstart', handler, true);
+  }
   plan.activeBtn();
+
 
 });

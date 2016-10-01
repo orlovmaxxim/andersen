@@ -1,3 +1,4 @@
+var valid = require('./validate.js');
 module.exports = {
   callForm: function () {
     $('.callform').on('submit', function(e) {
@@ -11,31 +12,34 @@ module.exports = {
       //   tel: $('[name=tel]').closest('.callform__input').val()
       // };
 
-      $.ajax({
-        url: 'static/email.php',
-        data: alldata,
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function() {
-          console.log(alldata);
-        },
-        success: function(data) {
-          if(data.error) {
-            console.log('data error');
-            console.log(data.error);
-            
-          } else {
-            console.log("good job");
-            console.log(data.sucess);
-            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
-          }
-        },
-        error: function() {
-          form.trigger('reset');
-          console.log("last error");
-          form.find('.error-alert').text('Ошибка на сервере').show();
-        }
-      });
+if(valid.validateForm(form)) {
+  $.ajax({
+    url: 'static/email.php',
+    data: alldata,
+    type: 'POST',
+    dataType: 'json',
+    beforeSend: function() {
+      console.log(alldata);
+    },
+    success: function(data) {
+      if(data.error) {
+        console.log('data error');
+        console.log(data.error);
+
+      } else {
+        console.log("good job");
+        console.log(data.sucess);
+        form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+      }
+    },
+    error: function() {
+      form.trigger('reset');
+      console.log("last error");
+      form.find('.error-alert').text('Ошибка на сервере').show();
+    }
+  });
+}
+
 
     })
   },
@@ -68,30 +72,31 @@ module.exports = {
       //   name: $('[name=name]').closest('.addition-manager-form__input').val(),
       //   call: $('[name=call]').closest('.addition-manager-form__input').val()
       // };
-
-      jQuery.ajax({
-        url: 'static/email.php',
-        data: alldata,
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function() {
-          console.log(alldata);
-        },
-        success: function(data) {
-          if(data.error) {
-            console.log('data error');
-          } else {
-            console.log("good job");
-            console.log(data.status);
-            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+      if(valid.validateForm(form)) {
+        jQuery.ajax({
+          url: 'static/email.php',
+          data: alldata,
+          type: 'POST',
+          dataType: 'json',
+          beforeSend: function() {
+            console.log(alldata);
+          },
+          success: function(data) {
+            if(data.error) {
+              console.log('data error');
+            } else {
+              console.log("good job");
+              console.log(data.status);
+              form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+            }
+          },
+          error: function() {
+            form.trigger('reset');
+            console.log("last error");
+            form.find('.error-alert').text('Ошибка на сервере').show();
           }
-        },
-        error: function() {
-          form.trigger('reset');
-          console.log("last error");
-          form.find('.error-alert').text('Ошибка на сервере').show();
-        }
-      });
+        });
+      }
     })
   },
 
@@ -111,30 +116,31 @@ module.exports = {
       console.log(data);
 
       alldata = alldata + data.manager;
-
-      jQuery.ajax({
-        url: 'static/email.php',
-        data: alldata,
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function() {
-          console.log(alldata);
-        },
-        success: function(data) {
-          if(data.error) {
-            console.log(data.error);
-          } else {
-            console.log("good job");
-            console.log(data.status);
-            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+      if(valid.validateForm(form)) {
+        jQuery.ajax({
+          url: 'static/email.php',
+          data: alldata,
+          type: 'POST',
+          dataType: 'json',
+          beforeSend: function() {
+            console.log(alldata);
+          },
+          success: function(data) {
+            if(data.error) {
+              console.log(data.error);
+            } else {
+              console.log("good job");
+              console.log(data.status);
+              form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+            }
+          },
+          error: function() {
+            form.trigger('reset');
+            console.log("last error");
+            form.find('.error-alert').text('Ошибка на сервере').show();
           }
-        },
-        error: function() {
-          form.trigger('reset');
-          console.log("last error");
-          form.find('.error-alert').text('Ошибка на сервере').show();
-        }
-      });
+        });
+      }
     })
   },
 
@@ -152,30 +158,31 @@ module.exports = {
       //   questionText: $('[name=desc]').closest('.question-manager-form__input').val()
       // };
       // console.log(data);
-
-      jQuery.ajax({
-        url: 'static/email.php',
-        data: alldata,
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function() {
-          console.log(alldata);
-        },
-        success: function(data) {
-          if(data.error) {
-            console.log('data error');
-          } else {
-            console.log("good job");
-            console.log(data.status);
-            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+      if(valid.validateForm(form)) {
+        jQuery.ajax({
+          url: 'static/email.php',
+          data: alldata,
+          type: 'POST',
+          dataType: 'json',
+          beforeSend: function() {
+            console.log(alldata);
+          },
+          success: function(data) {
+            if(data.error) {
+              console.log('data error');
+            } else {
+              console.log("good job");
+              console.log(data.status);
+              form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+            }
+          },
+          error: function() {
+            form.trigger('reset');
+            console.log("last error");
+            form.find('.error-alert').text('Ошибка на сервере').show();
           }
-        },
-        error: function() {
-          form.trigger('reset');
-          console.log("last error");
-          form.find('.error-alert').text('Ошибка на сервере').show();
-        }
-      });
+        });
+      }
     })
   },
 
@@ -200,30 +207,31 @@ module.exports = {
 
 
       console.log(alldata);
-
-      jQuery.ajax({
-        url: 'static/email.php',
-        data: alldata,
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function() {
-          console.log(data);
-        },
-        success: function(data) {
-          if(data.error) {
-            console.log('data error');
-          } else {
-            console.log("good job");
-            console.log(data.status);
-            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+      if(valid.validateForm(form)) {
+        jQuery.ajax({
+          url: 'static/email.php',
+          data: alldata,
+          type: 'POST',
+          dataType: 'json',
+          beforeSend: function() {
+            console.log(data);
+          },
+          success: function(data) {
+            if(data.error) {
+              console.log('data error');
+            } else {
+              console.log("good job");
+              console.log(data.status);
+              form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+            }
+          },
+          error: function() {
+            form.trigger('reset');
+            console.log("last error");
+            form.find('.error-alert').text('Ошибка на сервере').show();
           }
-        },
-        error: function() {
-          form.trigger('reset');
-          console.log("last error");
-          form.find('.error-alert').text('Ошибка на сервере').show();
-        }
-      });
+        });
+      }
     })
   },
 
@@ -252,31 +260,32 @@ module.exports = {
         // data: JSON.stringify(alldata),
         // type: 'POST',
         // contentType: 'application/json',
-
-      jQuery.ajax({
-        url: 'static/email.php',
-        data: alldata,
-        type: 'POST',
-        dataType: 'json',
-        beforeSend: function() {
-          console.log(alldata);
-        },
-        success: function(data) {
-          if(data.error) {
-            console.log('data error');
-          } else {
-            console.log("good job");
-            console.log(data.status);
-            //$('#planing-form').fadeOut();
-            form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+      if(valid.validateForm(form)) {
+        jQuery.ajax({
+          url: 'static/email.php',
+          data: alldata,
+          type: 'POST',
+          dataType: 'json',
+          beforeSend: function() {
+            console.log(alldata);
+          },
+          success: function(data) {
+            if(data.error) {
+              console.log('data error');
+            } else {
+              console.log("good job");
+              console.log(data.status);
+              //$('#planing-form').fadeOut();
+              form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+            }
+          },
+          error: function() {
+            form.trigger('reset');
+            console.log("last error");
+            form.find('.error-alert').text('Ошибка на сервере').show();
           }
-        },
-        error: function() {
-          form.trigger('reset');
-          console.log("last error");
-          form.find('.error-alert').text('Ошибка на сервере').show();
-        }
-      });
+        });
+      }
     })
   }
 
