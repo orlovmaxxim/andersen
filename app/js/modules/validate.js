@@ -6,11 +6,9 @@ module.exports = {
           'input[type="radio"]'
         ),
         isValid = true;
-
-      // выделим шаблон проверки почты
+    
       var patternMail =  /\w+@\w+\.\w{2,4}/;
-
-      // проходимя по каждому найденному полю
+    
       $.each(requiredInputs, function(index, val) {
         var element = $(val),
           val = element.val(),
@@ -19,6 +17,9 @@ module.exports = {
         if((!val.length) || (val === placeholder)) {
           isValid = false;
           element.addClass('light-error');
+          (element.attr('name') == 'name') ? (element.next('span').text('Не указано имя')):
+          (element.attr('name') == 'tel') ? (element.next('span').text('Не указан телефон')):
+          (element.siblings('span').text('Не указан email адрес'));
         } else if ( ( element.hasClass('e-mail') ) && ( !patternMail.test(val) ) ) {
           isValid = false;
           element.addClass('light-error');

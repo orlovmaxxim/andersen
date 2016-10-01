@@ -973,9 +973,23 @@
   }
 }
 
+// validation
+
 .light-error {
   color: red;
-  border: solid 1px red; }
+  border: solid 1px _palette(base, myred);
+}
+
+.fileupload-form__errname {
+  position: relative;
+  top: -17px;
+  left: 25px;
+  right: 0;
+  font-size: 0.7em;
+  color: _palette(base, myred);
+}
+
+
 
 // outline for slider in chrome
 

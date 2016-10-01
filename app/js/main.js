@@ -211,9 +211,10 @@ $(document).ready(function(){
 
 
   // delete error border of validation
-  
+
   $('form').on('keydown', '.light-error', function(){
     $(this).removeClass('light-error');
+    $(this).siblings('span').text(' ');
   });
 
   // requests
