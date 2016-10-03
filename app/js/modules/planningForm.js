@@ -2,7 +2,7 @@ module.exports = {
   showPlanningForm: function() {
 
     var popupBlock = $('#planing-form');
-    $('.view').on('click touchstart', function(e){
+    $('.view__btn').on('click touchstart', function(e){
       e.preventDefault();
 
       var $this = $(this);
