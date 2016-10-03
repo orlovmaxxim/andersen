@@ -768,8 +768,11 @@
 // liquid blocks
 
 .liquid-blocks {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  //height: 286px;
   height: 252px;
   padding: 5px 0;
 
@@ -785,6 +788,8 @@
   }
 
   @include breakpoint(small) {
+    //-webkit-box-orient: none;
+    display: -webkit-box;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -825,6 +830,7 @@
   @include breakpoint(small) {
     width: 100%;
     height: 100%;
+    flex: 1;
   }
   @include breakpoint(x-small) {
     width: 100%;
