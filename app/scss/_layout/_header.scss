@@ -13,8 +13,9 @@
   .container-main {
     background-color: #fff;
     padding: 13px 0 10px 0;
+
     @include breakpoint(x-small) {
-      padding: 13px 16px 13px 16px;
+      //padding: 13px 16px 13px 16px;
     }
   }
 
@@ -90,6 +91,10 @@
   @include breakpoint(small) {
     width: auto;
 		padding-right: 2.5%;
+  }
+
+  .mobile-call {
+    margin-top: -8px;
   }
 }
 
