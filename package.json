@@ -18,6 +18,7 @@
   "homepage": "https://github.com/keen-on-design/boilerplate#readme",
   "devDependencies": {
     "browser-sync": "^2.14.0",
+    "file-exists": "^2.0.0",
     "fs-utils": "^0.7.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-autoprefixer": "3.1.0",

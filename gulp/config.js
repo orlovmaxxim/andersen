@@ -1,8 +1,8 @@
 'use strict';
 
 var root = './',
-    src  = './app/',
-    dest = './build/';
+  src  = './app/',
+  dest = './build/';
 
 module.exports = {
 
@@ -12,8 +12,8 @@ module.exports = {
 
     app : {
         favicon : {
-            location    : src + 'favicon/favicon.png',
-            destination : dest,
+            location    : src + 'favicon/master.png',
+            destination : src + 'favicon/',
             dataFile    : root + 'favicon.json',
             basedir     : '/',
             template    : '_favicon.pug',
@@ -68,17 +68,12 @@ module.exports = {
     },
 
     fonts : {
-        location    : src  + 'fonts/Fonts/webfontkit2/**/*',
+        location    : src  + 'fonts/**/*.{ttf,woff,woff2,eof,svg}',
         destination : dest + 'fonts'
     },
 
-    static : {
-        location    : src  + 'static/**/*',
-        destination : dest + 'static'
-    },
-
     images: {
-        location    : src + 'img/**/*',
+        location    : src + 'images/**/*',
         destination : dest + 'img',
 
         config      : {

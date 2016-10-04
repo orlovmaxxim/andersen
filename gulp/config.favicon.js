@@ -1,9 +1,11 @@
 'use strict';
 
 module.exports = {
-    design : {
+    design: {
         ios: {
-            pictureAspect: 'noChange',
+            pictureAspect: 'backgroundAndMargin',
+            backgroundColor: '#ffffff',
+            margin: '35%',
             assets: {
                 ios6AndPriorIcons: false,
                 ios7AndLaterIcons: false,
@@ -14,7 +16,7 @@ module.exports = {
         desktopBrowser: {},
         windows: {
             pictureAspect: 'noChange',
-            backgroundColor: '#da532c',
+            backgroundColor: '#ffffff',
             onConflict: 'override',
             assets: {
                 windows80Ie10Tile: false,
@@ -27,10 +29,12 @@ module.exports = {
             }
         },
         androidChrome: {
-            pictureAspect: 'noChange',
+            pictureAspect: 'backgroundAndMargin',
+            margin: '25%',
+            backgroundColor: '#ffffff',
             themeColor: '#ffffff',
             manifest: {
-                name: 'test',
+                name: 'cradle.boilerplate',
                 display: 'standalone',
                 orientation: 'notSet',
                 onConflict: 'override',
@@ -43,7 +47,7 @@ module.exports = {
         },
         safariPinnedTab: {
             pictureAspect: 'silhouette',
-            themeColor: '#5bbad5'
+            themeColor: '#5b93d5'
         }
     },
     settings: {
