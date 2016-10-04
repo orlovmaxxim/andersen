@@ -25,6 +25,7 @@
     "bootstrap": "^4.0",
     "bpopup": "^0.11.0",
     "isotope": "^3.0.1",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "hammerjs": "^2.0.8"
   }
 }
