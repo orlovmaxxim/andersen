@@ -15,7 +15,7 @@ module.exports = {
             location    : src + 'favicon/master.png',
             destination : src + 'favicon/',
             dataFile    : root + 'favicon.json',
-            basedir     : '/',
+            basedir     : '',
             template    : '_favicon.pug',
 
             config      : require('./config.favicon.js')
@@ -68,12 +68,12 @@ module.exports = {
     },
 
     fonts : {
-        location    : src  + 'fonts/**/*.{ttf,woff,woff2,eof,svg}',
+        location    : src  + 'fonts/Fonts/webfontkit2/**/*.{ttf,woff,woff2,eof,svg,css}',
         destination : dest + 'fonts'
     },
 
     images: {
-        location    : src + 'images/**/*',
+        location    : src + 'img/**/*',
         destination : dest + 'img',
 
         config      : {
