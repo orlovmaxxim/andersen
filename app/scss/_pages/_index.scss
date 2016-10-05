@@ -271,6 +271,9 @@
 .allwidth-block {
   margin-bottom: 22px;
   background: transparent url("/img/allwidth-bg.jpg") no-repeat scroll center bottom / cover;
+  .title {
+    text-shadow: 1px 1px 10px #6e6a6a, 0 0 2px #6e6a6a;
+  }
 }
 
 .title {
