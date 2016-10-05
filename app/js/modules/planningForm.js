@@ -1,6 +1,5 @@
 module.exports = {
   showPlanningForm: function() {
-
     var popupBlock = $('#planing-form');
     $('.view__btn').on('click touchstart', function(e){
       e.preventDefault();
@@ -10,6 +9,7 @@ module.exports = {
       var dataCategory = $this.closest('.planing-view__item').attr('data-category');
       var view = $this.closest('.view');
       var title = view.find('h2').text();
+      var hiddenTitle = view.find('h3').text();
       var fotoPlan = view.find('img').attr('src');
       var squareAll = view.find('.view__parag_all').text();
       var squareLive = view.find('.view__parag_live').text();
@@ -19,11 +19,13 @@ module.exports = {
           var form = popupBlock.find('#planing-choose-form');
           var formFoto = form.find('.plan__foto').find('img');
           var formTitle = $('#planing-form').find('.popup-header__title');
+          var hiddenTitleContent = $('#planing-form').find('.planing-choose-form__title');
           var allsq = form.find('.allsq').find('span');
           var livesq = form.find('.livesq').find('span');
 
           formFoto.attr("src", fotoPlan);
           formTitle.text(title);
+          hiddenTitleContent.text(hiddenTitle);
           allsq.text(squareAll);
           livesq.text(squareLive);
 
@@ -44,7 +46,6 @@ module.exports = {
 
 
       $('#planing-form .popup-header__close').on('click touchstart', function(){
-        console.log('I am click');
         popupBlock.close();
       });
     });

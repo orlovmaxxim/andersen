@@ -97,6 +97,15 @@
   border: 0 none;
   color: #fff;
   border-radius: 5px;
+  @include media($planing-middle) {
+    padding: 5px 50px;
+  }
+  @include media($planing-small) {
+    padding: 5px 39px;
+  }
+  @include media($mobile) {
+    padding: 5px 60px;
+  }
 }
 
 .view__pic {
@@ -104,7 +113,16 @@
   height: 60%;
   text-align: center; // for IE11
   //margin: 0 auto;
-  @include breakpoint(small) {
+  @include media($planing-size) {
+    height: 50%;
+  }
+  @include media($planing-middle) {
+    height: 45%;
+  }
+  @include media($planing-small) {
+    height: 39%;
+  }
+  @include media($mobile) {
     height: 50%;
   }
   @include breakpoint(x-small) {

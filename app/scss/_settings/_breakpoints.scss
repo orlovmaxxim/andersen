@@ -11,6 +11,11 @@ $breakpoints: (
 
 // addition breakpoints from bourbon neat
 $addit: new-breakpoint(max-width 585px 12); // for slider btns
+///--for plannings--///
+$planing-size: new-breakpoint(max-width 1100px 12);
+$planing-middle: new-breakpoint(max-width 920px 12);
+$planing-small: new-breakpoint(max-width 850px 12);
+///----///
 $mobile: new-breakpoint(max-width 700px 12);
 $tablet: new-breakpoint(max-width 900px 12);
 $desktop: new-breakpoint(max-width 1400px 12);

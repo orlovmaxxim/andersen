@@ -19,22 +19,16 @@ if(valid.validateForm(form)) {
     type: 'POST',
     dataType: 'json',
     beforeSend: function() {
-      console.log(alldata);
     },
     success: function(data) {
       if(data.error) {
-        console.log('data error');
-        console.log(data.error);
 
       } else {
-        console.log("good job");
-        console.log(data.sucess);
         form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
       }
     },
     error: function() {
       form.trigger('reset');
-      console.log("last error");
       form.find('.error-alert').text('Ошибка на сервере').show();
     }
   });
@@ -79,20 +73,15 @@ if(valid.validateForm(form)) {
           type: 'POST',
           dataType: 'json',
           beforeSend: function() {
-            console.log(alldata);
           },
           success: function(data) {
             if(data.error) {
-              console.log('data error');
             } else {
-              console.log("good job");
-              console.log(data.status);
               form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
             }
           },
           error: function() {
             form.trigger('reset');
-            console.log("last error");
             form.find('.error-alert').text('Ошибка на сервере').show();
           }
         });
@@ -106,14 +95,12 @@ if(valid.validateForm(form)) {
 
       var form = $(this),
         alldata = form.serialize();
-      console.log(data);
 
       var data = {
         name: $('[name=name]').closest('.manager-consult-form__input').val(),
         call: $('[name=call]').closest('.manager-consult-form__input').val(),
         manager: "Консультация " + $('#consult-form').find('h2 span').text()
       };
-      console.log(data);
 
       alldata = alldata + data.manager;
       if(valid.validateForm(form)) {
@@ -123,20 +110,15 @@ if(valid.validateForm(form)) {
           type: 'POST',
           dataType: 'json',
           beforeSend: function() {
-            console.log(alldata);
           },
           success: function(data) {
             if(data.error) {
-              console.log(data.error);
             } else {
-              console.log("good job");
-              console.log(data.status);
               form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
             }
           },
           error: function() {
             form.trigger('reset');
-            console.log("last error");
             form.find('.error-alert').text('Ошибка на сервере').show();
           }
         });
@@ -165,20 +147,15 @@ if(valid.validateForm(form)) {
           type: 'POST',
           dataType: 'json',
           beforeSend: function() {
-            console.log(alldata);
           },
           success: function(data) {
             if(data.error) {
-              console.log('data error');
             } else {
-              console.log("good job");
-              console.log(data.status);
               form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
             }
           },
           error: function() {
             form.trigger('reset');
-            console.log("last error");
             form.find('.error-alert').text('Ошибка на сервере').show();
           }
         });
@@ -192,7 +169,6 @@ if(valid.validateForm(form)) {
 
       var form = $(this),
         alldata = form.serialize();
-      console.log(data);
 
         var data = {
           startpay: $('[name=startpay]').val(),
@@ -201,12 +177,10 @@ if(valid.validateForm(form)) {
         };
 
      var formId = form.attr('id');
-      console.log(formId);
 
       // alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
 
 
-      console.log(alldata);
       if(valid.validateForm(form)) {
         jQuery.ajax({
           url: 'static/email.php',
@@ -214,20 +188,15 @@ if(valid.validateForm(form)) {
           type: 'POST',
           dataType: 'json',
           beforeSend: function() {
-            console.log(data);
           },
           success: function(data) {
             if(data.error) {
-              console.log('data error');
             } else {
-              console.log("good job");
-              console.log(data.status);
               form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
             }
           },
           error: function() {
             form.trigger('reset');
-            console.log("last error");
             form.find('.error-alert').text('Ошибка на сервере').show();
           }
         });
@@ -241,7 +210,6 @@ if(valid.validateForm(form)) {
 
       var form = $(this),
          alldata = form.serialize();
-      console.log(alldata);
 
       var data = {
         name: $('[name=name]').closest('.planing-choose-form__input').val(),
@@ -254,7 +222,6 @@ if(valid.validateForm(form)) {
       alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
 
 
-      console.log(data);
 
         // url: 'static/email.php',
         // data: JSON.stringify(alldata),
@@ -267,21 +234,16 @@ if(valid.validateForm(form)) {
           type: 'POST',
           dataType: 'json',
           beforeSend: function() {
-            console.log(alldata);
           },
           success: function(data) {
             if(data.error) {
-              console.log('data error');
             } else {
-              console.log("good job");
-              console.log(data.status);
               //$('#planing-form').fadeOut();
               form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
             }
           },
           error: function() {
             form.trigger('reset');
-            console.log("last error");
             form.find('.error-alert').text('Ошибка на сервере').show();
           }
         });

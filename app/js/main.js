@@ -238,7 +238,6 @@ $(document).ready(function(){
   addition.showForm();
 
   //planning form
-
   plan.showPlanningForm();
 
 
@@ -265,7 +264,6 @@ $(document).ready(function(){
   };
 
   if (isMobile.any()) {
-    console.log('mobile');
     document.addEventListener('touchstart', handler, true);
   }
   plan.activeBtn();
