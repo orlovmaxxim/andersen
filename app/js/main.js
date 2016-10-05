@@ -241,6 +241,7 @@ $(document).ready(function(){
   plan.showPlanningForm();
 
 
+
   // functions is mobile
   var isMobile = {
     Android: function() {
