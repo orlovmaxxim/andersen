@@ -111,6 +111,8 @@ $(document).ready(function(){
   triggers.burgerMenu();
   tabs.init();
 
+  triggers.showMorePlan();
+
 
 
   // isotope - test
@@ -130,12 +132,15 @@ $(document).ready(function(){
 
 
   $('#all').click(function(){
+    // $( ".planing-view__item.disp.one:nth-child(n+4)" ).css("display", "none");
     $('.grid').isotope({ filter: '*' });
+    $('.wp-project-wrapper').css('height', 402);
 
   });
 
   $('#one').click(function(){
     $('.grid').isotope({ filter: '.one' });
+    $('.wp-project-wrapper').css('height', 402);
 
     // $('.planing-view__item').each(function(indx, elem) {
     //   if($(this).css('display') !== 'none') {
@@ -149,18 +154,28 @@ $(document).ready(function(){
 
   $('#two').click(function(){
     $('.grid').isotope({ filter: '.two' });
+    $('.wp-project-wrapper').css('height', 402);
+    $('.moreBtn').show();
   });
 
   $('#three').click(function(){
+
     $('.grid').isotope({ filter: '.three' });
+    $('.wp-project-wrapper').css('height', 402);
+    $('.moreBtn').show();
+
   });
 
   $('#four').click(function(){
     $('.grid').isotope({ filter: '.four' });
+    $('.wp-project-wrapper').css('height', 402);
+    $('.moreBtn').show();
   });
 
   $('#penthaus').click(function(){
     $('.grid').isotope({ filter: '.penthaus' });
+    $('.wp-project-wrapper').css('height', 402);
+    $('.moreBtn').show();
   });
 
 
@@ -268,6 +283,8 @@ $(document).ready(function(){
     document.addEventListener('touchstart', handler, true);
   }
   plan.activeBtn();
+
+
 
 
 });

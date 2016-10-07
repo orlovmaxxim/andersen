@@ -3,7 +3,7 @@
 }
 
 .planing-block__nav {
-  margin-bottom: 22px;
+  margin-bottom: 40px;
 }
 
 .planing-block__list {
@@ -197,7 +197,10 @@
 
 .wp-project-wrapper {
   @include outer-container;
-  padding-top: 1rem;
+  //padding-top: 1rem;
+  overflow: hidden;
+  height: 402px;
+  position: relative;
 
   li.wp-project {
     @include span-columns(4);
@@ -234,3 +237,30 @@
   font-size: 24px;
   text-align: center;
 }
+
+
+.planing-choose-form__main-title {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.moreBtn {
+  position: absolute;
+  color: #366bd7;
+  bottom: -7px;
+  left: 43%;
+  right: 0;
+  @include breakpoint(medium) {
+    left: 40%;
+  }
+  @include breakpoint(small) {
+    left: 37%;
+  }
+  @include media($addit) {
+    left: 30%;
+  }
+  @include breakpoint(x-small) {
+    left: 18%;
+  }
+}
+

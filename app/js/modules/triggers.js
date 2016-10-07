@@ -101,5 +101,66 @@ module.exports = {
       $('.header__burg').toggleClass('menu-on');
       $('.mobile-navigation').fadeOut();
     })
+  },
+
+  showMorePlan: function() {
+    $('.moreBtn').click(function(e){
+      var $this = $(this);
+      var filterBlock = $('.planing-block__list');
+      var index = 0;
+      var desktopK = 6462; // coefficient for each filter block
+      var mobileK = 6462; // coefficient for each filter block (for mobile - one column)
+      var k = 0;
+
+
+      e.preventDefault();
+
+      $('.planing-block__item').each(function(indx, elem) {
+        if($(this).children('.planing-block__btn').hasClass('active')) {
+          index = indx;
+        }
+      });
+
+      switch(index) {
+        case 0:
+          desktopK = 6462;
+          mobileK = 18586;
+          break;
+        case 1:
+          desktopK = 1618;
+          mobileK = 4850;
+          break;
+        case 2:
+          desktopK = 1214;
+          mobileK = 2830;
+          break;
+        case 3:
+          desktopK = 1618;
+          mobileK = 4850;
+          break;
+        case 4:
+          desktopK = 800;
+          mobileK = 1214;
+          break;
+        case 5:
+          desktopK = 2022;
+          mobileK = 5254;
+          break;
+      }
+      if($(window).width() < 701) {
+        k = mobileK;
+      } else {
+        k = desktopK;
+      }
+      var heightWrap = parseInt($('.wp-project-wrapper').css('height'));
+      heightWrap = heightWrap + 4;
+        var nHeight = heightWrap + 400;
+      if(nHeight <= k) {
+        //console.log(nHeight); // height check (for debug when change entity plans in block plan)
+        $('.wp-project-wrapper').css('height', nHeight);
+      } else {
+        $('.moreBtn').hide();
+      }
+    })
   }
 };
