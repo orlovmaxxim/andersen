@@ -55,7 +55,7 @@ module.exports = {
     
     // document.addEventListener('touchstart', handler, {capture: true});
     
-    $('.planing-block__btn').on('click touchstart', function (e) {
+    $('.planing-block__btn').click(function (e) {
       e.preventDefault();
 
       var $this = $(this);
@@ -66,6 +66,7 @@ module.exports = {
       $('.planing-block__list').find('.planing-block__btn.active').removeClass('active');
       $this.addClass('active');
     });
+
   }
 
 };

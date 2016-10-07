@@ -147,7 +147,8 @@ module.exports = {
           mobileK = 5254;
           break;
       }
-      if($(window).width() < 701) {
+      console.log(window.screen.width);
+      if(window.screen.width < 701) {
         k = mobileK;
       } else {
         k = desktopK;
@@ -156,7 +157,8 @@ module.exports = {
       heightWrap = heightWrap + 4;
         var nHeight = heightWrap + 400;
       if(nHeight <= k) {
-        //console.log(nHeight); // height check (for debug when change entity plans in block plan)
+        console.log(nHeight); // height check (for debug when change entity plans in block plan)
+        console.log(k);
         $('.wp-project-wrapper').css('height', nHeight);
       } else {
         $('.moreBtn').hide();

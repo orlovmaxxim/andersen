@@ -280,7 +280,7 @@ $(document).ready(function(){
   };
 
   if (isMobile.any()) {
-    document.addEventListener('touchstart', handler, true);
+    // document.addEventListener('touchstart', handler, true);
   }
   plan.activeBtn();
 
