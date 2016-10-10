@@ -6,6 +6,7 @@ var questionManagerForm = require('./modules/questionManagerForm.js');
 var consult = require('./modules/managerConsult.js');
 var addition = require('./modules/additionForm.js');
 var plan = require('./modules/planningForm.js');
+var freeForm = require('./modules/freeForm.js');
 
 require('./modules/select.js')();
 
@@ -18,6 +19,13 @@ $(window).resize(function(){
 });
 
 $(document).ready(function(){
+
+// hide all standard checkbox
+  [].forEach.call( document.querySelectorAll('.checkbox'), function(element) {
+    element.style.display = 'none';
+  });
+  freeForm.checkView();
+
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     nextButton: '.swiper-button-next',
@@ -229,7 +237,7 @@ $(document).ready(function(){
 
   $('form').on('keydown', '.light-error', function(){
     $(this).removeClass('light-error');
-    $(this).siblings('span').text(' ');
+    $(this).next('span').text(' ');
   });
 
   // requests
@@ -240,6 +248,7 @@ $(document).ready(function(){
   request.consultCall();
   request.questionSend();
   request.planSend();
+  request.freeformSend();
 
   // questions form
 

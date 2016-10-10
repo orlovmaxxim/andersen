@@ -249,6 +249,39 @@ if(valid.validateForm(form)) {
         });
       }
     })
+  },
+
+  freeformSend: function() {
+    $('.freeform').on('submit', function(e){
+      e.preventDefault();
+
+      var form = $(this),
+        alldata = form.serialize();
+
+      console.log(alldata);
+
+      if(valid.validateForm(form)) {
+        jQuery.ajax({
+          url: 'static/email.php',
+          data: alldata,
+          type: 'POST',
+          dataType: 'json',
+          beforeSend: function() {
+          },
+          success: function(data) {
+            if(data.error) {
+            } else {
+              //$('#planing-form').fadeOut();
+              form.find('.suc-alert').text('Спасибо, ваша заявка отправлена').show();
+            }
+          },
+          error: function() {
+            form.trigger('reset');
+            form.find('.error-alert').text('Ошибка на сервере').show();
+          }
+        });
+      }
+    })
   }
 
 };

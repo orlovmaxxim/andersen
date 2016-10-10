@@ -1,0 +1,59 @@
+.freeform-wrap
+  form.freeform(id="free-form" role="form" action="email.php" method="post")
+    .freeform__block-change
+      ul.checkboxs__list
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-ten" name="10" value="10")
+          label(for="checkbox-ten") 10
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-nine" name="9" value="9")
+          label(for="checkbox-nine") 9
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-eight" name="8" value="8")
+          label(for="checkbox-eight") 8
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-seven" name="7" value="7")
+          label(for="checkbox-seven") 7
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-six" name="6" value="6")
+          label(for="checkbox-six") 6
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-five" name="5" value="5")
+          label(for="checkbox-five") 5
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-four" name="4" value="4")
+          label(for="checkbox-four") 4
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-three" name="3" value="3")
+          label(for="checkbox-three") 3
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-two" name="2" value="2")
+          label(for="checkbox-two") 2
+        li.checkboxs__item
+          input.checkbox(type="checkbox" id="checkbox-one" name="1" value="1")
+          label(for="checkbox-one") 1
+      .freeform__view
+        img.freeform__pic(src="img/viewfoto1.jpg")
+        img.freeform__overlay.freeform__overlay-ten(id="10" src="img/16.png")
+        img.freeform__overlay.freeform__overlay-nine(id="9" src="img/8.png")
+        img.freeform__overlay.freeform__overlay-eight(id="8" src="img/12.png")
+        img.freeform__overlay.freeform__overlay-seven(id="7" src="img/2.png")
+        img.freeform__overlay.freeform__overlay-six(id="6" src="img/5.png")
+        img.freeform__overlay.freeform__overlay-five(id="5" src="img/8.png")
+        img.freeform__overlay.freeform__overlay-four(id="4" src="img/16.png")
+        img.freeform__overlay.freeform__overlay-three(id="3" src="img/12.png")
+        img.freeform__overlay.freeform__overlay-two(id="2" src="img/2.png")
+        img.freeform__overlay.freeform__overlay-one(id="1" src="img/5.png")
+    .freeform__block-question
+      select.freeform__select(id='entity-rooms' name='rooms' class='custom-select select2-hidden-accessible' aria-hidden="true" tabindex="-1" style="width: 100%")
+        option(value='hide') Выберите количество комнат
+        - var rooms = ['1', '2', '3', '4']
+        each room in rooms
+          option(value= room)= room
+      input.freeform__input(name="name" placeholder="Ваше имя" type="text")
+      span.fileupload-form__errname
+      input.freeform__input(name="tel" placeholder="Ваш телефон" type="tel")
+      span.fileupload-form__errname
+      input.freeform__input(name="email" placeholder="Ваш e-mail" type="email")
+      span.fileupload-form__errname
+      input.freeform__btn(name="" placeholder="Получить подборку квартир" type="submit")

@@ -19,7 +19,7 @@ module.exports = {
           element.addClass('light-error');
           (element.attr('name') == 'name') ? (element.next('span').text('Не указано имя')):
           (element.attr('name') == 'tel') ? (element.next('span').text('Не указан телефон')):
-          (element.siblings('span').text('Не указан email адрес'));
+          (element.next('span').text('Не указан email адрес'));
         } else if ( ( element.hasClass('e-mail') ) && ( !patternMail.test(val) ) ) {
           isValid = false;
           element.addClass('light-error');
