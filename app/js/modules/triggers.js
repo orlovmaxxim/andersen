@@ -147,7 +147,7 @@ module.exports = {
           mobileK = 5254;
           break;
       }
-      console.log(window.screen.width);
+      //console.log(window.screen.width);
       if(window.screen.width < 701) {
         k = mobileK;
       } else {
@@ -157,9 +157,12 @@ module.exports = {
       heightWrap = heightWrap + 4;
         var nHeight = heightWrap + 400;
       if(nHeight <= k) {
-        console.log(nHeight); // height check (for debug when change entity plans in block plan)
-        console.log(k);
+        //console.log(nHeight); // height check (for debug when change entity plans in block plan)
+        // console.log(k);
         $('.wp-project-wrapper').css('height', nHeight);
+        if(nHeight+400 > k) {
+          $('.moreBtn').hide();
+        }
       } else {
         $('.moreBtn').hide();
       }

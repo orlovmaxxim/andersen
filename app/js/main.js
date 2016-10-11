@@ -171,13 +171,15 @@ $(document).ready(function(){
   $('#all').click(function(){
     // $( ".planing-view__item.disp.one:nth-child(n+4)" ).css("display", "none");
     $('.grid').isotope({ filter: '*' });
-    $('.wp-project-wrapper').css('height', 402);
+    $('.wp-project-wrapper').css('height', 1202);
+    $('.moreBtn').show();
 
   });
 
   $('#one').click(function(){
     $('.grid').isotope({ filter: '.one' });
-    $('.wp-project-wrapper').css('height', 402);
+    $('.wp-project-wrapper').css('height', 1202);
+    $('.moreBtn').show();
 
     // $('.planing-view__item').each(function(indx, elem) {
     //   if($(this).css('display') !== 'none') {
@@ -206,7 +208,7 @@ $(document).ready(function(){
   $('#four').click(function(){
     $('.grid').isotope({ filter: '.four' });
     $('.wp-project-wrapper').css('height', 402);
-    $('.moreBtn').show();
+    $('.moreBtn').hide();
   });
 
   $('#penthaus').click(function(){
