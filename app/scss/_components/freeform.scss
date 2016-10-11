@@ -135,6 +135,7 @@
   border: 0 none;
   color: #fff;
   @include prefixer(border-radius, 5px, webkit ms spec);
+  cursor: pointer;
 }
 
 .freeform__block-question {

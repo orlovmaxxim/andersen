@@ -159,6 +159,7 @@
   border: 0 none;
   color: #fff;
   @include prefixer(border-radius, 5px, webkit ms spec);
+  cursor: pointer;
 
   @include breakpoint(small) {
     font-size: 16px;

@@ -163,9 +163,10 @@ module.exports = {
         if(nHeight+400 > k) {
           $('.moreBtn').hide();
         }
-      } else {
-        $('.moreBtn').hide();
       }
+      // else {
+      //   $('.moreBtn').hide();
+      // }
     })
   }
 };

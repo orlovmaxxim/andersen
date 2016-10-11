@@ -185,6 +185,7 @@
   font-size: 20px;
   color: #fff;
   @include prefixer(border-radius, 5px, webkit ms spec);
+  cursor: pointer;
 }
 
 .plan__img {

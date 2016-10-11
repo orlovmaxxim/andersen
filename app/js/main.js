@@ -193,27 +193,35 @@ $(document).ready(function(){
 
   $('#two').click(function(){
     $('.grid').isotope({ filter: '.two' });
-    $('.wp-project-wrapper').css('height', 402);
-    $('.moreBtn').show();
+    if(window.screen.width < 701) {
+      $('.wp-project-wrapper').css('height', 2802);
+    } else {
+      $('.wp-project-wrapper').css('height', 1202);
+    }
+    $('.moreBtn').hide();
   });
 
   $('#three').click(function(){
 
     $('.grid').isotope({ filter: '.three' });
-    $('.wp-project-wrapper').css('height', 402);
+    $('.wp-project-wrapper').css('height', 1202);
     $('.moreBtn').show();
 
   });
 
   $('#four').click(function(){
     $('.grid').isotope({ filter: '.four' });
-    $('.wp-project-wrapper').css('height', 402);
+    if(window.screen.width < 701) {
+      $('.wp-project-wrapper').css('height', 1202);
+    } else {
+      $('.wp-project-wrapper').css('height', 402);
+    }
     $('.moreBtn').hide();
   });
 
   $('#penthaus').click(function(){
     $('.grid').isotope({ filter: '.penthaus' });
-    $('.wp-project-wrapper').css('height', 402);
+    $('.wp-project-wrapper').css('height', 1202);
     $('.moreBtn').show();
   });
 
