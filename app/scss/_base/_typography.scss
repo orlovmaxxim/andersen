@@ -15,6 +15,11 @@ body, input, select, textarea {
 	line-height: 1.65;
 }
 
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 
 // Hyperlinks
 a {

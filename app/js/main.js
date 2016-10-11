@@ -20,6 +20,35 @@ $(window).resize(function(){
 
 $(document).ready(function(){
 
+  window.setTimeout(function () {
+    var popupBlock = $('#offer-form');
+    //$('.call__btn').on('click touchstart', function(e){
+    //e.preventDefault();
+
+
+    var form = popupBlock.find('.callform');
+
+    popupBlock.bPopup({
+      fadeSpeed: 'slow',
+      followSpeed: 1000,
+      modalColor: '#818e9b',
+      transition: 'slideIn',
+      transitionClose: 'slideBack',
+      escClose: true,
+      onClose: function () {
+        form.find('.response-alert').hide();
+        form.trigger('reset');
+        form.find('.suc-alert').css('display', 'none');
+        form.find('.error-alert').css('display', 'none');
+      }
+    });
+
+    popupBlock.find('.popup-header__close').on('click touchstart', function(){
+      popupBlock.close();
+    });
+  }, 3000);
+
+
 // hide all standard checkbox
   [].forEach.call( document.querySelectorAll('.checkbox'), function(element) {
     element.style.display = 'none';

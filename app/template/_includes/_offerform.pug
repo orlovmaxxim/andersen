@@ -1,0 +1,18 @@
+.question-form(id="offer-form")
+    .question-form__wrap.wide
+        header.popup-header--background
+            .popup-header__close &#10006;
+            h2.popup-header__title.background.accent Супер акция
+            h3.popup-header__title.background.subtitle
+                | ДО 1 ОКТЯБРЯ <br />
+                | кладовка в подарок<br />
+                | (подробности у менеджера)
+        form.callform(action="email.php" role="form" method="post")
+            .suc-alert
+            .error-alert
+            .callform__inner
+                input.callform__input(name="name" placeholder="Ваше имя" type="text")
+                span.fileupload-form__errname
+                input.callform__input(name="tel" placeholder="Ваш телефон" type="tel")
+                span.fileupload-form__errname
+                input.callform__btn(name="" value="Узнать подробнее" type="submit")

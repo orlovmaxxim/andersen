@@ -244,23 +244,20 @@
   margin: 10px 0;
 }
 
+.moreContainer {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 .moreBtn {
-  position: absolute;
-  color: #366bd7;
-  bottom: -7px;
-  left: 43%;
   right: 0;
-  @include breakpoint(medium) {
-    left: 40%;
-  }
-  @include breakpoint(small) {
-    left: 37%;
-  }
-  @include media($addit) {
-    left: 30%;
-  }
-  @include breakpoint(x-small) {
-    left: 18%;
+  border: 1px solid #DCE4EA;
+  color: #191919;
+  padding: .5em 1em;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #DCE4EA;
   }
 }
 
