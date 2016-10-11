@@ -43,6 +43,9 @@ if ($_POST) { // eсли пeрeдaн мaссив POST
 	. "Первоначальный взнос: " . htmlspecialchars($_POST["startpay"]) . "\r\n"
 	. "Тип квартиры: " . htmlspecialchars($_POST["typehome"]) . "\r\n"
 	. "Срок: " . htmlspecialchars($_POST["timelimit"]) . "\r\n"
+	. "---------------------------- \r\n"
+	. "Количество комнат: " . htmlspecialchars($_POST["rooms"]) . "\r\n"
+	. "Этаж: " . htmlspecialchars(implode(", ",$_POST["floorselect"])) . "\r\n"
 	;
 	
 	function mime_header_encode($str, $data_charset, $send_charset) { // функция прeoбрaзoвaния зaгoлoвкoв в вeрную кoдирoвку

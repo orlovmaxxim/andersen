@@ -28,9 +28,13 @@
 
 .checkboxs__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
   @include media($tablet) {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -45,9 +49,7 @@
 
 .freeform__view {
   position: relative;
-  width: 600px;
-  height: 300px;
-  background-color: gainsboro;
+  width: 100%;
   @include media($tablet) {
     font-size: 0;
     width: 100%;
@@ -66,22 +68,28 @@
 
 .checkbox + label {
   display: block;
-  width: 50px;
+  width: 40px;
   padding: 2px 0;
+  margin: 0 5px 5px 0;
+  border-radius: 4px;
   text-align: center;
-  background-color: #e74c3c;
-  color: #fff;
+  background-color: #fff;
+  color: _palette(base, myblue);
+  cursor: pointer;
+  border: 1px solid lighten(_palette(base, myblue), 50%);
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+
   @include media($tablet) {
     width: 60px;
   }
 }
 
 .checkbox:checked + label {
-  background-color: #2ecc71;
+  background-color: _palette(base, myred);
+  color: #fff;
 }
 
 .freeform__overlay {
@@ -94,7 +102,7 @@
   width: 100%;
   height: 100%;
   //background-color: pink;
-  opacity: 0.3;
+  //opacity: 0.3;
 }
 
 .freeform__input {

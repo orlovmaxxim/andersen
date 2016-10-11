@@ -276,13 +276,21 @@
   }
 
   &.solid {
-    background-color: #ccc;
+    background-color: #DCE4EA;
     background-image: none;
 
     .title {
-      color: red;
-      color: red;
-      text-shadow: 1px 1px 10px #6e6a6a, 0 0 2px #6e6a6a;
+      color: _palette(base, myblue);
+      max-width: 90%;
+      margin-left: 5%;
+      text-shadow: none;
+      padding: 20px 0 0 0;
+    }
+
+    h3.subtitle {
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
     }
 
   }
