@@ -1,0 +1,42 @@
+
+.range-slider {
+  display: none;
+  width: auto;
+  //height: 800px;
+  padding: 20px;
+  background-color: #5bc0de;
+}
+
+.block-plan-pic {
+  display: none;
+  //width: 100px;
+  //height: 100px;
+  background-color: #359d80;
+}
+
+.block-plan-pic.active {
+  display: block;
+}
+
+.com {
+  display: none;
+}
+
+.com {
+  &.active {
+    display: block;
+  }
+}
+
+.plan-floor {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#pips-slider {
+  &.ui-slider-horizontal.ui-slider-pips {
+    margin-bottom: 3.4em;
+  }
+}

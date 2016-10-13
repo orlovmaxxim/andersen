@@ -7,6 +7,7 @@ var consult = require('./modules/managerConsult.js');
 var addition = require('./modules/additionForm.js');
 var plan = require('./modules/planningForm.js');
 var freeForm = require('./modules/freeForm.js');
+var houseModule = require('./modules/houseModule.js');
 
 require('./modules/select.js')();
 
@@ -54,6 +55,54 @@ $(document).ready(function(){
     element.style.display = 'none';
   });
   freeForm.checkView();
+
+  // range-slider
+
+  var floors = ["1 этаж", "типовой этаж", "типовой этаж", "типовой этаж", "типовой этаж",
+    "типовой этаж", "типовой этаж", "типовой этаж", "9 этаж", "10 этаж"];
+
+  $("#pips-slider")
+
+    .slider({
+      min: 1,
+      max: 10,
+      step: 1
+    })
+
+    .slider("pips", {
+      first: "label",
+      last: "label",
+      rest: "label",
+      step: 1,
+      labels: floors,
+      prefix: "",
+      suffix: ""
+    })
+
+    .slider("float", {
+      handle: true,
+      pips: false,
+      labels: false,
+      prefix: "",
+      suffix: ""
+    })
+    .on("slidechange", function( e, ui ) {
+
+      console.log('I am changed');
+      var picBlocks = [ ".block-plan-pic-one", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing",
+        ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-nine", ".block-plan-pic-ten"];
+      var numberOfPic = ui.value;
+      var blockPic = $('.com .block-plan-pic');
+      var thisPicBlock = picBlocks[numberOfPic-1];
+      $(thisPicBlock).show();
+      $(thisPicBlock).siblings(blockPic).hide();
+    });
+
+  // end range-slider
+
+
+  houseModule.showRangeSlider();
+
 
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
