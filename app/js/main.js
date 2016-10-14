@@ -50,6 +50,9 @@ $(document).ready(function(){
   }, 3000);
 
 
+
+
+
 // hide all standard checkbox
   [].forEach.call( document.querySelectorAll('.checkbox'), function(element) {
     element.style.display = 'none';
@@ -102,6 +105,7 @@ $(document).ready(function(){
 
 
   houseModule.showRangeSlider();
+  houseModule.showTT();
 
 
   var mySwiper = new Swiper ('.swiper-container', {

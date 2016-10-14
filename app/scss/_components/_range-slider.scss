@@ -12,6 +12,7 @@
   //width: 100px;
   //height: 100px;
   background-color: #359d80;
+  position: relative;
 }
 
 .block-plan-pic.active {
@@ -39,4 +40,14 @@
   &.ui-slider-horizontal.ui-slider-pips {
     margin-bottom: 3.4em;
   }
+}
+
+object {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.testlink {
+  display: block;
 }

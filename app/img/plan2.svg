@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1312.2 581.9" style="enable-background:new 0 0 1312.2 581.9;" xml:space="preserve">
+<style type="text/css">
+	.test1{fill:red;}
+    .test1:hover {
+      fill:white;
+    }
+	.test2{fill:white;}
+    .test2:hover {
+      fill:red;
+    }
+</style>
+<g id="Layer_1">
+	<polygon class="st0 test test1" points="298.1,84.6 255.5,84.6 229.5,84.6 187.7,84.6 185,84.6 151.6,84.6 145.5,84.6 141,84.6 141,89.6 
+		64.1,89.6 61.4,89.6 61.2,89.6 61.2,92.2 61.2,133.8 61.2,136.6 61.2,309.5 61.2,311.2 66.9,311.2 66.9,311.2 237.5,311.2 
+		237.5,310.4 237.5,310.4 237.5,282.2 264.7,282.2 272.9,282.2 274.3,282.2 274.3,276.5 274.3,276.5 274.3,255 277.1,255 
+		277.1,216.8 319.5,216.8 319.5,214 319.5,214 319.5,98.7 319.5,93.4 319.5,84.6 	"/>
+	<path class="st0 test test2" d="M491.9,139.4V93.2V91v-0.6h-79.8v-5.8h-44.2h-1.8h-42h-26V86v12.8h15.8v112.3h-19.7h-22.7v2.9v0.2v2.6v29.9
+		v8.4v21.4v2.5v3.2h46.2h49.5h25.3v0.7h102.2v-3.1v-3.3V150.2v-2.4v-8.4H491.9z"/>
+</g>
+<g id="Слой_2">
+</g>
+</svg>
