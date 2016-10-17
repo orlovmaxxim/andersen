@@ -3,13 +3,14 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1312.2 581.9" style="enable-background:new 0 0 1312.2 581.9;" xml:space="preserve">
 <style type="text/css">
-	.test1{fill:red;}
+    .test { fill:red; opacity:0 }
+	<!--.test1{fill:red;}-->
     .test1:hover {
-      fill:white;
+      opacity: .4;
     }
-	.test2{fill:white;}
+	<!--.test2{fill:white;}-->
     .test2:hover {
-      fill:red;
+      opacity: .4;
     }
 </style>
 <g id="Layer_1">

@@ -45,6 +45,8 @@ module.exports = {
           });
 
 
+
+
       $('#planing-form .popup-header__close').on('click touchstart', function(){
         popupBlock.close();
       });

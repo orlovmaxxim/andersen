@@ -17,19 +17,19 @@ module.exports = {
         // transition: 'slideIn',
         // transitionClose: 'slideBack',
         escClose: true,
-        onOpen: function() {
-          console.log('open Popup');
-          console.log($(this));
-          // $('.testlink').on('click touchstart', function(e){
-          //   e.preventDefault();
-          //   console.log('I am test');
-          // });
-        },
+        positionStyle: 'fixed',
+        // onOpen: function() {
+        //   console.log('open Popup');
+        //   console.log($(this));
+        //   // $('.testlink').on('click touchstart', function(e){
+        //   //   e.preventDefault();
+        //   //   console.log('I am test');
+        //   // });
+        // },
         onClose: function () {
         }
       });
-
-
+      popupBlock.reposition();
 
       //$(nwIndividBlock).addClass('active');
       $('.' + nwIndividBlock).show();
@@ -42,12 +42,12 @@ module.exports = {
     var plans = {
       test1 : {
         tit: "Однокомнатная квартира",
-        floor : "Подъезд 1, 2-8 этаж",
+        floor : "Подъезд 1, 1 этаж",
         category : "one",
-        fot : "/img/apartments/oneroom/34-98.png"
+        fot : "/img/apartments/tworoom/50-10.png"
       },
 
-      secondPlan: {
+      test2: {
         tit: "Однокомнатная квартира",
         floor : "Подъезд 1, 2-8 этаж",
         category : "one",
@@ -68,6 +68,20 @@ module.exports = {
           $.each(plans, function(key, value){
             if(testClass.indexOf(key)+1) {
               console.log('good job');
+
+              var form = popupBlock.find('#planing-choose-form');
+              var formFoto = form.find('.plan__foto').find('img');
+              var formTitle = $('#planing-form').find('.popup-header__title');
+              var hiddenTitleContent = $('#planing-form').find('.planing-choose-form__title');
+              var allsq = form.find('.allsq').find('span');
+              var livesq = form.find('.livesq').find('span');
+
+              formFoto.attr("src", value.fot);
+              formTitle.text(value.tit);
+              hiddenTitleContent.text(value.floor);
+              // allsq.text(squareAll);
+              // livesq.text(squareLive);
+
               popupBlock.bPopup({
                 // fadeSpeed: 'slow',
                 // followSpeed: 1000,
