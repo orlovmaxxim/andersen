@@ -117,6 +117,10 @@ $(document).ready(function(){
   //   houseModule.showTT();
   // }
 
+// kostylek
+  $('.house-tooltip').on('click touchstart', function(e){
+    houseModule.showTT();
+  });
 
 
   var mySwiper = new Swiper ('.swiper-container', {
