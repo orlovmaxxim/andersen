@@ -17,6 +17,25 @@
 //
 .house-block {
   position: relative;
+  .tooltip-one {
+    left: 17.9%;
+    top: 46%;
+  }
+
+  .tooltip-two {
+    left: 27.9%;
+    top: 26%;
+  }
+
+  .tooltip-three {
+    left: 57.9%;
+    top: 16%;
+  }
+
+  .tooltip-four {
+    left: 47.9%;
+    top: 36%;
+  }
 }
 
 .house-block__bg {
@@ -43,24 +62,5 @@
   background-color: rgba(219, 50, 92, 0.75);
   padding: .75rem;
   transform: translateX(-50%);
-}
-
-.tooltip-one {
-  left: 47.9%;
-  top: 36%;
-}
-
-.tooltip-two {
-  left: 27.9%;
-  top: 26%;
-}
-
-.tooltip-three {
-  left: 57.9%;
-  top: 16%;
-}
-
-.tooltip-four {
-  left: 17.9%;
-  top: 46%;
+  cursor: pointer;
 }

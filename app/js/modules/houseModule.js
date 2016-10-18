@@ -5,9 +5,9 @@ module.exports = {
       e.preventDefault();
       var $this = $(this);
       var individBlock = $this.attr('class');
-      console.log(individBlock);
+      // console.log(individBlock);
       var nwIndividBlock = individBlock.split(' ')[1];
-      console.log(nwIndividBlock);
+      // console.log(nwIndividBlock);
       var popupBlock = $('.range-slider');
 
       popupBlock.bPopup({
@@ -17,7 +17,7 @@ module.exports = {
         // transition: 'slideIn',
         // transitionClose: 'slideBack',
         escClose: true,
-        positionStyle: 'fixed',
+        // positionStyle: 'fixed',
         // onOpen: function() {
         //   console.log('open Popup');
         //   console.log($(this));
@@ -31,14 +31,21 @@ module.exports = {
       });
       popupBlock.reposition();
 
-      //$(nwIndividBlock).addClass('active');
+      $('.' + nwIndividBlock).siblings('.com').removeClass('active');
+      $('.' + nwIndividBlock).addClass('active');
+
       $('.' + nwIndividBlock).show();
       $('.' + nwIndividBlock).siblings('.com').hide();
+
+      $('.range-slider .popup-header__close').on('click touchstart', function(){
+        popupBlock.close();
+      });
     });
+
+
   },
 
   showTT: function() {
-
     var plans = {
 
       plan1_1_1 : {
@@ -933,7 +940,30 @@ module.exports = {
       }
     };
 
-    document.querySelector('object').addEventListener('load',function(){
+    var myObjId = '';
+    var indivBlockTwo = '';
+
+    $('.com').each(function(indx){
+      if($(this).css('display') == 'block') {
+        console.log($(this));
+        var individBlock = $(this).attr('class');
+        console.log(individBlock);
+        indivBlockTwo = individBlock.split(' ')[1];
+        console.log(indivBlockTwo);
+      }
+    });
+
+
+    $('.' + indivBlockTwo + ' .block-plan-pic').each(function(index){
+      //console.log($(this));s
+      if($(this).css('display') == 'block') {
+        console.log($(this));
+        myObjId = $(this).find('object').attr('id');
+        console.log(myObjId);
+      }
+    });
+
+    document.getElementById(myObjId).addEventListener('load',function(){
       var p = this.contentDocument.documentElement.querySelectorAll('path');
 
 
@@ -945,8 +975,8 @@ module.exports = {
           //alert("Hello my name is "+this.getAttribute('class')+"…");
           $.each(plans, function(key, value){
             if(testClass.indexOf(key)+1) {
-              // console.log('good job');
-              // console.log(testClass);
+              console.log('good job');
+              console.log(testClass);
 
               var form = popupBlock.find('#planing-choose-form');
               var formFoto = form.find('.plan__foto').find('img');
@@ -974,6 +1004,10 @@ module.exports = {
                   form.find('.suc-alert').css('display', 'none');
                   form.find('.error-alert').css('display', 'none');
                 }
+              });
+
+              $('#planing-form .popup-header__close').on('click touchstart', function(){
+                popupBlock.close();
               });
             }
           });

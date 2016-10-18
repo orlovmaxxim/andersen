@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1205.9 451.3" style="enable-background:new 0 0 1205.9 451.3;" xml:space="preserve">
+<style type="text/css">
+	.st0 {fill:none;}
+	.plan { fill:red; opacity:0; cursor:pointer; }
+	<!--.test1{fill:red;}-->
+    .plan4_9_1:hover {
+      opacity: .4;
+    }
+	<!--.test2{fill:white;}-->
+    .plan4_9_2:hover, 
+    .plan4_9_3:hover, 
+    .plan4_9_4:hover, 
+    .plan4_9_5:hover, 
+    .plan4_9_6:hover, 
+    .plan4_9_7:hover, 
+    .plan4_9_8:hover, 
+    .plan4_9_9:hover, 
+    .plan4_9_10:hover, 
+    .plan4_9_11:hover,
+    .plan4_9_12:hover {
+      opacity: .4;
+    }
+</style>
+<g id="Layer_1">
+	<polygon class="st0 plan plan4_9_1" points="79.3,0 79.3,4.1 0,4.1 0,230.3 79.3,230.3 114.9,230.3 175.9,230.3 175.9,0 	"/>
+	<polygon class="st0 plan plan4_9_1" points="265.2,4.1 265.2,0 169.4,0 169.4,120.6 122.7,120.6 122.7,182.5 169.4,182.5 169.4,197.6 248.1,197.6 
+		265.2,197.6 343.9,197.6 343.9,4.1 	"/>
+	<polygon class="st0 plan plan4_9_1" points="422.6,0 422.6,3.5 341.7,3.5 341.7,197.3 422.6,197.3 458.2,197.3 535.9,197.3 535.9,0 	"/>
+	<polygon class="st0 plan plan4_9_1" points="779,4.1 779,0 661.1,0 661.1,197.3 737.5,197.3 779,197.3 855.4,197.3 855.4,4.1 	"/>
+	<polygon class="st0 plan plan4_9_1" points="932.7,0.1 932.7,4.1 851.4,4.1 851.4,197.8 932.7,197.8 995.5,197.8 1026.6,197.8 1026.6,0.1 	"/>
+	<polygon class="st0 plan plan4_9_1" points="1200.7,48.5 1200.7,4.1 1122.2,4.1 1122.2,0.1 1020.9,0.1 1020.9,125.1 1064.1,125.1 1064.1,176.3 
+		1020.9,176.3 1020.9,230.3 1064.1,230.3 1162.6,230.3 1205.8,230.3 1205.8,48.5 	"/>
+	<polygon class="st0 plan plan4_9_1" points="1110.4,224 1110.4,224.3 1020.2,224.3 1020.2,253.3 982,253.3 982,319.4 1020.2,319.4 1110.4,319.4 
+		1110.4,444.5 1205.9,444.5 1205.9,224 	"/>
+	<polygon class="st0 plan plan4_9_1" points="987.2,313.5 987.2,259.3 987.2,253.1 767.2,253.1 767.2,445.1 845.4,445.1 845.4,451.3 974.7,451.3 
+		987.2,451.3 1116.6,451.3 1116.6,313.5 	"/>
+	<polygon class="st0 plan plan4_9_1" points="774.1,254 594.9,254 594.9,257.1 594.9,447.8 594.9,451 691.7,451 691.7,447.8 774.1,447.8 	"/>
+	<polygon class="st0 plan plan4_9_1" points="427.4,253 427.4,445.5 505.6,445.5 505.6,451.3 600.7,451.3 600.7,445.5 600.7,258.8 600.7,253 	"/>
+	<polygon class="st0 plan plan4_9_1" points="433.4,253.7 210.2,253.7 210.2,311.1 84.7,311.1 84.7,451.3 350.9,451.3 350.9,444.8 433.4,444.8 	"/>
+	<polygon class="st0 plan plan4_9_1" points="175.5,253.9 175.5,224.7 90.7,224.7 66.5,224.7 0,224.7 0,446.3 90.7,446.3 90.7,317 106.3,317 
+		175.5,317 215.4,317 215.4,253.9 	"/>
+</g>
+<g id="Слой_2">
+</g>
+</svg>

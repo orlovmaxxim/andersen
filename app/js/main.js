@@ -99,13 +99,24 @@ $(document).ready(function(){
       var thisPicBlock = picBlocks[numberOfPic-1];
       $(thisPicBlock).show();
       $(thisPicBlock).siblings(blockPic).hide();
+
+      houseModule.showTT();
     });
+
 
   // end range-slider
 
-
   houseModule.showRangeSlider();
-  houseModule.showTT();
+  // if(houseModule.showRangeSlider()) {
+  //   houseModule.showTT();
+  // }
+
+  // houseModule.showTT();
+  // if($('.range-slider').css('display') == 'block') {
+  //   console.log('wow');
+  //   houseModule.showTT();
+  // }
+
 
 
   var mySwiper = new Swiper ('.swiper-container', {

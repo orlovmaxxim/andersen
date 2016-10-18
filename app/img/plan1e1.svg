@@ -5,13 +5,22 @@
 <style type="text/css">
     
     .st0 {fill:none;}
-	.plan { fill:red; opacity:0 }
+	.plan { fill:red; opacity:0; cursor:pointer; }
 	<!--.test1{fill:red;}-->
     .plan1_1_1:hover {
       opacity: .4;
     }
 	<!--.test2{fill:white;}-->
-    .plan1_1_2:hover, .plan1_1_3:hover, .plan1_1_4:hover,.plan1_1_5:hover,.plan1_1_6:hover,.plan1_1_7:hover,.plan1_1_8:hover,.plan1_1_9:hover,.plan1_1_10:hover, .plan1_1_11:hover {
+    .plan1_1_2:hover, 
+    .plan1_1_3:hover, 
+    .plan1_1_4:hover, 
+    .plan1_1_5:hover, 
+    .plan1_1_6:hover, 
+    .plan1_1_7:hover, 
+    .plan1_1_8:hover, 
+    .plan1_1_9:hover, 
+    .plan1_1_10:hover, 
+    .plan1_1_11:hover {
       opacity: .4;
     }
 </style>
