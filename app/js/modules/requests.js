@@ -219,7 +219,7 @@ if(valid.validateForm(form)) {
         foto: $('#planing-form .plan__img').attr('src')
       };
 
-      alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + data.foto;
+      alldata = alldata + data.plan + ". Этаж: " + data.hight + ". Ссылка на фото: " + "http://lp.domandersen.ru" + data.foto;
 
 
 

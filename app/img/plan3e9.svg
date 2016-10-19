@@ -1,42 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 798.7 858.7" style="enable-background:new 0 0 798.7 858.7;" xml:space="preserve">
-<style type="text/css">
-	.st0 {fill:none;}
-	.plan { fill:red; opacity:0; cursor:pointer; }
-	<!--.test1{fill:red;}-->
-    .plan3_9_1:hover {
-      opacity: .4;
-    }
-	<!--.test2{fill:white;}-->
-    .plan3_9_2:hover, 
-    .plan3_9_3:hover, 
-    .plan3_9_4:hover, 
-    .plan3_9_5:hover, 
-    .plan3_9_6:hover, 
-    .plan3_9_7:hover, 
-    .plan3_9_8:hover, 
-    .plan3_9_9:hover, 
-    .plan3_9_10:hover {
-      opacity: .4;
-    }
-</style>
-<g id="Layer_1">
-	<polygon class="st0 plan plan3_9_1" points="419.8,80.9 466.7,273.3 670.7,221.2 656.5,161.3 627,170.7 593.3,36.9 	"/>
-	<polygon class="st0 plan plan3_9_1" points="257.1,119.6 277.6,202.9 244.4,211.4 260.2,268.3 327.9,252.6 339.7,305.4 473.7,271.6 426.6,81.1 
-		351.7,101.3 350.5,96.6 	"/>
-	<polygon class="st0 plan plan3_9_1" points="87.1,163.5 135,356.2 345.1,304 330.2,246.4 262.6,262.1 252.2,214.7 285.6,207.6 262.3,119.2 	"/>
-	<polygon class="st0 plan plan3_9_1" points="3.6,184.2 93.8,164.1 140.7,354.7 190.1,338.1 189.3,550.2 0.4,550.2 0.2,243.7 3.8,243.7 	"/>
-	<polygon class="st0 plan plan3_9_1" points="250.1,761.7 250.1,722 195.8,722 195.8,676.2 2.6,676.2 2.6,858.4 56.8,858.4 195.8,858.4 
-		249.2,858.4 250.1,858.4 444,858.4 444,761.7 	"/>
-	<rect x="245.1" y="586" class="st0 plan plan3_9_3" width="199.6" height="186.2"/>
-	<rect x="246.3" y="585.4" class="st0 plan plan3_9_2" width="199.2" height="186.8"/>
-	<polygon class="st0 plan plan3_9_1" points="245.9,385.8 246.3,591.5 441.2,591.7 444,530.4 452.2,528.2 406.9,346.3 	"/>
-	<polygon class="st0 plan plan3_9_1" points="448.1,529.5 620,487.4 573.6,304.7 402,346.3 	"/>
-	<polygon class="st0 plan plan3_9_1" points="612.2,489.3 566.9,309 665.6,281.7 665.9,264.6 798,264.6 798,441.6 	"/>
-</g>
-<g id="Слой_2">
-	<polygon class="st0 plan plan3_9_1" points="798.7,0 798.1,270.7 671.4,270.7 670.7,223 653.7,169.1 621.7,177.9 587.5,38.3 742.4,0.7 	"/>
-</g>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1">
+<path d="M424.6,87.5l46.9,192.4l204-52.1l-14.2-59.9l-29.5,9.4L598.1,43.5L424.6,87.5z"/>
+<path d="M261.9,126.2l20.5,83.3l-33.2,8.5l15.8,56.9l67.7-15.7l11.8,52.8l134-33.8L431.4,87.7l-74.9,20.2l-1.2-4.7L261.9,126.2z"/>
+<path d="M91.9,170.1l47.9,192.7l210.1-52.2L335,253l-67.6,15.7L257,221.3l33.4-7.1l-23.3-88.4L91.9,170.1z"/>
+<path d="M13.2,251.8c0,0,0.2-57.5,0-57.5s69.2-5.2,69.2-5.2l55,178l52.5-10.5v194.2L8.4,552.5V254.2L13.2,251.8z"/>
+<path d="M260.2,576.2h199.6v186.2H260.2V576.2z"/>
+<path d="M250.7,392.4l0.4,205.7l194.9,0.2l2.8-61.3l8.2-2.2l-45.3-181.9L250.7,392.4z"/>
+<path d="M452.9,536.1L624.8,494l-46.4-182.7l-171.6,41.6L452.9,536.1z"/>
+<path d="M617,495.9l-45.3-180.3l98.7-27.3l0.3-17.1h132.1v177L617,495.9z"/>
+<path d="M803.5,6.6l-0.6,270.7H676.2l-0.7-47.7l-17-53.9l-32,8.8L592.3,44.9L747.2,7.3L803.5,6.6z"/>
+<path d="M189.9,687l4,47.3l22,2.7l34.8,36.9h192.5l-2.7,86.4h-428V687H189.9z"/>
 </svg>
