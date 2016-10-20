@@ -18,23 +18,23 @@
 .house-block {
   position: relative;
   .tooltip-one {
-    left: 17.9%;
-    top: 46%;
-  }
-
-  .tooltip-two {
-    left: 27.9%;
-    top: 26%;
-  }
-
-  .tooltip-three {
-    left: 57.9%;
+    left: 58.9%;
     top: 16%;
   }
 
+  .tooltip-two {
+    left: 68.9%;
+    top: 34%;
+  }
+
+  .tooltip-three {
+    left: 50.9%;
+    top: 45%;
+  }
+
   .tooltip-four {
-    left: 47.9%;
-    top: 36%;
+    left: 32.9%;
+    top: 26%;
   }
 }
 
@@ -63,4 +63,10 @@
   padding: .75rem;
   transform: translateX(-50%);
   cursor: pointer;
+  @include breakpoint(medium) {
+    padding: .15rem;
+  }
+  @include breakpoint(small) {
+    font-size: 9pt;
+  }
 }
