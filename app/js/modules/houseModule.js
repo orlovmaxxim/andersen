@@ -945,11 +945,11 @@ module.exports = {
 
     $('.com').each(function(indx){
       if($(this).css('display') == 'block') {
-        console.log($(this));
+        //console.log($(this));
         var individBlock = $(this).attr('class');
-        console.log(individBlock);
+        //console.log(individBlock);
         indivBlockTwo = individBlock.split(' ')[1];
-        console.log(indivBlockTwo);
+        //console.log(indivBlockTwo);
       }
     });
 
@@ -957,9 +957,9 @@ module.exports = {
     $('.' + indivBlockTwo + ' .block-plan-pic').each(function(index){
       //console.log($(this));s
       if($(this).css('display') == 'block') {
-        console.log($(this));
+        //console.log($(this));
         myObjId = $(this).find('object').attr('id');
-        console.log(myObjId);
+        //console.log(myObjId);
       }
     });
 
@@ -975,8 +975,8 @@ module.exports = {
           //alert("Hello my name is "+this.getAttribute('class')+"…");
           $.each(plans, function(key, value){
             if(testClass.indexOf(key)+1) {
-              console.log('good job');
-              console.log(testClass);
+              //console.log('good job');
+              //console.log(testClass);
 
               var form = popupBlock.find('#planing-choose-form');
               var formFoto = form.find('.plan__foto').find('img');

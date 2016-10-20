@@ -91,7 +91,6 @@ $(document).ready(function(){
     })
     .on("slidechange", function( e, ui ) {
 
-      console.log('I am changed');
       var picBlocks = [ ".block-plan-pic-one", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing",
         ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-nine", ".block-plan-pic-ten"];
       var numberOfPic = ui.value;
