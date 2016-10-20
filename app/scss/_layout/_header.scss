@@ -199,7 +199,7 @@
   display: none;
   @include breakpoint(x-small) {
     display: block;
-    background-image: url(/img/phone-circle-icon.png);
+    background-image: url(../img/phone-circle-icon.png);
     width: 33px;
     height: 33px;
   }
