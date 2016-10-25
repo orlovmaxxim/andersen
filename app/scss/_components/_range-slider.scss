@@ -56,6 +56,26 @@
       }
     }
   }
+
+  .ui-state-hover {
+    background-color: _palette(base, myred);
+    border: none;
+  }
+
+  .ui-slider-line {
+    height: 6px;
+    opacity: .3;
+  }
+
+  .ui-slider-handle {
+    border-radius: 50%;
+    cursor : pointer;
+
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: -15px;
+  }
 }
 
 
