@@ -10,6 +10,10 @@
 
     .subtitle {
       margin: 0 0 .5em 0;
+
+      @include breakpoint(small) {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -48,6 +52,16 @@
   height: auto;
   width: 100%;
   margin: 0;
+
+  @include breakpoint(small) {
+     width: 120%;
+     margin-left: -10%;
+  }
+
+  @include breakpoint(xsmall) {
+    width: 140%;
+    margin-left: -20%;
+  }
 }
 
 .house-tooltip {
@@ -95,7 +109,7 @@
   }
 
   @include breakpoint(medium) {
-    padding: .15rem;
+    padding: .15rem 1rem;
   }
   @include breakpoint(small) {
     font-size: 9pt;

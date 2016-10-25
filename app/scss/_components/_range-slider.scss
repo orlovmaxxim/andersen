@@ -48,7 +48,7 @@
     @include breakpoint(small) {
       margin-bottom: 2.4em;
       .ui-slider-pip {
-        font-size: 0.4em;
+        font-size: .6em;
         line-height: 0.9em;
       }
       .ui-slider-label {
@@ -57,24 +57,46 @@
     }
   }
 
-  .ui-state-hover {
+  .ui-state-hover, .ui-state-focus {
     background-color: _palette(base, myred);
     border: none;
   }
 
+  .ui-slider-tip {
+    background-color: #f6f8fa;
+    border: 1px solid #ccc;
+
+    &:before {
+      border-top-color: #ccc;
+    }
+
+    &:after {
+      border-top-color: #f6f8fa;
+    }
+  }
+
   .ui-slider-line {
     height: 6px;
+    margin-top: -3px;
     opacity: .3;
+  }
+
+  .ui-slider-pip-selected {
+    color: _palette(base, myred);
+  }
+
+  .ui-slider-pip-initial {
+    color: #999;
+    font-weight: normal;
   }
 
   .ui-slider-handle {
     border-radius: 50%;
     cursor : pointer;
 
-    width: 30px;
-    height: 30px;
-    margin-top: -5px;
-    margin-left: -15px;
+    width: 22px;
+    height: 22px;
+    margin-left: -11px;
   }
 }
 
