@@ -9,7 +9,8 @@ module.exports = {
       var nwIndividBlock = individBlock.split(' ')[1];
       // console.log(nwIndividBlock);
       var popupBlock = $('.range-slider');
-
+      var doorway = $this.text();
+      popupBlock.find('h2:first').text(doorway);
       popupBlock.bPopup({
         // fadeSpeed: 'slow',
         // followSpeed: 1000,
