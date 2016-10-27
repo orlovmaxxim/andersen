@@ -61,14 +61,14 @@ $(document).ready(function(){
 
   // range-slider
 
-  var floors = ["1", "2", "3", "4", "5",
+  var floors = ["2", "3", "4", "5",
     "6", "7", "8", "9", "10"];
 
   $("#pips-slider")
 
     .slider({
       min: 1,
-      max: 10,
+      max: 9,
       step: 1
     })
 
@@ -91,7 +91,7 @@ $(document).ready(function(){
     })
     .on("slidechange", function( e, ui ) {
 
-      var picBlocks = [ ".block-plan-pic-one", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing",
+      var picBlocks = [".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing",
         ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-nine", ".block-plan-pic-ten"];
       var numberOfPic = ui.value;
       var blockPic = $('.com .block-plan-pic');
@@ -119,6 +119,7 @@ $(document).ready(function(){
 // kostylek
   $('.house-tooltip').on('click touchstart', function(e){
     houseModule.showTT();
+    $("#pips-slider").slider('value', 1);
   });
 
 
