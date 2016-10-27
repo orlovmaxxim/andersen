@@ -67,7 +67,7 @@ $(document).ready(function(){
   $("#pips-slider")
 
     .slider({
-      min: 1,
+      min: 2,
       max: 9,
       step: 1
     })
