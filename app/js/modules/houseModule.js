@@ -53,7 +53,7 @@ module.exports = {
         tit: "Двухкомнатная квартира",
         floor : "Подъезд 1, 1 этаж",
         category : "one",
-        fot : "img/apartments/50-36-u.png",
+        fot : "img/apartments/50-10-u.png",
         squareAll: "50,10 м2",
         squareLive: "21,66 м2"
       },
@@ -63,7 +63,7 @@ module.exports = {
         floor : "Подъезд 1, 1 этаж",
         category : "one",
         fot : "img/apartments/oneroom/34-98.png",
-        squareAll: "34,90 м2",
+        squareAll: "34,98 м2",
         squareLive: "11,55 м2"
       },
 
@@ -89,8 +89,8 @@ module.exports = {
         tit: "Двухкомнатная квартира",
         floor : "Подъезд 1, 1 этаж",
         category : "one",
-        fot : "img/apartments/tworoom/49-89.png",
-        squareAll: "49,89 м2",
+        fot : "img/apartments/tworoom/49-69.png",
+        squareAll: "49,69 м2",
         squareLive: "21,96 м2"
       },
 
@@ -257,8 +257,8 @@ module.exports = {
       },
 
       plan1_9_1 : {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/86-24-u.png",
         squareAll: "86,24 м2",
@@ -275,8 +275,8 @@ module.exports = {
       },
 
       plan1_9_3 : {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/74-12-u.png",
         squareAll: "74,12 м2",
@@ -284,8 +284,8 @@ module.exports = {
       },
 
       plan1_9_4: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/threeroom/75-20.png",
         squareAll: "75,20 м2",
@@ -302,8 +302,8 @@ module.exports = {
       },
 
       plan1_9_6: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/threeroom/87-12.png",
         squareAll: "87,12 м2",
@@ -311,8 +311,8 @@ module.exports = {
       },
 
       plan1_9_7 : {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/62-03-u.png",
         squareAll: "62,03 м2",
@@ -320,8 +320,8 @@ module.exports = {
       },
 
       plan1_9_8: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/threeroom/61-61.png",
         squareAll: "61,61 м2",
@@ -329,8 +329,8 @@ module.exports = {
       },
 
       plan1_9_9 : {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/threeroom/64-77.png",
         squareAll: "64,77 м2",
@@ -338,8 +338,8 @@ module.exports = {
       },
 
       plan1_9_10: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/64-98-u.png",
         squareAll: "64,98 м2",
@@ -347,8 +347,8 @@ module.exports = {
       },
 
       plan1_9_11 : {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/threeroom/60-74.png",
         squareAll: "60,74 м2",
@@ -356,8 +356,8 @@ module.exports = {
       },
 
       plan1_9_12: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 1, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 1, 9-10 этаж",
         category : "one",
         fot : "img/apartments/64-17-u.png",
         squareAll: "64,17 м2",
@@ -455,8 +455,8 @@ module.exports = {
       },
 
       plan2_9_1: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/84-05-u.png",
         squareAll: "84,05 м2",
@@ -464,8 +464,8 @@ module.exports = {
       },
 
       plan2_9_2: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/76-21-u.png",
         squareAll: "76,21 м2",
@@ -473,8 +473,8 @@ module.exports = {
       },
 
       plan2_9_3: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/75-93-u.png",
         squareAll: "75,93 м2",
@@ -491,8 +491,8 @@ module.exports = {
       },
 
       plan2_9_5: {
-        tit: "Четырёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/92-88-u.png",
         squareAll: "92,88 м2",
@@ -500,8 +500,8 @@ module.exports = {
       },
 
       plan2_9_6: {
-        tit: "Двухкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/tworoom/65-32.png",
         squareAll: "65,32 м2",
@@ -509,8 +509,8 @@ module.exports = {
       },
 
       plan2_9_7: {
-        tit: "Четырёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/fourroom/77-10.png",
         squareAll: "77,10 м2",
@@ -518,8 +518,8 @@ module.exports = {
       },
 
       plan2_9_8: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/threeroom/56-50.png",
         squareAll: "56,50 м2",
@@ -527,8 +527,8 @@ module.exports = {
       },
 
       plan2_9_9: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/60-23-u.png",
         squareAll: "60,23 м2",
@@ -536,8 +536,8 @@ module.exports = {
       },
 
       plan2_9_10: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 2, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 2, 9-10 этаж",
         category : "two",
         fot : "img/apartments/100-68-u.png",
         squareAll: "100,68 м2",
@@ -635,8 +635,8 @@ module.exports = {
       },
 
       plan3_9_1: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/threeroom/100-68.png",
         squareAll: "100,68 м2",
@@ -644,8 +644,8 @@ module.exports = {
       },
 
       plan3_9_2: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/threeroom/60-23.png",
         squareAll: "60,23 м2",
@@ -653,8 +653,8 @@ module.exports = {
       },
 
       plan3_9_3: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/56-50-u.png",
         squareAll: "56,50 м2",
@@ -662,8 +662,8 @@ module.exports = {
       },
 
       plan3_9_4: {
-        tit: "Четырёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/fourroom/77-10-2.png",
         squareAll: "77,10 м2",
@@ -671,8 +671,8 @@ module.exports = {
       },
 
       plan3_9_5: {
-        tit: "Двухкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/65-32-u.png",
         squareAll: "65,32 м2",
@@ -680,8 +680,8 @@ module.exports = {
       },
 
       plan3_9_6: {
-        tit: "Четырёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/fourroom/92-88.png",
         squareAll: "92,88 м2",
@@ -698,8 +698,8 @@ module.exports = {
       },
 
       plan3_9_8: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/threeroom/75-93.png",
         squareAll: "75,93 м2",
@@ -707,8 +707,8 @@ module.exports = {
       },
 
       plan3_9_9: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/threeroom/76-21.png",
         squareAll: "76,21 м2",
@@ -716,8 +716,8 @@ module.exports = {
       },
 
       plan3_9_10: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 3, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 3, 9-10 этаж",
         category : "three",
         fot : "img/apartments/threeroom/84-05.png",
         squareAll: "84,05 м2",
@@ -833,8 +833,8 @@ module.exports = {
       },
 
       plan4_9_1: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/62-03.png",
         squareAll: "62,03 м2",
@@ -842,8 +842,8 @@ module.exports = {
       },
 
       plan4_9_2: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/61-61-u.png",
         squareAll: "61,61 м2",
@@ -851,8 +851,8 @@ module.exports = {
       },
 
       plan4_9_3: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/64-77-2.png",
         squareAll: "64,77 м2",
@@ -860,8 +860,8 @@ module.exports = {
       },
 
       plan4_9_4: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/64-98.png",
         squareAll: "64,98 м2",
@@ -869,8 +869,8 @@ module.exports = {
       },
 
       plan4_9_5: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/60-74-u.png",
         squareAll: "60,74 м2",
@@ -878,8 +878,8 @@ module.exports = {
       },
 
       plan4_9_6: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/64-17.png",
         squareAll: "64,17 м2",
@@ -887,8 +887,8 @@ module.exports = {
       },
 
       plan4_9_7: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/87-12-u.png",
         squareAll: "87,12 м2",
@@ -897,7 +897,7 @@ module.exports = {
 
       plan4_9_8: {
         tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/56-80.png",
         squareAll: "56,80 м2",
@@ -905,8 +905,8 @@ module.exports = {
       },
 
       plan4_9_9: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/75-20-u.png",
         squareAll: "75,20 м2",
@@ -914,8 +914,8 @@ module.exports = {
       },
 
       plan4_9_10: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/74-12.png",
         squareAll: "74,12 м2",
@@ -924,7 +924,7 @@ module.exports = {
 
       plan4_9_11: {
         tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/57-34.png",
         squareAll: "57,34 м2",
@@ -932,8 +932,8 @@ module.exports = {
       },
 
       plan4_9_12: {
-        tit: "Трёхкомнатная квартира",
-        floor : "Подъезд 4, 9-10 этаж (пентхаус)",
+        tit: "Пентхаус",
+        floor : "Подъезд 4, 9-10 этаж",
         category : "four",
         fot : "img/apartments/threeroom/86-24.png",
         squareAll: "86,24 м2",
