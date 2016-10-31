@@ -152,8 +152,8 @@ module.exports = {
         tit: "Двухкомнатная квартира",
         floor : "Подъезд 1, 2-8 этаж",
         category : "one",
-        fot : "img/apartments/50-36-u.png",
-        squareAll: "50,36 м2",
+        fot : "img/apartments/50-10-u.png",
+        squareAll: "50,10 м2",
         squareLive: "21,66 м2"
       },
 
@@ -171,7 +171,7 @@ module.exports = {
         floor : "Подъезд 1, 2-8 этаж",
         category : "one",
         fot : "img/apartments/oneroom/30-45.png",
-        squareAll: "30,39 м2",
+        squareAll: "30,45 м2",
         squareLive: "11,48 м2"
       },
 
@@ -197,8 +197,8 @@ module.exports = {
         tit: "Двухкомнатная квартира",
         floor : "Подъезд 1, 2-8 этаж",
         category : "one",
-        fot : "img/apartments/tworoom/49-89.png",
-        squareAll: "50,15 м2",
+        fot : "img/apartments/tworoom/49-69.png",
+        squareAll: "49,69 м2",
         squareLive: "21,96 м2"
       },
 

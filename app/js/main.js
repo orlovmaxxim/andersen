@@ -68,7 +68,7 @@ $(document).ready(function(){
 
     .slider({
       min: 2,
-      max: 9,
+      max: 10,
       step: 1
     })
 
@@ -95,7 +95,7 @@ $(document).ready(function(){
         ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-typing", ".block-plan-pic-nine", ".block-plan-pic-ten"];
       var numberOfPic = ui.value;
       var blockPic = $('.com .block-plan-pic');
-      var thisPicBlock = picBlocks[numberOfPic-1];
+      var thisPicBlock = picBlocks[numberOfPic-2];
       $(thisPicBlock).show();
       $(thisPicBlock).siblings(blockPic).hide();
 
